@@ -1985,3 +1985,224 @@ export const logo = img(
 export const footerLogo = img(
   "/resources/c0173968/image-widget/95DD94A0-43A6-4BF1-BDEB-219E9DCEB6EF/footer-logo.svg"
 );
+
+// ===== FAQ page =====
+
+export const faqPageHero = {
+  image: "/images/hero/hero-3.png",
+  title: "Building Design FAQs",
+  tagline: "Answers on permits, planning and choosing the right designer",
+};
+
+export const faqPageIntro = [
+  "Planning a new home, renovation or development often raises questions about permits, council requirements and what's possible on your site. Below, Manzel Studio answers common questions on building design in Melbourne - from permits and granny flats to narrow blocks and choosing the right designer.",
+];
+
+export const faqCategories: { id: string; title: string; lead: string; items: { q: string; a: string }[] }[] = [
+  {
+    id: "planning-building-permits",
+    title: "Planning & Building Permits",
+    lead: "Understanding which approvals apply to your project is an important part of the building design process. Planning permits and building permits serve different purposes, and the requirements can vary depending on the property and proposed work.",
+    items: [
+      {
+        q: "What is the difference between a planning permit and a building permit?",
+        a: "A planning permit relates to how land can be used or developed, while a building permit confirms that proposed construction complies with applicable building regulations. Depending on your Melbourne property and project scope, you may need a planning permit, a building permit, both, or in some cases neither.",
+      },
+      {
+        q: "How do I know if I need a planning permit in Melbourne?",
+        a: "Whether you need a planning permit depends on your property's zoning, overlays, proposed development and local planning requirements. A site assessment can identify the controls affecting your property and determine whether planning approval is required before design work progresses.",
+      },
+      {
+        q: "How do I know if I need a building permit?",
+        a: "A building permit is commonly required for new homes, extensions, structural alterations and many other building works. The requirements depend on the type and scope of the project, so they should be confirmed with the relevant building professional or building surveyor.",
+      },
+    ],
+  },
+  {
+    id: "granny-flats-secondary-dwellings",
+    title: "Granny Flats & Secondary Dwellings",
+    lead: "Granny flats and secondary dwellings can provide additional living space for family members, guests or changing household needs. Before designing one, it is important to understand the planning controls, available space and building requirements affecting your property.",
+    items: [
+      {
+        q: "Can I build a granny flat on my property in Melbourne?",
+        a: "You may be able to build a granny flat or secondary dwelling depending on your property's size, zoning, overlays, access and site constraints. An early site assessment can determine what is feasible before you invest in detailed design and documentation.",
+      },
+      {
+        q: "Do I need a planning permit for a granny flat in Victoria?",
+        a: "A planning permit may not be required for some secondary dwellings in Victoria when the proposal meets the applicable planning requirements. However, zoning, overlays and site-specific controls can affect your project, so the property should be assessed before proceeding.",
+      },
+      {
+        q: "Do I need a building permit for a granny flat?",
+        a: "A building permit will generally be required before constructing a granny flat or secondary dwelling. This confirms that the proposed building work meets the relevant building regulations and construction requirements.",
+      },
+    ],
+  },
+  {
+    id: "narrow-blocks-multi-dwelling",
+    title: "Small Lots, Narrow Blocks & Multi-Dwelling Sites",
+    lead: "Smaller and constrained sites do not necessarily mean limited design possibilities. Careful building design can help make better use of available space while responding to access, privacy, open space and other planning considerations.",
+    items: [
+      {
+        q: "Can I build a house on a narrow block in Melbourne?",
+        a: "Yes, narrow blocks can often accommodate well-designed homes when the site is carefully planned. The design needs to consider setbacks, private open space, vehicle access, overlooking, daylight, orientation and other applicable planning requirements.",
+      },
+      {
+        q: "Can I build a second dwelling on my property in Melbourne?",
+        a: "Potentially. Whether your property can accommodate a second dwelling depends on factors such as lot size, zoning, overlays, setbacks, access, private open space and existing site conditions. A feasibility assessment can help determine the development potential of your block.",
+      },
+      {
+        q: "Can I build a dual occupancy on my property?",
+        a: "Dual occupancy may be possible if your property can satisfy the applicable planning and design requirements. Important considerations include site dimensions, setbacks, vehicle access, private open space, overlooking, neighbourhood character and other relevant planning controls.",
+      },
+    ],
+  },
+  {
+    id: "site-access-trees",
+    title: "Site Access & Trees",
+    lead: "Existing site conditions can influence what can be designed and approved. Vehicle access, street infrastructure, trees and planning controls should therefore be considered early rather than after the design has already been developed.",
+    items: [
+      {
+        q: "Can I have a second driveway or crossover on my property?",
+        a: "A second vehicle crossover may be possible, but council approval is generally required. Council will typically consider factors such as traffic safety, crossover width and location, street trees, existing services, footpaths and the overall impact on the streetscape.",
+      },
+      {
+        q: "Can I remove a tree from my property in Melbourne?",
+        a: "Whether you can remove a tree depends on the property's planning controls and any local tree protection requirements. Trees affected by overlays or other protection controls may require council approval before they can be removed, pruned or significantly altered.",
+      },
+    ],
+  },
+  {
+    id: "change-of-use-commercial",
+    title: "Change of Use & Commercial Projects",
+    lead: "Commercial building projects and changes of use can involve different requirements from residential projects. The existing use of the property, proposed business activity, building classification and local planning controls can all affect the approval process.",
+    items: [
+      {
+        q: "Can I convert my property into a rooming house?",
+        a: "Potentially. Converting a property into a rooming house may involve planning, building and other regulatory requirements. The existing building, proposed occupancy and applicable planning controls should be assessed before proceeding.",
+      },
+      {
+        q: "What is a rooming house?",
+        a: "A rooming house provides accommodation where residents rent rooms and may share facilities such as kitchens, bathrooms or common areas. Specific regulatory requirements can apply depending on the property's use, occupancy and configuration.",
+      },
+      {
+        q: "Do I need a planning permit for a rooming house in Victoria?",
+        a: "Whether a planning permit is required depends on the property, proposed use and applicable Victorian planning controls. It is important to confirm the requirements for the individual site rather than assuming the use is automatically permitted.",
+      },
+      {
+        q: "Do I need a building permit for a rooming house?",
+        a: "Building approval may be required where building work, a change of building classification or other regulated changes are involved. The specific requirements should be confirmed based on the existing property and proposed rooming house use.",
+      },
+      {
+        q: "Do I need a building permit for a shop fit-out?",
+        a: "A building permit may be required depending on the scope of the shop fit-out. Structural changes, alterations to essential safety measures, accessibility requirements, changes in building classification and other building work can affect whether approval is needed.",
+      },
+      {
+        q: "Do I need a planning permit for a shop fit-out?",
+        a: "A planning permit may be required if the project involves a change of use, external alterations, signage or other works controlled by the local planning scheme. A straightforward internal fit-out may have different requirements, so the site and proposed use should be checked first.",
+      },
+      {
+        q: "Can I convert a house into a commercial property?",
+        a: "Potentially, but changing a residential property to commercial use can trigger planning and building requirements. Zoning, overlays, parking, access, amenity and the proposed business use should be assessed before preparing detailed plans.",
+      },
+    ],
+  },
+  {
+    id: "choosing-a-building-designer",
+    title: "Choosing a Building Designer",
+    lead: "Choosing the right professional can influence the design, documentation and approval stages of your project. Experience with the type of building you are planning and an understanding of local requirements are particularly important.",
+    items: [
+      {
+        q: "What does a building designer do?",
+        a: "A building designer develops practical building designs and prepares documentation for approvals and construction. Depending on the project and scope of service, this can include concept design, planning drawings, construction documentation and coordination with consultants such as engineers and building surveyors.",
+      },
+      {
+        q: "What is the difference between a building designer and an architect?",
+        a: "Building designers and architects can both design residential and commercial buildings, but their qualifications, registration pathways and scope of services can differ. The right choice depends on your project's complexity, design requirements, budget and level of professional involvement required throughout the project.",
+      },
+      {
+        q: "Do I need an architect or a building designer?",
+        a: "It depends on your project. A building designer can be well suited to many new homes, renovations, extensions and residential developments, while some clients choose architects for projects requiring a particular architectural approach or broader professional services. Rather than choosing based on title alone, consider relevant experience, previous projects, scope of service and whether the professional's approach suits what you want to achieve.",
+      },
+      {
+        q: "Should I hire a building designer before a builder?",
+        a: "In many cases, yes. Engaging a building designer early allows you to establish the brief, assess the site and develop drawings before requesting detailed construction quotes. Providing builders with consistent documentation can also make it easier to compare quotes and understand what is included in each proposal.",
+      },
+    ],
+  },
+  {
+    id: "design-approval-process",
+    title: "Building Design & Approval Process",
+    lead: "Every building project follows a slightly different path depending on the property, design and approvals involved. Understanding the process early can help you plan the project more effectively and identify potential constraints before they become expensive changes.",
+    items: [
+      {
+        q: "Do I need a planning permit to renovate or build a house in Melbourne?",
+        a: "Not every renovation or new home requires a planning permit. Requirements depend on the property's zoning, overlays and the type and scale of the proposed development. Checking these controls early can prevent unnecessary design changes and approval delays later.",
+      },
+      {
+        q: "How long does the building design and approval process take in Melbourne?",
+        a: "The timeframe varies depending on the project's complexity, planning requirements, consultant input and council assessment. Straightforward projects may progress relatively quickly, while developments requiring planning approval, design revisions or additional reports can take several months or longer.",
+      },
+      {
+        q: "Can a building designer work from my existing plans or sketches?",
+        a: "Yes. Existing plans, sketches and ideas can provide a useful starting point for a building designer. They will generally review and develop the information further to ensure the proposed design addresses current site conditions, planning controls and applicable building requirements.",
+      },
+      {
+        q: "Should I renovate or knock down and rebuild?",
+        a: "The right option depends on your existing home's condition, planning constraints, project goals, budget and desired outcome. A feasibility assessment can compare renovation and rebuilding options before you commit to detailed design or construction.",
+      },
+    ],
+  },
+  {
+    id: "builders-difficult-sites",
+    title: "Builders, Difficult Sites & Construction",
+    lead: "Good building design needs to work beyond the drawing board. Site conditions, construction requirements and coordination with builders can all influence how successfully a design moves from concept to completed project.",
+    items: [
+      {
+        q: "Can a building designer design a home for a sloping or difficult site?",
+        a: "Yes. An experienced building designer can develop solutions for sloping, narrow, irregular or otherwise constrained sites. The design may consider site levels, orientation, access, overlooking, retaining requirements and strategies such as stepped floor levels to respond efficiently to the land.",
+      },
+      {
+        q: "Does a building designer oversee construction?",
+        a: "It depends on the services offered by the building designer. Some provide construction-stage assistance such as responding to builder queries, reviewing design-related issues and conducting periodic site visits, while the builder remains responsible for managing construction and trades.",
+      },
+      {
+        q: "How do I choose the right builder for my project?",
+        a: "Compare builders based on relevant project experience, registration, previous work, communication, quote detail, construction timeframe and how they manage variations. Providing each shortlisted builder with the same drawings and specifications can also make their quotes easier to compare and reduce uncertainty around what is included.",
+      },
+    ],
+  },
+  {
+    id: "services-getting-started",
+    title: "Building Designer Services & Getting Started",
+    lead: "If you are at the beginning of your project, you do not need to have every detail worked out before speaking with a building designer. An initial discussion can help clarify your priorities, understand the site and establish the next steps for design and approvals.",
+    items: [
+      {
+        q: "How much does a building designer cost in Melbourne?",
+        a: "Building designer fees vary depending on the size and complexity of the project, the level of design required and the scope of documentation and approval assistance. Defining your project requirements first allows a building designer to provide a more accurate fee proposal.",
+      },
+      {
+        q: "What should I look for when choosing a building designer in Melbourne?",
+        a: "Look for relevant project experience, a strong portfolio, clear communication and an understanding of Melbourne's planning and building requirements. You should also check exactly what services are included, from initial concept design through to documentation and approvals.",
+      },
+      {
+        q: "Can a building designer help with council approval in Melbourne?",
+        a: "Yes, depending on their scope of services. A building designer can prepare drawings and documentation required for planning applications and coordinate with relevant consultants to help guide the project through the approval process.",
+      },
+      {
+        q: "What information do I need before meeting a building designer?",
+        a: "Start with your project goals, approximate budget, preferred spaces, design ideas and any existing property documents you have. You do not need to have everything resolved before your first meeting, as site constraints and approval requirements can be investigated during the early design stages.",
+      },
+    ],
+  },
+];
+
+export const faqPageClosing = {
+  title: "Have a Building Design Question?",
+  paragraphs: [
+    "Every property is different. Zoning, overlays, site dimensions, orientation, existing structures and the type of development you are considering can all influence what can be designed and what approvals may be required.",
+    "Getting these details checked early can provide a clearer understanding of your options before significant time or money is committed to detailed plans.",
+    "Manzel Studio works across residential and commercial building design in Melbourne, including new homes, renovations, extensions, multi-dwelling developments and commercial projects.",
+    "If you are considering a building project and are unsure where to begin, speak with Manzel Studio about your property, design ideas and next steps.",
+  ],
+  cta: { label: "Get In Touch", href: "/contact-us" },
+};
