@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function Process() {
   return (
-    <section className="bg-ink px-6 py-[100px] text-white md:py-[120px]">
+    <section className="bg-ink px-6 py-14 text-white md:py-[120px]">
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
           <div className="mx-auto mb-[70px] max-w-[780px] text-center">

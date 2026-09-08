@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function WhyChoose() {
   return (
-    <section className="bg-[#f2f2f2] px-6 py-[100px] md:py-[120px]">
+    <section className="bg-[#f2f2f2] px-6 py-14 md:py-[120px]">
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
           <div className="mx-auto mb-[70px] max-w-[780px] text-center">

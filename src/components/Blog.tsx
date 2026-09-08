@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 
 export default function Blog() {
   return (
-    <section className="bg-white px-6 pt-[110px] pb-[30px] md:px-10">
+    <section className="bg-white px-6 pt-14 pb-[30px] md:px-10 md:pt-[110px]">
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
           <div className="mx-auto mb-16 max-w-[820px] text-center">

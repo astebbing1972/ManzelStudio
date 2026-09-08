@@ -15,7 +15,7 @@ export default function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-[#fbfbfb] px-6 pb-[120px] pt-[120px]">
+    <section className="bg-[#fbfbfb] px-6 pb-14 pt-14 md:pb-[120px] md:pt-[120px]">
       <div className="mx-auto max-w-[854px]">
         <Reveal>
           <div className="mb-16 text-center">

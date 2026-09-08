@@ -10,7 +10,7 @@ export default function Testimonials() {
   const go = (dir: 1 | -1) => setIndex((v) => (v + dir + total) % total);
 
   return (
-    <section className="bg-[#fbfbfb] px-6 pt-[120px]">
+    <section className="bg-[#fbfbfb] px-6 pt-16 md:pt-[120px]">
       <Reveal>
         <div className="mx-auto mb-16 max-w-[780px] text-center">
           <div className="eyebrow mb-[14px]">— Client Testimonials</div>

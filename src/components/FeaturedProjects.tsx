@@ -6,7 +6,7 @@ export default function FeaturedProjects() {
   return (
     <section className="bg-white">
       <Reveal>
-        <h2 className="px-6 pb-0 pt-[100px] text-center text-[34px] font-medium leading-[1.15] tracking-[-0.044em] text-black sm:text-[50px] md:text-[70px] md:leading-[78px]">
+        <h2 className="px-6 pb-0 pt-14 text-center text-[34px] font-medium leading-[1.15] tracking-[-0.044em] text-black sm:text-[50px] md:pt-[100px] md:text-[70px] md:leading-[78px]">
           Featured Projects
         </h2>
       </Reveal>

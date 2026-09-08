@@ -44,9 +44,9 @@ export default function Hero() {
         </div>
       ))}
 
-      <div className="relative z-10 flex h-full max-w-[1440px] items-end px-6 pb-[90px] md:pb-[180px] md:pl-[260px]">
+      <div className="relative z-10 flex h-full max-w-[1440px] items-end px-6 pb-[70px] md:pb-[180px] md:pl-[260px]">
         <div className="max-w-[1000px]">
-          <h1 className="mb-9 text-[42px] font-medium leading-[1.08] tracking-[-0.044em] text-white sm:text-[60px] md:text-[92px] md:leading-[100px]">
+          <h1 className="mb-6 text-[32px] font-medium leading-[1.15] tracking-[-0.044em] text-white sm:text-[60px] md:mb-9 md:text-[92px] md:leading-[100px]">
             Designing spaces
             <br />
             that inspire, from concept to creation.

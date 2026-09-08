@@ -33,7 +33,7 @@ export default function Sectors() {
   const go = (dir: 1 | -1) => setIndex((v) => (v + dir + total) % total);
 
   return (
-    <section className="bg-[#fbfbfb] px-6 pb-[100px] pt-[90px] md:px-10 md:pb-[150px]">
+    <section className="bg-[#fbfbfb] px-6 pb-14 pt-12 md:px-10 md:pb-[150px] md:pt-[90px]">
       <Reveal>
         <h2 className="sector-heading mx-auto mb-10 max-w-[1400px] text-left font-medium tracking-[-0.044em] text-black">
           Sectors we work in.
