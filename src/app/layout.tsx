@@ -3,6 +3,7 @@ import { Albert_Sans } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
 import Analytics from "@/components/Analytics";
 import ScrollReset from "@/components/ScrollReset";
+import DebugOverlay from "@/components/DebugOverlay";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, organizationJsonLd } from "@/lib/seo";
 import "./globals.css";
 
@@ -58,6 +59,7 @@ export default function RootLayout({
         <JsonLd data={organizationJsonLd()} />
         <Analytics />
         <ScrollReset />
+        <DebugOverlay />
         {children}
       </body>
     </html>
