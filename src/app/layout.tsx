@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
 import Analytics from "@/components/Analytics";
+import ScrollReset from "@/components/ScrollReset";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, organizationJsonLd } from "@/lib/seo";
 import "./globals.css";
 
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col">
         <JsonLd data={organizationJsonLd()} />
         <Analytics />
+        <ScrollReset />
         {children}
       </body>
     </html>
