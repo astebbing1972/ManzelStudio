@@ -130,6 +130,8 @@ export function aggregateRatingJsonLd({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    address: { "@type": "PostalAddress", ...ORG_ADDRESS },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue,
