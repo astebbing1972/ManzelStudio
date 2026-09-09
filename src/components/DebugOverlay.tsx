@@ -11,50 +11,70 @@ export default function DebugOverlay() {
     if (params.get("debug") !== "1") return;
     setShow(true);
 
-    const report = () => {
+    const measure = (label: string) => {
+      const section = document.querySelector("main section") as HTMLElement | null;
       const h1 = document.querySelector("main h1") as HTMLElement | null;
       const header = document.querySelector("header") as HTMLElement | null;
+      const img = document.querySelector("main section img") as HTMLImageElement | null;
+      const sectionRect = section?.getBoundingClientRect();
       const h1Rect = h1?.getBoundingClientRect();
       const headerRect = header?.getBoundingClientRect();
       const h1Style = h1 ? getComputedStyle(h1) : null;
+      const sectionStyle = section ? getComputedStyle(section) : null;
+      const headerStyle = header ? getComputedStyle(header) : null;
+      const bodyStyle = getComputedStyle(document.body);
 
-      const data = {
-        userAgent: navigator.userAgent,
+      return {
+        label,
+        time: Math.round(performance.now()),
         viewport: { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio },
-        visualViewport: window.visualViewport
-          ? {
-              w: Math.round(window.visualViewport.width),
-              h: Math.round(window.visualViewport.height),
-              scale: window.visualViewport.scale,
-              offsetTop: window.visualViewport.offsetTop,
-            }
-          : null,
         scrollY: window.scrollY,
-        scrollRestoration: history.scrollRestoration,
         fontsStatus: document.fonts.status,
+        section: sectionRect
+          ? {
+              top: Math.round(sectionRect.top),
+              height: Math.round(sectionRect.height),
+              width: Math.round(sectionRect.width),
+              cssAspectRatio: sectionStyle?.aspectRatio,
+              cssMinHeight: sectionStyle?.minHeight,
+              cssPosition: sectionStyle?.position,
+              cssDisplay: sectionStyle?.display,
+            }
+          : "section not found",
+        img: img
+          ? { complete: img.complete, naturalW: img.naturalWidth, naturalH: img.naturalHeight, src: img.currentSrc?.slice(-40) }
+          : "img not found",
+        header: headerRect
+          ? { top: Math.round(headerRect.top), height: Math.round(headerRect.height), cssPosition: headerStyle?.position }
+          : null,
+        bodyDisplay: bodyStyle.display,
         h1: h1Rect
           ? {
               top: Math.round(h1Rect.top),
               height: Math.round(h1Rect.height),
               fontSize: h1Style?.fontSize,
               lineHeight: h1Style?.lineHeight,
-              fontFamily: h1Style?.fontFamily,
               text: h1?.textContent,
             }
           : "h1 not found",
-        headerHeight: headerRect ? Math.round(headerRect.height) : null,
       };
-      setInfo(JSON.stringify(data, null, 2));
     };
 
-    report();
-    document.fonts.ready.then(report);
-    const onChange = () => report();
-    window.addEventListener("resize", onChange);
-    window.addEventListener("scroll", onChange);
+    const history_: unknown[] = [];
+    const report = (label: string) => {
+      history_.push(measure(label));
+      setInfo(JSON.stringify(history_, null, 2));
+    };
+
+    report("immediate");
+    setTimeout(() => report("settled(t+1500ms)"), 1500);
+    const onResize = () => report("event:resize");
+    const onScroll = () => report("event:scroll");
+    window.addEventListener("resize", onResize);
+    window.addEventListener("scroll", onScroll);
     return () => {
-      window.removeEventListener("resize", onChange);
-      window.removeEventListener("scroll", onChange);
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
