@@ -2,8 +2,16 @@
 
 import { useEffect, useState } from "react";
 
+type Snapshot = {
+  label: string;
+  h1: { top: number; height: number; fontSize?: string; lineHeight?: string; text?: string } | string;
+  section: { top: number; height: number; width: number } | string;
+  header: { top: number; height: number } | null;
+  viewport: { w: number; h: number; dpr: number };
+};
+
 export default function DebugOverlay() {
-  const [info, setInfo] = useState<string | null>(null);
+  const [snapshots, setSnapshots] = useState<Snapshot[]>([]);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -60,10 +68,10 @@ export default function DebugOverlay() {
       };
     };
 
-    const history_: unknown[] = [];
+    const history_: Snapshot[] = [];
     const report = (label: string) => {
-      history_.push(measure(label));
-      setInfo(JSON.stringify(history_, null, 2));
+      history_.push(measure(label) as unknown as Snapshot);
+      setSnapshots([...history_]);
     };
 
     report("immediate");
@@ -80,27 +88,59 @@ export default function DebugOverlay() {
 
   if (!show) return null;
 
+  const last = snapshots[snapshots.length - 1];
+  const summary = last
+    ? `[${last.label}] h1.top=${typeof last.h1 === "object" ? last.h1.top : "?"} h1.h=${
+        typeof last.h1 === "object" ? last.h1.height : "?"
+      } h1.font=${typeof last.h1 === "object" ? last.h1.fontSize : "?"} | section.top=${
+        typeof last.section === "object" ? last.section.top : "?"
+      } section.h=${typeof last.section === "object" ? last.section.height : "?"} | header.h=${
+        last.header?.height ?? "?"
+      } | vw=${last.viewport.w}`
+    : "loading...";
+
   return (
-    <pre
+    <div
       style={{
         position: "fixed",
         bottom: 0,
         left: 0,
         right: 0,
-        maxHeight: "60vh",
-        overflow: "auto",
-        background: "rgba(0,0,0,0.92)",
-        color: "#0f0",
-        fontSize: "11px",
-        lineHeight: 1.4,
-        padding: "10px",
+        maxHeight: "70vh",
+        display: "flex",
+        flexDirection: "column",
+        background: "rgba(0,0,0,0.94)",
         zIndex: 999999,
-        whiteSpace: "pre-wrap",
-        wordBreak: "break-word",
-        margin: 0,
       }}
     >
-      {info ?? "loading..."}
-    </pre>
+      <div
+        style={{
+          color: "#ffcf40",
+          fontSize: "11px",
+          lineHeight: 1.5,
+          padding: "8px 10px",
+          borderBottom: "1px solid #444",
+          whiteSpace: "pre-wrap",
+          wordBreak: "break-word",
+          fontWeight: "bold",
+        }}
+      >
+        {summary}
+      </div>
+      <pre
+        style={{
+          overflow: "auto",
+          color: "#0f0",
+          fontSize: "11px",
+          lineHeight: 1.4,
+          padding: "10px",
+          whiteSpace: "pre-wrap",
+          wordBreak: "break-word",
+          margin: 0,
+        }}
+      >
+        {snapshots.length ? JSON.stringify(snapshots, null, 2) : "loading..."}
+      </pre>
+    </div>
   );
 }
