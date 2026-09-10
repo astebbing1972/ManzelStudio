@@ -209,12 +209,13 @@ export default function ContactSection({
 
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
-                    <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                    <label htmlFor="firstName" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                       First Name <span className="text-red-600">*</span>
                     </label>
                     <input
                       required
                       type="text"
+                      id="firstName"
                       name="firstName"
                       value={form.firstName}
                       onChange={update("firstName")}
@@ -223,12 +224,13 @@ export default function ContactSection({
                     />
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                    <label htmlFor="lastName" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                       Last Name <span className="text-red-600">*</span>
                     </label>
                     <input
                       required
                       type="text"
+                      id="lastName"
                       name="lastName"
                       value={form.lastName}
                       onChange={update("lastName")}
@@ -239,12 +241,13 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="email" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                     Email Address <span className="text-red-600">*</span>
                   </label>
                   <input
                     required
                     type="email"
+                    id="email"
                     name="email"
                     value={form.email}
                     onChange={update("email")}
@@ -254,12 +257,13 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="phone" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                     Phone Number <span className="text-red-600">*</span>
                   </label>
                   <input
                     required
                     type="tel"
+                    id="phone"
                     name="phone"
                     value={form.phone}
                     onChange={update("phone")}
@@ -269,9 +273,10 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-[13px] font-medium text-ink-2">Address of Site</label>
+                  <label htmlFor="address" className="mb-1.5 block text-[13px] font-medium text-ink-2">Address of Site</label>
                   <input
                     type="text"
+                    id="address"
                     name="address"
                     value={form.address}
                     onChange={update("address")}
@@ -281,11 +286,12 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="hearAbout" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                     How Did You Hear About Us?
                   </label>
                   <input
                     type="text"
+                    id="hearAbout"
                     name="hearAbout"
                     value={form.hearAbout}
                     onChange={update("hearAbout")}
@@ -294,12 +300,13 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="message" className="mb-1.5 block text-[13px] font-medium text-ink-2">
                     Message <span className="text-red-600">*</span>
                   </label>
                   <textarea
                     required
                     rows={4}
+                    id="message"
                     name="message"
                     value={form.message}
                     onChange={update("message")}
