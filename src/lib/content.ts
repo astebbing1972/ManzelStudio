@@ -326,6 +326,33 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Multi-Unit Planning Permits Melbourne: Requirements & Process",
+    href: "/blog/multi-unit-development-permits-melbourne",
+    image: "/images/blog/multi-unit-development-permits-melbourne.png",
+    imageLarge: "/images/blog/multi-unit-development-permits-melbourne.png",
+    date: "Fri, 11 Sep 2026",
+    author: "Manzel Studio",
+    excerpt:
+      "Developing two or more homes on one block can make better use of residential land in Melbourne. Here's what planning permit approvals and Clause 55 require.",
+    excerptLong:
+      "Developing two or more homes on one block can be an effective way to make better use of residential land in Melbourne. Before construction can begin, you need to understand what can realistically be developed on the site, which approvals apply under Clause 55, and what documentation council requires.",
+    categories: ["planning-permits", "residential-design"],
+    metaTitle: "Multi-Unit Development Permits Melbourne: 2026 Guide | Manzel Studio",
+    metaDescription:
+      "Planning a multi-unit development in Melbourne? Learn about planning permits, Clause 55, site requirements, drawings and the approval process.",
+    imageAlt: "Multi-Unit Planning Permits Melbourne: Requirements & Process",
+    keywords: [
+      "multi unit development permits Melbourne",
+      "multi unit development Melbourne",
+      "multi dwelling development Melbourne",
+      "multi unit planning permit",
+      "townhouse planning permit Melbourne",
+      "Clause 55 Victoria",
+      "multi dwelling planning permit",
+      "dual occupancy planning permit Melbourne",
+    ],
+  },
+  {
     title:
       "Essential Steps to Perform an Architectural Site Analysis for a New Building Project",
     href: "/blog/essential-steps-architectural-site-analysis",

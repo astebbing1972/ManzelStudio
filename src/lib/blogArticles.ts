@@ -1669,4 +1669,230 @@ export const blogArticles: Record<string, Article> = {
       },
     ],
   },
+  "multi-unit-development-permits-melbourne": {
+    slug: "multi-unit-development-permits-melbourne",
+    intro: [
+      "Developing two or more homes on one block can be an effective way to make better use of residential land in Melbourne. Whether you are considering a dual occupancy, a pair of townhouses or a larger multi-dwelling project, the design is only one part of the equation.",
+      "Before construction can begin, you need to understand what can realistically be developed on the site and which approvals apply. For most multi-unit developments in Melbourne residential zones, a planning permit is required. Depending on the project, you will generally also need a building permit before construction begins.",
+      "The process can appear complicated, particularly when zoning, overlays, site constraints and changing residential development standards are involved. Understanding these issues early, ideally through a proper [site assessment](/site-assessment), can help you develop a stronger design and avoid unnecessary redesign later.",
+    ],
+    sections: [
+      {
+        heading: "What Is Considered a Multi-Unit Development in Melbourne?",
+        leadIn:
+          "A multi-unit or multi-dwelling development generally involves two or more dwellings on the same parcel of land. This can include townhouses, units and apartment developments.",
+        list: [
+          "Two dwellings through a dual-occupancy development",
+          "Side-by-side homes",
+          "Townhouses",
+          "Three or more dwellings on a larger residential block",
+          "Low-rise apartment developments",
+        ],
+        paragraphs: [
+          "The important question is not simply how many homes you would like to build. It is how many appropriate dwellings the site can support within the applicable planning controls and good design principles. Manzel Studio's [residential building design](/residential-building-design) service includes feasibility and design for dual occupancy, townhouses and multi-dwelling projects.",
+        ],
+      },
+      {
+        heading: "Do You Need a Planning Permit for a Multi-Unit Development?",
+        banner: {
+          src: "/images/blog/multi-unit-development-permits-melbourne-checklist.png",
+          alt: "Checklist of factors to review before designing a multi-unit development: planning zone, overlays, title restrictions, easements, site characteristics and surrounding context",
+          aspect: "1080/732",
+        },
+        leadIn:
+          "In Victoria's residential zones, a planning permit is generally required for developments involving two or more dwellings on a lot under Clause 55. But knowing that you need a permit is only the beginning. Your local planning scheme can contain controls that affect what can be developed on a particular property. Before progressing too far with a design, it is important to investigate:",
+        list: [
+          "Planning zone and the requirements that apply to the land",
+          "Overlays that may introduce additional planning controls",
+          "Title restrictions or covenants that could affect development",
+          "Easements and their location across the property",
+          "Site size, shape and orientation",
+          "Existing buildings, vegetation and neighbouring properties",
+        ],
+        paragraphs: [
+          "This is why early site feasibility can be valuable for multi-unit projects. It helps identify potential opportunities and constraints before substantial time and money are committed to detailed documentation.",
+          "Most importantly, it helps answer the question many property owners and developers have at the beginning: what can this block realistically accommodate?",
+        ],
+      },
+      {
+        heading: "Understanding Clause 55 and the Townhouse and Low-Rise Code",
+        banner: {
+          src: "/images/blog/multi-unit-development-permits-melbourne-clause-55.png",
+          alt: "Key Clause 55 design considerations for multi-dwelling developments: street setbacks, building height, side and rear setbacks, site coverage, access, tree canopy, overlooking and overshadowing, daylight, and private open space",
+          aspect: "1080/810",
+        },
+        leadIn:
+          "Victoria's Townhouse and Low-Rise Code, contained in Clause 55 of planning schemes, applies to the development of two or more dwellings on a lot and residential buildings up to and including three storeys in relevant residential zones. It covers matters such as:",
+        list: [
+          "Street setbacks",
+          "Building height",
+          "Side and rear setbacks",
+          "Site coverage",
+          "Access",
+          "Tree canopy",
+          "Overlooking and overshadowing",
+          "Daylight",
+          "Private open space and amenity",
+        ],
+        paragraphs: [
+          "The current Clause 55 framework includes a deemed-to-comply assessment pathway. Where a proposal meets an applicable standard, the corresponding objective is deemed to be met. Where a standard is not met, council considers whether the relevant objective has nevertheless been satisfied.",
+          "Planning compliance should therefore influence the design from the beginning, rather than being checked only after floor plans have been finalised.",
+        ],
+      },
+      {
+        heading: "What About Four or More Storeys?",
+        paragraphs: [
+          "Not every multi-unit development falls under Clause 55. The planning framework changes as residential developments increase in height.",
+          "Clause 55 covers relevant developments up to and including three storeys. Victoria's Mid-Rise Code at Clause 57 applies to four-to-six-storey apartment developments in residential areas and came into operation in March 2026. Apartment developments of seven or more storeys, and certain apartment developments in commercial areas and activity centres, are addressed under other planning provisions.",
+          "This is another reason to establish the planning pathway before assuming that the requirements for one multi-unit project will apply to another.",
+        ],
+      },
+      {
+        heading: "What Should You Check Before Designing Multiple Dwellings?",
+        paragraphs: [
+          "The best time to discover a site's limitations is before detailed design begins. Two blocks of similar size in neighbouring Melbourne suburbs can have very different development potential.",
+          "Zoning and overlays should be checked first. An overlay can introduce additional considerations relating to matters such as heritage, flooding, vegetation or other site-specific issues.",
+          "The Certificate of Title should also be reviewed for easements, restrictive covenants and other agreements that may affect where or what you can build. Site width, depth, orientation, slope, access, neighbouring homes, windows, private open spaces, trees and vehicle movements can all influence the design response.",
+        ],
+      },
+      {
+        heading: "How Many Units Can You Build on Your Land?",
+        leadIn:
+          "This is often the first question property owners ask, but there is no universal answer based solely on land area. Development potential depends on:",
+        list: [
+          "Site dimensions and orientation",
+          "Planning controls and overlays",
+          "Neighbouring properties",
+          "Vehicle access and parking",
+          "Trees, easements and infrastructure",
+        ],
+        paragraphs: [
+          "A feasibility assessment before committing to a particular number of dwellings can save considerable redesign. A larger site is not automatically an easy development site, and a constrained site is not necessarily unsuitable. The design needs to respond to the specific planning and physical conditions of the land.",
+        ],
+      },
+      {
+        heading: "What Documents Are Needed for a Multi-Unit Planning Permit?",
+        leadIn:
+          "Requirements vary by council and project, so applicants should always confirm the specific checklist with the responsible authority. Generally, applications may require:",
+        list: [
+          "Current Certificate of Title and relevant title documents",
+          "Existing conditions and site analysis",
+          "Site and floor plans",
+          "Elevations and sections",
+          "Shadow diagrams where required",
+          "Landscape information",
+          "Planning/design response",
+          "Clause 55 assessment",
+          "Other specialist reports depending on the property and proposal",
+        ],
+        paragraphs: [
+          "A complete and coordinated submission makes it easier for council planners to understand exactly what is being proposed and can reduce avoidable requests for further information.",
+        ],
+      },
+      {
+        heading: "What Is the Multi-Unit Planning Permit Process?",
+        banner: {
+          src: "/images/blog/multi-unit-development-permits-melbourne-process.png",
+          alt: "The five-stage multi-unit planning permit process: site assessment and feasibility, concept design, planning documentation, planning permit application, and assessment and decision",
+          aspect: "1080/810",
+        },
+        leadIn: "While individual applications differ, the process generally follows several key stages.",
+        subsections: [
+          {
+            heading: "1. Site Assessment and Feasibility",
+            paragraph: "Investigate planning controls, physical constraints and development potential.",
+          },
+          {
+            heading: "2. Concept Design",
+            paragraph:
+              "Establish the dwelling configuration, access, setbacks, private open space and relationship with neighbouring properties.",
+          },
+          {
+            heading: "3. Planning Documentation",
+            paragraph:
+              "Prepare drawings and supporting material demonstrating how the proposal responds to applicable requirements.",
+          },
+          {
+            heading: "4. Planning Permit Application",
+            paragraph:
+              "Lodge the application with the responsible authority, usually the local council. Council may request further information.",
+          },
+          {
+            heading: "5. Assessment and Decision",
+            paragraph:
+              "Council assesses the proposal and may issue a permit, a Notice of Decision or a refusal. Conditions may need to be addressed before plans are endorsed.",
+          },
+        ],
+      },
+      {
+        heading: "Planning Permit vs Building Permit: What Is the Difference?",
+        paragraphs: [
+          "These two approvals are often confused, but they perform different functions.",
+          "A planning permit relates to whether the proposed use or development of land is acceptable under the relevant planning scheme. A building permit relates to whether the proposed building work meets applicable building legislation and technical construction requirements.",
+          "A planning permit is not a building permit, and some developments require both. For a typical multi-unit project, planning approval therefore does not mean construction can immediately begin. Manzel Studio provides both planning permit support and building permit documentation, allowing the design and documentation stages to remain connected as a project progresses.",
+        ],
+      },
+      {
+        heading: "Can You Fast-Track a Multi-Unit Planning Permit?",
+        paragraphs: [
+          "Some straightforward applications may qualify for VicSmart, Victoria's streamlined planning permit process.",
+          "VicSmart has a 10-business-day assessment process, does not involve advertising and limits assessment to predetermined matters. An application must satisfy the relevant eligibility criteria before it can use this pathway.",
+          "For other projects, there is no simple shortcut. One of the most effective ways to reduce avoidable delays is to prepare the proposal properly from the outset. Incomplete documentation, unresolved site constraints and designs that have not adequately considered applicable planning requirements can all create additional rounds of work.",
+        ],
+      },
+      {
+        heading: "Why Good Design Matters Before the Permit Application",
+        paragraphs: [
+          "A successful multi-unit development is not simply about fitting the maximum number of dwellings onto a block.",
+          "The design also needs to create homes that work. Natural light, privacy, usable open space, circulation, storage, access, orientation and the relationship between dwellings can all affect the quality of the final development.",
+          "There is also a commercial consideration. Pushing an unsuitable layout too far during concept design can lead to expensive revisions when planning constraints are addressed later. A stronger approach is to consider development potential, planning compliance and liveability together.",
+        ],
+      },
+      {
+        heading: "Common Multi-Unit Development Permit Mistakes",
+        leadIn: "Many planning problems begin before an application reaches council.",
+        list: [
+          "Assuming a certain number of units will fit because neighbouring properties have similar developments",
+          "Overlooking title restrictions or easements",
+          "Designing before checking overlays",
+          "Failing to account properly for neighbouring amenity",
+          "Submitting incomplete or poorly coordinated documentation",
+        ],
+        paragraphs: [
+          "Another mistake is treating council requirements as something to address after the design has been completed. For multi-unit development, planning should inform the design from the start. A well-considered concept will not guarantee approval, but it gives the application a much stronger foundation.",
+        ],
+      },
+    ],
+    conclusion: [
+      "If you are considering a dual occupancy, townhouse or multi-dwelling development, start by understanding your site rather than jumping straight into detailed floor plans.",
+      "Manzel Studio works with homeowners, investors and developers on [multi-residential building design](/residential-building-design) in Melbourne, including site feasibility, concept design, planning documentation, permit support and detailed building documentation. Browse [our projects](/our-projects) or [get in touch](/contact-us) to talk through your site's potential.",
+      "A clear understanding of your site's potential can help you establish the right development strategy before significant time and money are committed.",
+    ],
+    faqs: [
+      {
+        q: "Do I need a planning permit to build two units in Melbourne?",
+        a: "For two or more dwellings on a lot in relevant residential zones, a planning permit is generally required. Some eligible proposals may qualify for a streamlined VicSmart pathway.",
+      },
+      {
+        q: "Does Clause 55 apply to townhouses in Melbourne?",
+        a: "Clause 55 applies to two or more dwellings on a lot and residential buildings up to and including three storeys in relevant zones.",
+      },
+      {
+        q: "Is a planning permit the same as a building permit?",
+        a: "No. Planning permits and building permits address different regulatory requirements, and a project may require both before construction can proceed.",
+      },
+      {
+        q: "How many dwellings can I build on my Melbourne property?",
+        a: "There is no single number based only on lot size. Zoning, overlays, title restrictions, easements, site dimensions, access, neighbouring properties and the proposed design can all influence development potential.",
+      },
+      {
+        q: "Should I assess the site before designing townhouses?",
+        a: "Yes. Early [site assessment](/site-assessment) can identify planning controls, restrictions and development opportunities before substantial money is committed to detailed design.",
+      },
+      {
+        q: "Who submits a multi-unit planning permit application?",
+        a: "Applications are generally submitted to the responsible authority, usually the local council. A building designer or planning professional can assist with preparing the design, supporting documentation and managing the planning process.",
+      },
+    ],
+  },
 };
