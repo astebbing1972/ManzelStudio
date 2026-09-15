@@ -34,7 +34,7 @@ import {
 
 const title = "Healthcare Building Designer Melbourne | Manzel Studio";
 const description =
-  "Manzel Studio is a Melbourne healthcare building designer providing registered design for medical centres, aged care and NDIS facilities across Victoria. BPC registered.";
+  "Manzel Studio is a BPC registered healthcare building designer providing registered design for medical centres, aged care and NDIS facilities across Victoria.";
 
 export const metadata: Metadata = buildMetadata({
   title,

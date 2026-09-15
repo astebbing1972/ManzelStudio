@@ -34,7 +34,7 @@ import {
 
 const title = "Residential Building Designer Melbourne | Manzel Studio";
 const description =
-  "Manzel Studio is a registered Melbourne building designer and draftsperson specialising in custom homes, extensions, and multi-unit developments across Victoria.";
+  "Manzel Studio is a registered Melbourne building designer & draftsperson specialising in custom homes, extensions, and multi-unit developments across Victoria.";
 
 export const metadata: Metadata = buildMetadata({
   title,
