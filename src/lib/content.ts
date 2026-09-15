@@ -369,6 +369,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Every successful building begins with a thorough understanding of the site. Before sketches, floor plans, or 3D models are developed, architects and build...",
     categories: ["studio-news", "commercial-design", "sustainable-design", "residential-design"],
+    metaTitle: "Architectural Site Analysis: Key Steps | Manzel Studio",
   },
   {
     title:
@@ -393,6 +394,7 @@ export const blogPosts: BlogPost[] = [
       "planning-permits",
       "residential-design",
     ],
+    metaTitle: "Building Designer vs Architect vs Draftsman | Manzel Studio",
   },
   {
     title:
@@ -411,6 +413,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Commercial buildings have evolved significantly over the past decade. Today's businesses require spaces that do more than provide shelter - they need environmen...",
     categories: ["commercial-design", "sustainable-design", "planning-permits"],
+    metaTitle: "Commercial Building Design Trends Melbourne | Manzel Studio",
   },
   {
     title: "Manzel Studio Launches Purpose Driven Building Design Services in Melbourne",
@@ -428,6 +431,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Manzel Studio provides purpose-driven building design services in Melbourne for residential, commercial and health space projects. Based in Preston, the studio ...",
     categories: ["studio-news", "commercial-design", "sustainable-design", "residential-design"],
+    metaTitle: "Building Design Services in Melbourne | Manzel Studio",
   },
   {
     title: "Designing a Home on a Narrow Block",
