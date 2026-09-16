@@ -17,7 +17,7 @@
     "chrome >= 96",
     "edge >= 96",
     "firefox >= 96",
-    "safari >= 15.4"
+    "safari >= 15"
   ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
