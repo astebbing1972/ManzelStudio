@@ -35,12 +35,15 @@ export function buildMetadata({
   path,
   image,
   keywords,
+  noindex,
 }: {
   title: string;
   description: string;
   path: string;
   image?: string;
   keywords?: string[];
+  /** Draft/unapproved pages: keep them out of search results until signed off. */
+  noindex?: boolean;
 }): Metadata {
   const url = absoluteUrl(path);
   const ogImage = absoluteUrl(image ?? DEFAULT_OG_IMAGE);
@@ -48,6 +51,7 @@ export function buildMetadata({
     title,
     description,
     ...(keywords && keywords.length ? { keywords } : {}),
+    ...(noindex ? { robots: { index: false, follow: false } } : {}),
     alternates: { canonical: url },
     openGraph: {
       title,

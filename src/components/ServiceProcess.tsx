@@ -33,7 +33,11 @@ export default function ServiceProcess({
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="grid grid-cols-1 border border-line bg-white sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            className={`grid grid-cols-1 border border-line bg-white sm:grid-cols-2 ${
+              phases.length >= 5 ? "lg:grid-cols-5" : "lg:grid-cols-4"
+            }`}
+          >
             {phases.map((ph, i) => (
               <div
                 key={ph.num}

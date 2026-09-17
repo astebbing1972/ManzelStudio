@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import { renderRich } from "@/lib/richText";
 
 export default function ServiceIntro({
   eyebrow,
@@ -24,7 +25,7 @@ export default function ServiceIntro({
           <div>
             <div className="space-y-5 text-[17px] leading-[30px] text-ink-2">
               {paragraphs.map((p) => (
-                <p key={p}>{p}</p>
+                <p key={p}>{renderRich(p)}</p>
               ))}
             </div>
             <a

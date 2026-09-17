@@ -1248,6 +1248,680 @@ export const healthCta = {
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
+// ===== Rooming House Building Design page =====
+// NOTE: hero/card images below reuse existing multi-residential/home photos
+// already on the site (each card now uses a distinct image) - client's own
+// rooming house project photos are still pending (see content brief) and
+// should replace these once supplied.
+
+export const roomingHouseHero = {
+  image: img("/template/c0173968/images/Banner-Img2.png"),
+  eyebrow: "— Rooming House Service",
+  titlePre: "Rooming House Building Designer ",
+  titleEm: "Melbourne",
+  lead: "Manzel Studio provides practical rooming house building design for students, workers and other residents, based on your site, project requirements and shared living needs. From early site assessment through to permit-ready documentation, we help create functional and comfortable rooming house accommodation.",
+  sub: "",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Discuss Your Project", href: "/contact-us" },
+};
+
+export const roomingHouseIntro = {
+  eyebrow: "— Rooming House Design",
+  titlePre: "Rooming House Building Design for Practical Shared Living",
+  paragraphs: [
+    "A well-designed rooming house needs to balance private accommodation with comfortable, functional shared spaces.",
+    "At Manzel Studio, we design rooming houses around the way residents will use the property. This can include individually rented bedrooms with shared kitchens, living areas, laundries and outdoor spaces, depending on the project brief and site.",
+    "Our rooming house building design service can begin with an assessment of the site's opportunities and constraints, followed by concept planning, efficient bedroom and shared-space layouts, design development, consultant coordination and documentation for the relevant approval pathway.",
+    "Whether you are developing a purpose-built property, adapting an existing building or upgrading an established rooming house, we help turn the project requirements into a clear and coordinated design.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const roomingHouseWhatWeDesign = {
+  eyebrow: "— Rooming House Projects We Design",
+  titlePre: "Rooming house projects we ",
+  titleEm: "can help design.",
+  lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
+  cards: [
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential1.png"),
+      num: "01 / Purpose-Built",
+      title: "Purpose-Built Rooming Houses",
+      body: "Designing accommodation with individually rented bedrooms and shared facilities, planned around the site and intended resident group.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img3.png"),
+      num: "02 / Student Accommodation",
+      title: "Student Accommodation",
+      body: "Functional layouts designed around student living, with consideration for private rooms, shared amenities, circulation, storage and communal spaces.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img1.png"),
+      num: "03 / Conversions",
+      title: "Existing Building Conversions",
+      body: "Assessing suitable existing buildings and developing layouts that can accommodate the proposed rooming house use, subject to site and approval requirements.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential13.png"),
+      num: "04 / Renovations",
+      title: "Rooming House Renovations and Upgrades",
+      body: "Improving an existing rooming house through reconfiguration, upgrades and better use of available space.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential9.png"),
+      num: "05 / Extensions",
+      title: "Extensions and Reconfiguration",
+      body: "Exploring opportunities to increase bedroom numbers, improve shared facilities or reorganise existing spaces where the site and approval requirements allow.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential5.png"),
+      num: "06 / Site-Specific",
+      title: "Site-Specific Developments",
+      body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
+    },
+  ],
+};
+
+export const roomingHouseCapability = {
+  eyebrow: "— Designing Around Residents",
+  titlePre: "Designing Rooming Houses Around ",
+  titleEm: "Residents and the Site",
+  lead: "Good rooming house design is about more than fitting as many bedrooms as possible into a property. We consider the relationship between private and shared areas, how residents move through the building and how the accommodation functions on a day-to-day basis.",
+  items: [
+    {
+      num: "01 /",
+      label: "Occupancy, Resident Use & Privacy",
+      body: "Understanding the intended accommodation model and how residents will use bedrooms, kitchens, living areas, laundries and other shared spaces, with an appropriate balance between private and communal areas.",
+    },
+    {
+      num: "02 /",
+      label: "Shared Facilities & Circulation",
+      body: "Planning kitchens, bathrooms, laundries, living areas and other communal facilities around practical everyday use, considering entry points, internal circulation and site access as part of the overall layout.",
+    },
+    {
+      num: "03 /",
+      label: "Accessibility, Safety & Space Planning",
+      body: "Considering relevant accessibility, safety and building requirements while making practical use of the available site to maintain functional bedrooms, shared facilities and circulation.",
+    },
+  ],
+};
+
+export const roomingHouseWhatsIncluded = {
+  eyebrow: "— What's Included",
+  titlePre: "What's Included in Our ",
+  titleEm: "Rooming House Building Design Service",
+  titlePost: "",
+  lead: "The scope of each project is tailored to its requirements. The exact documentation required will depend on the property, project scope and relevant approval pathway.",
+  items: [
+    { title: "Initial Consultation & Site Assessment", body: "Initial consultation and site assessment." },
+    { title: "Feasibility & Site Planning", body: "Feasibility and site planning." },
+    { title: "Concept & Space Planning", body: "Concept design and space planning, including bedroom and shared-space layouts." },
+    { title: "Drawings & Design Development", body: "Floor plans, elevations and sections, and design development." },
+    { title: "Planning Permit Support", body: "Planning permit documentation and support where required." },
+    { title: "Building Permit Documentation", body: "Building permit drawings and documentation." },
+    { title: "Consultant Coordination", body: "Coordination with building surveyors, engineers, energy raters and other consultants." },
+    { title: "Ongoing Project Support", body: "Responses to information requests and construction-stage clarification and coordination, where included within the agreed scope." },
+  ],
+};
+
+export const roomingHouseProcess = {
+  eyebrow: "— How We Work",
+  titlePre: "Our ",
+  titleEm: "four-phase",
+  titlePost: " process.",
+  lead: "Every Manzel Studio project follows the same trusted four-phase process. You'll always know what stage we're at and what's next.",
+  phases: [
+    {
+      num: "01",
+      tag: "Phase 01",
+      title: "Strategic Discovery",
+      body: "We start by understanding your goals, property, intended use, budget and project opportunities. For a rooming house, this stage can also help identify key site, occupancy, access and approval considerations before design development begins.",
+    },
+    {
+      num: "02",
+      tag: "Phase 02",
+      title: "Concept Development",
+      body: "We develop practical layout options around the site and project brief, considering bedrooms, shared facilities, resident amenity, access, privacy and site constraints.",
+    },
+    {
+      num: "03",
+      tag: "Phase 03",
+      title: "Documentation & Permits",
+      body: "Once the design direction is established, we prepare detailed drawings and relevant documentation for the required approval stages and coordinate information from project consultants.",
+    },
+    {
+      num: "04",
+      tag: "Phase 04",
+      title: "Project Support",
+      body: "Where included within the agreed scope, we provide clarification and coordination during the project to help maintain the design intent and resolve documentation-related questions.",
+    },
+  ],
+  cta: { label: "Book a Free Consultation", href: "/contact-us" },
+};
+
+export const roomingHouseWhyManzel = {
+  eyebrow: "— Why Manzel",
+  titlePre: "Why choose ",
+  titleEm: "Manzel Studio?",
+  lead: "Rooming house projects require practical planning, careful space allocation and coordinated documentation. At Manzel Studio, our approach combines building design knowledge with construction awareness to create functional, approval-conscious designs.",
+  items: [
+    { title: "Practical Design Thinking", body: "We focus on how the building needs to work for residents, operators and the property." },
+    { title: "Clear Communication", body: "We keep the process structured and communicate clearly about project requirements, documentation and next steps." },
+    { title: "Construction Awareness", body: "Our building design approach considers how the design translates into documentation and construction." },
+    { title: "Coordinated Documentation", body: "We coordinate architectural information with appointed consultants and the relevant approval requirements." },
+    { title: "Melbourne & Regional Victoria", body: "We work across Melbourne and regional Victoria, adapting our approach to the specific property and project requirements." },
+    { title: "Registered Building Practitioners", body: "As registered building practitioners, we bring hands-on design and documentation experience to every rooming house project." },
+  ],
+};
+
+export const roomingHouseSuburbs = {
+  eyebrow: "— Where We Work",
+  titlePre: "Rooming house building design across ",
+  titleEm: "Melbourne & Victoria.",
+  body: "Our team designs rooming house projects across Melbourne and regional Victoria. Wherever your site is, we help identify the approach and approval pathway that applies to your property.",
+  chips: suburbs.chips,
+};
+
+export const roomingHouseFaqs = [
+  {
+    q: "What is a rooming house?",
+    a: "A rooming house generally provides accommodation where residents rent individual rooms and share facilities such as kitchens, living areas or laundries. The specific requirements for a project depend on its proposed use, property and applicable regulations.",
+  },
+  {
+    q: "Can Manzel Studio design a new rooming house?",
+    a: "Yes. We can assist with purpose-designed rooming house projects, subject to the site's suitability, project scope and applicable planning and building requirements.",
+  },
+  {
+    q: "Can you convert an existing property into a rooming house?",
+    a: "We can assess the existing property and develop design options for a proposed conversion, renovation or reconfiguration. Whether a particular property can be used for a rooming house depends on its site conditions, proposed use and approval requirements.",
+  },
+  {
+    q: "Do rooming houses require planning and building permits?",
+    a: "The approval pathway depends on the property, proposed use and applicable requirements. Manzel Studio can assess the project and help identify the relevant design and documentation requirements.",
+  },
+  {
+    q: "Can you coordinate engineers and other consultants?",
+    a: "Yes. Depending on the agreed project scope, we can coordinate architectural documentation with building surveyors, engineers, energy raters and other appointed consultants.",
+  },
+  {
+    q: "Do you work outside Melbourne?",
+    a: "Yes. Manzel Studio works across Melbourne and regional Victoria.",
+  },
+];
+
+export const roomingHouseCta = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Rooming House",
+  titlePost: " Project",
+  body: "Whether you are assessing a potential site, planning a new rooming house or adapting an existing property, the right design process starts with understanding what the site can support. Book a Free Consultation and talk to Manzel Studio about your rooming house building design project.",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+};
+
+// ===== Granny Flat Building Design page =====
+// NOTE: hero/card images below reuse existing multi-residential/home photos
+// already on the site (distinct from the Rooming House page's set) - client's
+// own granny flat project photos are still pending (see content brief) and
+// should replace these once supplied.
+
+export const grannyFlatHero = {
+  image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential6.png"),
+  eyebrow: "— Granny Flat Service",
+  titlePre: "Granny Flat Building Designer ",
+  titleEm: "Melbourne",
+  lead: "Custom granny flat design shaped around your property, budget and long-term plans. Manzel Studio helps homeowners and investors turn available space into a practical secondary dwelling, with clear guidance from the first site review through to permit-ready documentation.",
+  sub: "",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Discuss Your Project", href: "/contact-us" },
+};
+
+export const grannyFlatIntro = {
+  eyebrow: "— Granny Flat Design",
+  titlePre: "Custom Granny Flat Design for Melbourne Properties",
+  paragraphs: [
+    "A granny flat, also known as a secondary dwelling, can provide additional living space without the need to move or substantially change the existing home.",
+    "At Manzel Studio, we design granny flats around the property, existing home, access, privacy, natural light and intended use.",
+    "Whether the space is intended for family members, ageing relatives, independent living, guests or rental purposes, our approach starts with understanding how the secondary dwelling needs to work for you and the site.",
+    "We can assist from early feasibility and concept design through to detailed drawings, consultant coordination and documentation for the relevant planning and building approval stages.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const grannyFlatWhatWeDesign = {
+  eyebrow: "— Granny Flat Designs We Help With",
+  titlePre: "Granny flat designs we ",
+  titleEm: "can help with.",
+  lead: "From compact studios to larger family layouts, the right granny flat depends on your site, budget and intended use.",
+  cards: [
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img5-1.png"),
+      num: "01 / Detached",
+      title: "Detached Granny Flats",
+      body: "A separate secondary dwelling positioned within the available area of the property, subject to site conditions and applicable requirements.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential4.png"),
+      num: "02 / Attached",
+      title: "Attached Secondary Dwellings",
+      body: "Secondary dwelling solutions connected to or incorporated with an existing home where the property and design allow.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img4.png"),
+      num: "03 / Compact",
+      title: "Compact One-Bedroom Granny Flats",
+      body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img2.png"),
+      num: "04 / Larger / Accessible",
+      title: "Larger or Accessibility-Focused Dwellings",
+      body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential2.png"),
+      num: "05 / Constrained Sites",
+      title: "Custom Designs for Constrained Sites",
+      body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img7.png"),
+      num: "06 / Family & Investment",
+      title: "Flexible Family and Investment Use",
+      body: "Granny flats can be designed around family accommodation, ageing relatives, independent living or rental use, depending on the project and applicable requirements.",
+    },
+  ],
+};
+
+export const grannyFlatCapability = {
+  eyebrow: "— Designed Around Your Home",
+  titlePre: "Designing a Granny Flat Around ",
+  titleEm: "Your Existing Home",
+  lead: "A secondary dwelling should work as part of the property rather than feeling like an afterthought. Our design process considers how the new dwelling relates to the existing home, the site and the people who will use it.",
+  items: [
+    {
+      num: "01 /",
+      label: "Existing Home, Access & Entry",
+      body: "We consider the relationship between the proposed granny flat and the existing dwelling, including access, outlook and overall site use. Practical access to the secondary dwelling is considered from the early planning stages.",
+    },
+    {
+      num: "02 /",
+      label: "Privacy, Light & Orientation",
+      body: "We consider sightlines, window placement, outdoor areas and the relationship between the two dwellings. The design can respond to orientation, available openings and site conditions to create comfortable, functional living spaces.",
+    },
+    {
+      num: "03 /",
+      label: "Site Use, Services & Accessibility",
+      body: "Where relevant, parking, vehicle access, landscaping and outdoor areas are considered alongside the building footprint, along with existing site services and, where relevant to the brief, accessibility, practical storage and efficient internal layouts.",
+    },
+  ],
+};
+
+export const grannyFlatWhatsIncluded = {
+  eyebrow: "— What's Included",
+  titlePre: "What's Included in Our ",
+  titleEm: "Granny Flat Design Service",
+  titlePost: "",
+  lead: "Depending on your project scope, our service can include the below. The exact service and documentation package will be confirmed based on the property and project requirements.",
+  items: [
+    { title: "Consultation, Assessment & Feasibility", body: "Initial consultation and site assessment, and site planning and feasibility." },
+    { title: "Concept & Space Planning", body: "Concept design and space planning." },
+    { title: "Drawings & Design Development", body: "Floor plans, elevations and sections, and design development." },
+    { title: "3D Visualisation", body: "3D visualisation where included." },
+    { title: "Planning Permit Support", body: "Planning permit support where required." },
+    { title: "Building Permit Documentation", body: "Building permit drawings and documentation." },
+    { title: "Consultant Coordination", body: "Coordination with surveyors, engineers, energy raters and other consultants." },
+    { title: "Approval Queries & Construction Support", body: "Responses to approval queries and construction support where included within the agreed scope." },
+  ],
+};
+
+export const grannyFlatProcess = {
+  eyebrow: "— How We Work",
+  titlePre: "Our ",
+  titleEm: "four-phase",
+  titlePost: " process.",
+  lead: "From initial discovery through to documentation and support, our four-phase process keeps your granny flat project on track.",
+  phases: [
+    {
+      num: "01",
+      tag: "Phase 01",
+      title: "Strategic Discovery",
+      body: "We review your goals, property, budget and intended use to establish a clear direction for the project.",
+    },
+    {
+      num: "02",
+      tag: "Phase 02",
+      title: "Concept Development",
+      body: "We explore the layout and design around the existing home, site access, privacy, natural light, outdoor areas and the needs of the future occupants.",
+    },
+    {
+      num: "03",
+      tag: "Phase 03",
+      title: "Documentation & Permits",
+      body: "Once the design is established, we prepare detailed drawings and relevant documentation for the applicable approval stages, coordinating information from project consultants.",
+    },
+    {
+      num: "04",
+      tag: "Phase 04",
+      title: "Project Support",
+      body: "Where included in the agreed scope, we provide clarification and coordination support as the project progresses.",
+    },
+  ],
+  cta: { label: "Book a Free Consultation", href: "/contact-us" },
+};
+
+export const grannyFlatWhyManzel = {
+  eyebrow: "— Why Manzel",
+  titlePre: "Why choose Manzel Studio for ",
+  titleEm: "granny flat design?",
+  lead: "",
+  items: [
+    { title: "Personalised Design", body: "We don't rely on a one-size-fits-all approach. Your granny flat is designed around your property, intended use and project goals." },
+    { title: "Practical Space Planning", body: "We focus on layouts that make the available space work efficiently while maintaining everyday functionality." },
+    { title: "Construction Awareness", body: "Our building design experience helps us consider how design decisions translate into detailed documentation and construction." },
+    { title: "Clear Permit Guidance", body: "We help you understand the design and documentation required for the relevant planning and building approval stages." },
+    { title: "Coordinated Documentation", body: "We work with appointed consultants and coordinate the architectural documentation required for the project." },
+    { title: "Melbourne & Regional Victoria", body: "We provide building design services across Melbourne and regional Victoria." },
+  ],
+};
+
+export const grannyFlatSuburbs = {
+  eyebrow: "— Where We Work",
+  titlePre: "Granny flat building design across ",
+  titleEm: "Melbourne & Victoria.",
+  body: "From inner Melbourne to regional Victoria, we help homeowners and investors understand what their property can support before committing to a design.",
+  chips: suburbs.chips,
+};
+
+export const grannyFlatFaqs = [
+  {
+    q: "What is a granny flat?",
+    a: "A granny flat is commonly used to describe a self-contained secondary dwelling located on the same property as an existing home. The applicable requirements depend on the property and proposed development.",
+  },
+  {
+    q: "Can you design a custom granny flat?",
+    a: "Yes. We develop custom designs around your property, intended use, site constraints and project requirements.",
+  },
+  {
+    q: "Can a granny flat be designed for rental use?",
+    a: "A secondary dwelling can potentially be designed for rental use, subject to the property's suitability and applicable requirements. We can discuss your intended use during the initial consultation.",
+  },
+  {
+    q: "Can you design a granny flat for ageing parents?",
+    a: "Yes. Where appropriate, the design can consider accessibility, practical circulation, storage, bathroom layouts and other requirements relevant to the occupants.",
+  },
+  {
+    q: "Will my granny flat need a planning permit?",
+    a: "The answer depends on the property and proposed design. Manzel Studio can assess the project and help establish the relevant approval pathway.",
+  },
+  {
+    q: "Do you provide building permit drawings?",
+    a: "Yes. Building permit documentation can be included within the agreed project scope.",
+  },
+  {
+    q: "Do you work with existing homes and builders?",
+    a: "Yes. We design secondary dwellings in relation to existing properties and can coordinate with client-nominated builders and appointed consultants.",
+  },
+];
+
+export const grannyFlatCta = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Granny Flat",
+  titlePost: " Project",
+  body: "Whether you want to create a private space for family, accommodate ageing relatives, support independent living or explore a secondary dwelling investment, the first step is understanding what your property can support. Book a Free Consultation with Manzel Studio to discuss your granny flat building design project.",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+};
+
+// ===== Building Permit Drawings page =====
+// NOTE: hero/card images below reuse existing site photos (distinct from the
+// Rooming House / Granny Flat pages' sets) - client's own project photos are
+// still pending (see content brief) and should replace these once supplied.
+
+export const buildingPermitHero = {
+  image: img("/resources/c0173968/snippet/snippet-8848/images/commercial-banner-image-3.png"),
+  eyebrow: "— Building Permit Drawings Service",
+  titlePre: "Building Permit Drawings ",
+  titleEm: "Melbourne",
+  lead: "Clear, coordinated building permit drawings for residential and commercial projects across Melbourne and Victoria. Manzel Studio prepares detailed architectural documentation to support building permit applications, consultant coordination, builder pricing and construction clarity.",
+  sub: "",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Discuss Your Project", href: "/contact-us" },
+};
+
+export const buildingPermitIntro = {
+  eyebrow: "— Building Permit Drawings",
+  titlePre: "Detailed Building Permit Drawings for Your Project",
+  paragraphs: [
+    "Building permit drawings turn an established design into detailed, coordinated documentation that communicates the design accurately for assessment, consultant coordination and construction.",
+    "At Manzel Studio, we prepare building permit drawings for residential and commercial projects across Melbourne and Victoria - whether your design is already developed and ready to progress, or still needs further development first.",
+    "Depending on the project and the appointed building surveyor's requirements, the drawing package can include site and floor plans, elevations, sections, demolition plans, door and window information, construction details and consultant coordination - tailored to each project rather than a standard template.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const buildingPermitWhatWeDesign = {
+  eyebrow: "— Different Project Types",
+  titlePre: "Building permit documentation for ",
+  titleEm: "different project types.",
+  lead: "From new homes to commercial fit-outs, the right drawing package looks different for every project type.",
+  cards: [
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential8.png"),
+      num: "01 / New Homes",
+      title: "New Homes",
+      body: "Detailed documentation for new residential buildings, developed from the established design.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-1.jpg"),
+      num: "02 / Renovations",
+      title: "Renovations and Extensions",
+      body: "Existing and proposed drawings, demolition information and detailed documentation for alterations and additions.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential10.png"),
+      num: "03 / Multi-Residential",
+      title: "Dual Occupancy and Multi-Residential Projects",
+      body: "Documentation for projects involving multiple dwellings, subject to the project scope and applicable requirements.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-3.jpg"),
+      num: "04 / Granny Flats",
+      title: "Granny Flats and Secondary Dwellings",
+      body: "Building permit drawings for secondary dwelling projects following the relevant design and approval pathway.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-2.jpg"),
+      num: "05 / Rooming Houses",
+      title: "Rooming Houses",
+      body: "Detailed documentation for rooming house projects, coordinated with the wider project requirements.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-8857/images/commercial-img1.png"),
+      num: "06 / Commercial",
+      title: "Commercial Projects",
+      body: "Documentation for offices, retail, hospitality, healthcare, specialist spaces, fit-outs and other commercial projects within our agreed scope.",
+    },
+  ],
+};
+
+export const buildingPermitSurveyorIntro = {
+  eyebrow: "— Working With Consultants",
+  titlePre: "Working With Your Building Surveyor and Consultants",
+  paragraphs: [
+    "Building permit documentation rarely exists in isolation.",
+    "A coordinated project can involve a building surveyor, structural engineer, civil engineer, energy rater and other specialists depending on the project.",
+    "Manzel Studio coordinates the architectural information with the wider project documentation.",
+    "We can communicate with the appointed building surveyor to clarify drawing requirements and respond to relevant requests for additional information.",
+    "Our role is to coordinate the architectural documentation. Specialist consultants remain responsible for their own reports, calculations, certifications and professional advice.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const buildingPermitWhatsIncluded = {
+  eyebrow: "— What's Included",
+  titlePre: "What's included in our ",
+  titleEm: "building permit drawing service",
+  titlePost: ".",
+  lead: "The exact documentation required depends on the project, scope, existing information and requirements of the appointed building surveyor.",
+  items: [
+    { title: "Design Review", body: "We review the established design, available property information and relevant project documentation before progressing the permit drawings." },
+    { title: "Detailed Architectural Drawings", body: "We develop the agreed design into detailed plans, elevations, sections, details and other drawings required for the project." },
+    { title: "Consultant Coordination", body: "We coordinate the architectural documentation with information provided by structural engineers, energy raters and other appointed consultants." },
+    { title: "Building Surveyor Coordination", body: "Where included in the agreed scope, we communicate with the appointed building surveyor to clarify documentation requirements and respond to information requests." },
+    { title: "Revisions", body: "Where required, we can revise the documentation in response to project or approval requirements within the agreed scope." },
+    { title: "Construction Clarity", body: "Clear documentation helps communicate the design to builders and trades and can support more accurate project pricing and construction decisions." },
+    { title: "Site & Floor Plans", body: "Site plan, and existing and proposed floor plans." },
+    { title: "Elevations & Sections", body: "Elevations, building sections and roof plan where required." },
+  ],
+};
+
+export const buildingPermitProcess = {
+  eyebrow: "— How We Work",
+  titlePre: "Our building permit drawing ",
+  titleEm: "process.",
+  titlePost: "",
+  lead: "Every Manzel Studio project follows a clear, coordinated process. You'll always know what stage we're at and what's next.",
+  phases: [
+    {
+      num: "01",
+      tag: "Phase 01",
+      title: "Project & Design Review",
+      body: "We review the property information, established design, existing drawings, planning documentation and other relevant project information. At this stage, we also confirm the project scope, available information and any known requirements from the appointed building surveyor or consultants.",
+    },
+    {
+      num: "02",
+      tag: "Phase 02",
+      title: "Design Development",
+      body: "If the design is already established, we develop it into the level of detail required for building permit documentation. Where further design development is required, we clarify the additional scope before progressing.",
+    },
+    {
+      num: "03",
+      tag: "Phase 03",
+      title: "Permit Documentation",
+      body: "We prepare the detailed architectural drawing package, including the plans, elevations, sections, details and other information relevant to the project.",
+    },
+    {
+      num: "04",
+      tag: "Phase 04",
+      title: "Consultant Coordination",
+      body: "We coordinate architectural documentation with structural, energy and other consultant information provided for the project. Each specialist consultant remains responsible for their own professional documentation and advice.",
+    },
+    {
+      num: "05",
+      tag: "Phase 05",
+      title: "Surveyor Review & Revisions",
+      body: "Where included within the agreed scope, documentation can be issued to the appointed building surveyor and updated in response to relevant information requests.",
+    },
+  ],
+  cta: { label: "Book a Free Consultation", href: "/contact-us" },
+};
+
+export const buildingPermitPlanningIntro = {
+  eyebrow: "— Planning to Building Permit",
+  titlePre: "From Planning Permit to Building Permit",
+  paragraphs: [
+    "Where a project requires both planning and building permits, the documentation process typically develops in stages.",
+    "Once planning approval has been obtained, the endorsed design and any relevant planning conditions can be reviewed before progressing into detailed building permit documentation.",
+    "Manzel Studio can then develop the architectural drawings, coordinate consultant information and incorporate relevant planning conditions into the building permit documentation.",
+    "The exact sequence depends on the project and approval pathway, so requirements are confirmed at the beginning of each engagement.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const buildingPermitCapability = {
+  eyebrow: "— Why Detailed Drawings Matter",
+  titlePre: "Building permit drawings for ",
+  titleEm: "clearer construction.",
+  lead: "Good building permit drawings need to communicate more than the appearance of a building. They need to provide sufficient information for the relevant approval process and help the project team understand how the design is intended to be delivered.",
+  items: [
+    {
+      num: "01 /",
+      label: "Reducing Ambiguity & Supporting Coordination",
+      body: "Reduce ambiguity between the design and construction stages, and support consultant coordination.",
+    },
+    {
+      num: "02 /",
+      label: "Approvals, Pricing & Design Intent",
+      body: "Provide information for building surveyor assessment, assist builders with project pricing, and communicate design intent.",
+    },
+    {
+      num: "03 /",
+      label: "Clearer Documentation & Construction Reference",
+      body: "Identify documentation issues earlier and create a clearer reference point during construction.",
+    },
+  ],
+};
+
+export const buildingPermitWhyManzel = {
+  eyebrow: "— Why Manzel",
+  titlePre: "Why choose ",
+  titleEm: "Manzel Studio?",
+  lead: "",
+  items: [
+    { title: "Practical Documentation", body: "We focus on detailed drawings that communicate the design clearly and practically." },
+    { title: "Design & Construction Knowledge", body: "Our building design approach combines design thinking with an understanding of construction requirements." },
+    { title: "Coordinated Project Information", body: "We work across architectural and consultant information to create a more coordinated documentation package." },
+    { title: "Clear Communication", body: "We keep the process structured and communicate clearly about requirements, revisions and next steps." },
+    { title: "Residential & Commercial Capability", body: "We prepare building permit documentation across a range of residential and commercial project types." },
+    { title: "Melbourne & Regional Victoria", body: "Manzel Studio works with clients across Melbourne and regional Victoria." },
+  ],
+};
+
+export const buildingPermitSuburbs = {
+  eyebrow: "— Where We Work",
+  titlePre: "Building permit drawings across ",
+  titleEm: "Melbourne & Victoria.",
+  body: "Our team prepares building permit documentation for residential and commercial projects across Melbourne and regional Victoria.",
+  chips: suburbs.chips,
+};
+
+export const buildingPermitFaqs = [
+  {
+    q: "What are building permit drawings?",
+    a: "Building permit drawings are detailed plans and documentation prepared to provide the information required for assessment and approval of building work. The exact documentation depends on the project and requirements of the appointed building surveyor.",
+  },
+  {
+    q: "Do you provide building permit drawings in Melbourne?",
+    a: "Yes. Manzel Studio provides building permit drawing and documentation services across Melbourne and regional Victoria.",
+  },
+  {
+    q: "Can you prepare building permit drawings from an existing design?",
+    a: "Yes. If your design has already been established, we can review the available information and develop it into detailed building permit documentation within the agreed scope.",
+  },
+  {
+    q: "Can you help if my design is not finished?",
+    a: "Yes. We can discuss what additional design development is required before the building permit documentation can be prepared and confirm the appropriate scope.",
+  },
+  {
+    q: "Do you coordinate engineers and other consultants?",
+    a: "Yes. We can coordinate architectural documentation with information from appointed structural engineers, energy raters and other consultants.",
+  },
+  {
+    q: "Do you work with my existing building surveyor?",
+    a: "Yes. Where included within the agreed scope, we can communicate with your appointed building surveyor and respond to relevant documentation requests.",
+  },
+  {
+    q: "Do you apply for the building permit?",
+    a: "The exact application and submission responsibilities depend on the project arrangement and agreed scope. We can prepare and coordinate the architectural documentation required for the building permit process.",
+  },
+  {
+    q: "How long do building permit drawings take?",
+    a: "Timing depends on the size and complexity of the project, the quality of the information available, consultant requirements and the review process. We confirm the expected scope and programme for each project rather than applying a fixed timeframe.",
+  },
+];
+
+export const buildingPermitCta = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Building Permit",
+  titlePost: " Documentation.",
+  body: "Whether you have an established design ready for documentation or need help developing the project further, Manzel Studio can help you progress towards a clear, coordinated building permit drawing package. Book a Free Consultation to discuss your project, documentation requirements and next steps.",
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+};
+
 // ===== Site Assessment page =====
 
 export const siteAssessmentHero = {
