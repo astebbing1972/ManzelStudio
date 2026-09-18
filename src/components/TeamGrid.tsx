@@ -101,18 +101,22 @@ export default function TeamGrid({
               </svg>
             </button>
 
-            <h3 className="pr-10 text-[26px] font-semibold leading-[1.2] text-black sm:text-[30px]">
-              {active.name} <span className="font-normal text-black/50">/ {active.role}</span>
-            </h3>
+            <div className="flex flex-col gap-5 pr-10 sm:flex-row sm:gap-7">
+              <div className="relative h-[120px] w-[120px] shrink-0 overflow-hidden sm:h-[140px] sm:w-[140px]">
+                <Image src={active.image} alt={active.name} fill quality={70} className="object-cover" sizes="140px" />
+              </div>
 
-            <div className="mt-5 space-y-4 text-[15px] leading-[1.65] text-ink-2 sm:text-[16px]">
-              {active.bio.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
+              <div>
+                <h3 className="text-[26px] font-semibold leading-[1.2] text-black sm:text-[30px]">
+                  {active.name} <span className="font-normal text-black/50">/ {active.role}</span>
+                </h3>
 
-            <div className="relative mt-7 h-[280px] w-full overflow-hidden sm:h-[340px]">
-              <Image src={active.image} alt={active.name} fill quality={70} className="object-cover" sizes="600px" />
+                <div className="mt-4 space-y-4 text-[15px] leading-[1.65] text-ink-2 sm:text-[16px]">
+                  {active.bio.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
