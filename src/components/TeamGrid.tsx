@@ -83,7 +83,7 @@ export default function TeamGrid({
           role="dialog"
           aria-modal="true"
           aria-label={`${active.name} bio`}
-          className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-black/60 px-4 py-10 sm:items-center"
+          className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-black/60 px-4 py-10"
           onClick={() => setActiveIndex(null)}
         >
           <div
