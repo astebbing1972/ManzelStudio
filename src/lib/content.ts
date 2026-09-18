@@ -2630,15 +2630,55 @@ export const ourApproach = {
 export const aboutTeam = {
   title: "The Minds Behind Our Mission",
   members: [
-    { name: "Ahmed Dirani", role: "Director", image: img("/template/c0173968/images/team-1b.png") },
-    { name: "Ali Dirani", role: "Director", image: img("/template/c0173968/images/team-2b.png") },
-    { name: "Rukaya Dirani", role: "Building Designer", image: img("/template/c0173968/images/team-3.png") },
+    {
+      name: "Ahmed Dirani",
+      role: "Director",
+      image: img("/template/c0173968/images/team-1b.png"),
+      bio: [
+        "Ahmed Dirani is an experienced building designer, draftsman, and project manager with over two decades in the architecture and construction industry. Beginning his career at Mimar Architects, Ahmed developed expertise across all stages of residential and commercial design — from concept development and planning approvals to detailed documentation and project delivery.",
+        "He later founded Dirani Design and Drafting, Dirani Build Group and Manzel Studio, expanding his work into design, construction, and project management. As Director of Manzel Studio, Ahmed leads a multidisciplinary team delivering innovative building and interior design solutions across Victoria.",
+        "Ahmed holds advanced qualifications in Building Design and Drafting from RMIT and NMIT, and is a member of Design Matters and Housing Industry Association (HIA). Fluent in Arabic and deeply passionate about architecture, he combines design creativity with practical construction knowledge to achieve thoughtful, functional spaces.",
+      ],
+    },
+    {
+      name: "Ali Dirani",
+      role: "Director",
+      image: img("/template/c0173968/images/team-2b.png"),
+      bio: [
+        "Ali is committed to shaping practical, inspiring spaces that rise above typical standards and genuinely reflect each client's aspirations. He navigates projects from broad creative direction through to meticulous technical resolution, driven by his appreciation for artistic expression and his determination to turn client ideas into built reality.",
+        "He holds a Master's degree in Electrical Engineering as well as an Advanced Diploma of Building Design, giving him a rare combination of technical depth and design capability. With over seven years of experience spanning architectural design, interior planning, and marketing, Ali brings a well-rounded mix of creativity, analytical thinking, and clear communication to every project. He prioritizes a smooth, coordinated workflow with his team and strives to achieve outcomes that support the success of everyone involved.",
+      ],
+    },
+    {
+      name: "Rukaya Dirani",
+      role: "Building Designer",
+      image: img("/template/c0173968/images/team-3.png"),
+      bio: [
+        "Rukaya is a dedicated building designer who approaches each project with determination, creativity, and a strong desire to grow. She focuses on learning new skills and refining her work ethic to consistently achieve the best results. Guided by her mentors, Ahmed and Ali, she has gained valuable hands-on experience that strengthens both her technical ability and design understanding.",
+        "With four years of combined study and professional experience, Rukaya brings enthusiasm, reliability, and a genuine passion for design to every project. She is eager to contribute fresh ideas, collaborate effectively, and continue developing as a talented member of her team.",
+      ],
+    },
     {
       name: "Sarah Zhang",
       role: "Building Designer",
       image: img("/resources/c0173968/snippet/snippet-100/images/EditorImage.png"),
+      bio: [
+        "A highly skilled residential designer with over a decade of experience shaping luxury homes and boutique townhouses, she brings a rare balance of creativity, clarity and precision to every project. Her work is defined by a deep understanding of spatial quality, modern living requirements and the unique character each client wants to express in their home.",
+        "From the earliest stages, she helps clients articulate their vision and explore possibilities, translating ideas into refined concepts that combine beauty, practicality and lifestyle-driven design thinking. As the project progresses, she develops each design with meticulous attention to detail, preparing comprehensive working drawings and documentation that support a seamless transition through council approvals, building permits and construction.",
+        "Her approach is hands-on, thoughtful and collaborative. She values communication, client comfort and design excellence, ensuring every home is not only visually elegant but also highly functional, timeless and carefully resolved. With a passion for craftsmanship and a commitment to quality, she consistently delivers homes that elevate everyday living and become lasting expressions of her clients' aspirations.",
+      ],
     },
-    { name: "Mohamed Ali", role: "Professional Photographer", image: img("/template/c0173968/images/team-4.png") },
+    {
+      name: "Mohamed Ali",
+      role: "Professional Photographer",
+      image: img("/template/c0173968/images/team-4.png"),
+      bio: [
+        "Mohamed Ali is a professional photographer, FPV drone operator, and graphic designer with over six years of experience in portrait, landscape, and real estate photography. As the founder of 1neShot, he combines technical expertise with creative vision to deliver captivating, high-quality imagery that connects with audiences.",
+        "In collaboration with Manzel Studio, Mohamed Ali provides professional real estate photography, detailed floor plans, and refined graphic design services. Expert in Adobe Lightroom and Photoshop, he brings depth, energy, and storytelling to every project through his unique creative approach.",
+        "Dedicated and passionate about his craft, Mohamed Ali is committed to achieving exceptional results through precision, creativity, and professionalism in every detail.",
+        "Follow Mohamed's latest FPV drone projects on Instagram: @cedrone_fpv",
+      ],
+    },
   ],
 };
 

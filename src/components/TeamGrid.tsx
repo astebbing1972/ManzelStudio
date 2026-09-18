@@ -1,13 +1,34 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Reveal from "./Reveal";
+
+type Member = { name: string; role: string; image: string; bio: string[] };
 
 export default function TeamGrid({
   title,
   members,
 }: {
   title: string;
-  members: { name: string; role: string; image: string }[];
+  members: Member[];
 }) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const active = activeIndex !== null ? members[activeIndex] : null;
+
+  useEffect(() => {
+    if (!active) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActiveIndex(null);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [active]);
+
   return (
     <section className="bg-white px-6 py-[100px] md:px-10 md:py-[130px]">
       <div className="mx-auto max-w-[1400px]">
@@ -22,7 +43,12 @@ export default function TeamGrid({
               delay={i * 60}
               className="w-[calc(50%-10px)] sm:w-[calc(33.333%-14px)] lg:w-[calc(20%-16px)]"
             >
-              <div className="group text-center">
+              <button
+                type="button"
+                onClick={() => setActiveIndex(i)}
+                className="group block w-full text-center"
+                aria-haspopup="dialog"
+              >
                 <div className="relative mb-3 h-[220px] overflow-hidden sm:h-[265px]">
                   <Image
                     src={m.image}
@@ -46,11 +72,51 @@ export default function TeamGrid({
                     />
                   </svg>
                 </span>
-              </div>
+              </button>
             </Reveal>
           ))}
         </div>
       </div>
+
+      {active && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${active.name} bio`}
+          className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-black/60 px-4 py-10 sm:items-center"
+          onClick={() => setActiveIndex(null)}
+        >
+          <div
+            className="relative w-full max-w-[600px] bg-white p-7 sm:p-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setActiveIndex(null)}
+              aria-label="Close"
+              className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center text-black/70 transition-colors hover:text-black"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M1 1l16 16M17 1L1 17" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+              </svg>
+            </button>
+
+            <h3 className="pr-10 text-[26px] font-semibold leading-[1.2] text-black sm:text-[30px]">
+              {active.name} <span className="font-normal text-black/50">/ {active.role}</span>
+            </h3>
+
+            <div className="mt-5 space-y-4 text-[15px] leading-[1.65] text-ink-2 sm:text-[16px]">
+              {active.bio.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+
+            <div className="relative mt-7 h-[280px] w-full overflow-hidden sm:h-[340px]">
+              <Image src={active.image} alt={active.name} fill quality={70} className="object-cover" sizes="600px" />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
