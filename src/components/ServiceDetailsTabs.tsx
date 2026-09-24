@@ -76,7 +76,14 @@ export default function ServiceDetailsTabs({
                   {panel.cards.map((c) => (
                     <article key={c.title}>
                       <div className="relative mb-4 aspect-[3/2] w-full overflow-hidden">
-                        <Image src={c.image} alt={c.title} fill quality={70} className="object-cover" sizes="(min-width: 640px) 33vw, 100vw" />
+                        {c.image.endsWith(".svg") ? (
+                          // Placeholder graphics render as plain <img> since next/image
+                          // blocks local SVGs without a next.config.ts change, which
+                          // would affect every other page's image handling.
+                          <img src={c.image} alt={c.title} className="h-full w-full object-cover" />
+                        ) : (
+                          <Image src={c.image} alt={c.title} fill quality={70} className="object-cover" sizes="(min-width: 640px) 33vw, 100vw" />
+                        )}
                       </div>
                       <div className="mb-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-muted">{c.num}</div>
                       <h3 className="mb-2 text-[18px] font-medium leading-[1.25] text-ink">{c.title}</h3>
@@ -104,15 +111,15 @@ export default function ServiceDetailsTabs({
               )}
 
               {panel.kind === "accordion" && (
-                <div className="mx-auto max-w-[820px] border-t border-line">
+                <div className="border border-line bg-white">
                   {panel.items.map((item, idx) => {
                     const isOpen = openAccordionItem === idx;
                     return (
-                      <div key={item.label} className="border-b border-line">
+                      <div key={item.label} className={idx !== panel.items.length - 1 ? "border-b border-line" : ""}>
                         <button
                           type="button"
                           onClick={() => setOpenAccordionItem(isOpen ? null : idx)}
-                          className="flex w-full items-center gap-5 py-5 text-left"
+                          className="flex w-full items-center gap-5 px-7 py-5 text-left"
                           aria-expanded={isOpen}
                         >
                           <span className="text-[14px] font-medium text-muted">{item.num}</span>
@@ -133,7 +140,7 @@ export default function ServiceDetailsTabs({
                           }`}
                         >
                           <div className="overflow-hidden">
-                            <p className="pb-5 pl-[38px] text-[14.5px] leading-[1.6] text-ink-2">{item.body}</p>
+                            <p className="max-w-[820px] px-7 pb-5 pl-[52px] text-[14.5px] leading-[1.6] text-ink-2">{item.body}</p>
                           </div>
                         </div>
                       </div>

@@ -1459,6 +1459,80 @@ export const roomingHouseCta = {
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
+// ===== Rooming House Building Design page (v2 redesign) =====
+// Standalone hero/cta for the /rooming-house-building-design-v2 draft page,
+// separate from the exports above so the original, already-live
+// /rooming-house-building-design page keeps rendering unchanged. Reuses
+// roomingHouseIntro/WhatWeDesign/WhatsIncluded/Process/WhyManzel/Faqs above
+// since their content didn't need to change, only how they're displayed.
+
+export const roomingHouseWhatWeDesignV2 = {
+  eyebrow: "— Rooming House Projects We Design",
+  titlePre: "Rooming house projects we ",
+  titleEm: "can help design.",
+  lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
+  cards: [
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "01 / Purpose-Built",
+      title: "Purpose-Built Rooming Houses",
+      body: "Designing accommodation with individually rented bedrooms and shared facilities, planned around the site and intended resident group.",
+    },
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "02 / Student Accommodation",
+      title: "Student Accommodation",
+      body: "Functional layouts designed around student living, with consideration for private rooms, shared amenities, circulation, storage and communal spaces.",
+    },
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "03 / Conversions",
+      title: "Existing Building Conversions",
+      body: "Assessing suitable existing buildings and developing layouts that can accommodate the proposed rooming house use, subject to site and approval requirements.",
+    },
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "04 / Renovations",
+      title: "Rooming House Renovations and Upgrades",
+      body: "Improving an existing rooming house through reconfiguration, upgrades and better use of available space.",
+    },
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "05 / Extensions",
+      title: "Extensions and Reconfiguration",
+      body: "Exploring opportunities to increase bedroom numbers, improve shared facilities or reorganise existing spaces where the site and approval requirements allow.",
+    },
+    {
+      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      num: "06 / Site-Specific",
+      title: "Site-Specific Developments",
+      body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
+    },
+  ],
+};
+
+export const roomingHouseHeroV2 = {
+  image: "/images/rooming-house/floor-plan.webp", // client-supplied floor plan render
+  eyebrow: "— Rooming House Service",
+  titlePre: "Rooming House Building Designer ",
+  titleEm: "Melbourne",
+  lead: "Manzel Studio provides practical rooming house building design for students, workers and other residents, based on your site, project requirements and shared living needs. From early site assessment through to permit-ready documentation, we help create functional and comfortable rooming house accommodation.",
+  sub: "",
+  cta: { label: "Start Your Project", href: "/contact-us?service=rooming-house-building-design" },
+};
+
+export const roomingHouseCtaV2 = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Rooming House",
+  titlePost: " Project",
+  body: "Whether you are assessing a potential site, planning a new rooming house or adapting an existing property, the right design process starts with understanding what the site can support. Book a Free Consultation and talk to Manzel Studio about your rooming house building design project.",
+  primaryCta: {
+    label: "Start Your Project",
+    href: "/contact-us?service=rooming-house-building-design",
+  },
+};
+
 // ===== Granny Flat Building Design page =====
 // NOTE: hero/card images below reuse existing multi-residential/home photos
 // already on the site (distinct from the Rooming House page's set) - client's
@@ -1710,13 +1784,13 @@ export const grannyFlatWhatWeDesignV2 = {
   lead: "From compact studios to larger family layouts, the right granny flat depends on your site, budget and intended use.",
   cards: [
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img5-1.png"),
+      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
       num: "01 / Detached",
       title: "Detached Granny Flats",
       body: "A separate small second dwelling positioned within the available area of the property, subject to site conditions and applicable requirements.",
     },
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential4.png"),
+      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
       num: "02 / Attached",
       title: "Attached Small Second Dwellings",
       body: "Small second dwelling solutions connected to or incorporated with an existing home where the property and design allow.",
@@ -1728,19 +1802,19 @@ export const grannyFlatWhatWeDesignV2 = {
       body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
     },
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential5.png"), // swapped: homes-img2.png has glitchy rendered-tree artifacts baked into the source file
+      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
       num: "04 / Larger / Accessible",
       title: "Larger or Accessibility-Focused Dwellings",
       body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
     },
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential2.png"),
+      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
       num: "05 / Constrained Sites",
       title: "Custom Designs for Constrained Sites",
       body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
     },
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img7.png"),
+      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
       num: "06 / Family & Investment",
       title: "Flexible Family and Investment Use",
       body: "Granny flats can be designed around family accommodation, ageing relatives, independent living or rental use, depending on the project and applicable requirements.",
@@ -2037,6 +2111,19 @@ export const buildingPermitFaqs = [
   },
 ];
 
+// Adds one existing, highly relevant FAQ pulled from the site's general FAQ
+// bank (faqCategories, "planning-building-permits") that wasn't yet reflected
+// on this page, per Mohamed's brief to reuse existing FAQ content rather than
+// write new questions. Kept separate from buildingPermitFaqs so the original,
+// already-live page keeps rendering its current FAQ set unchanged.
+export const buildingPermitFaqsV2 = [
+  {
+    q: "What is the difference between a planning permit and a building permit?",
+    a: "A planning permit relates to how land can be used or developed, while a building permit confirms that proposed construction complies with applicable building regulations. Depending on your property and project scope, you may need a planning permit, a building permit, both, or in some cases neither.",
+  },
+  ...buildingPermitFaqs,
+];
+
 export const buildingPermitCta = {
   eyebrow: "— Start Your Project",
   titlePre: "Start Your ",
@@ -2045,6 +2132,106 @@ export const buildingPermitCta = {
   body: "Whether you have an established design ready for documentation or need help developing the project further, Manzel Studio can help you progress towards a clear, coordinated building permit drawing package. Book a Free Consultation to discuss your project, documentation requirements and next steps.",
   primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+};
+
+// ===== Building Permit Drawings page (v2 redesign) =====
+// Standalone content for the /building-permit-drawings-v2 draft page,
+// separate from the exports above so the original, already-live
+// /building-permit-drawings page keeps rendering unchanged. Reuses
+// buildingPermitIntro/WhatsIncluded/Process/WhyManzel/Faqs above since
+// their content didn't need to change, only how they're displayed. Hero
+// and Project Types images are kept as-is per Mohamed's note that the
+// current images on this page can remain.
+
+export const buildingPermitHeroV2 = {
+  image: img("/resources/c0173968/snippet/snippet-8848/images/commercial-banner-image-3.png"),
+  eyebrow: "— Building Permit Drawings Service",
+  titlePre: "Building Permit Drawings ",
+  titleEm: "Melbourne",
+  lead: "Clear, coordinated building permit drawings for residential and commercial projects across Melbourne and Victoria. Manzel Studio prepares detailed architectural documentation to support building permit applications, consultant coordination, builder pricing and construction clarity.",
+  sub: "",
+  cta: { label: "Start Your Project", href: "/contact-us?service=building-permit-drawings" },
+};
+
+export const buildingPermitWhatWeDesignV2 = {
+  eyebrow: "— Different Project Types",
+  titlePre: "Building permit documentation for ",
+  titleEm: "different project types.",
+  lead: "From new homes to commercial fit-outs, the right drawing package looks different for every project type.",
+  cards: [
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential8.png"),
+      num: "01 / New Homes",
+      title: "New Homes",
+      body: "Detailed documentation for new residential buildings, developed from the established design.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-1.jpg"),
+      num: "02 / Renovations",
+      title: "Renovations and Extensions",
+      body: "Existing and proposed drawings, demolition information and detailed documentation for alterations and additions.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential10.png"),
+      num: "03 / Multi-Residential",
+      title: "Dual Occupancy and Multi-Residential Projects",
+      body: "Documentation for projects involving multiple dwellings, subject to the project scope and applicable requirements.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-3.jpg"),
+      num: "04 / Granny Flats",
+      title: "Granny Flats and Small Second Dwellings",
+      body: "Building permit drawings for small second dwelling projects following the relevant design and approval pathway.",
+    },
+    {
+      image: img("/template/c0173968/images/inner-project-2.jpg"),
+      num: "05 / Rooming Houses",
+      title: "Rooming Houses",
+      body: "Detailed documentation for rooming house projects, coordinated with the wider project requirements.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-8857/images/commercial-img1.png"),
+      num: "06 / Commercial",
+      title: "Commercial Projects",
+      body: "Documentation for offices, retail, hospitality, healthcare, specialist spaces, fit-outs and other commercial projects within our agreed scope.",
+    },
+  ],
+};
+
+// Consolidates buildingPermitCapability's 3 items with the key points from
+// buildingPermitSurveyorIntro and buildingPermitPlanningIntro (both full
+// standalone sections on the original page) into one compact accordion tab.
+export const buildingPermitConsultantsV2 = {
+  items: [
+    {
+      title: "Reducing Ambiguity & Supporting Coordination",
+      body: "Good building permit drawings reduce ambiguity between the design and construction stages, support consultant coordination, and create a clearer reference point during construction.",
+    },
+    {
+      title: "Approvals, Pricing & Design Intent",
+      body: "They provide information for building surveyor assessment, assist builders with project pricing, and communicate design intent clearly.",
+    },
+    {
+      title: "Working With Your Building Surveyor & Consultants",
+      body: "We coordinate the architectural documentation with your building surveyor, structural engineer, energy rater and other appointed consultants throughout the project.",
+    },
+    {
+      title: "From Planning Permit to Building Permit",
+      body: "Where a project needs both planning and building permits, we review the endorsed design and conditions before progressing into detailed building permit documentation.",
+    },
+  ],
+};
+
+export const buildingPermitCtaV2 = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Building Permit",
+  titlePost: " Documentation.",
+  body: "Whether you have an established design ready for documentation or need help developing the project further, Manzel Studio can help you progress towards a clear, coordinated building permit drawing package. Book a Free Consultation to discuss your project, documentation requirements and next steps.",
+  primaryCta: {
+    label: "Start Your Project",
+    href: "/contact-us?service=building-permit-drawings",
+  },
 };
 
 // ===== Site Assessment page =====
