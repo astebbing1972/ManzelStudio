@@ -1674,6 +1674,131 @@ export const grannyFlatCta = {
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
+// ===== Granny Flat Building Design page (v2 redesign) =====
+// Standalone content for the /granny-flat-building-design-v2 draft page,
+// separate from the exports above so the original, already-live
+// /granny-flat-building-design page keeps rendering unchanged. Reuses
+// grannyFlatWhatsIncluded/grannyFlatProcess/grannyFlatWhyManzel/trustBar
+// above since their content didn't change, only how they're displayed.
+
+export const grannyFlatHeroV2 = {
+  image: "/images/granny-flat/hero.jpg", // client-supplied preferred image
+  eyebrow: "— Granny Flat Service",
+  titlePre: "Granny Flat Building Designer ",
+  titleEm: "Melbourne",
+  lead: "Custom granny flat design shaped around your property, budget and long-term plans. Manzel Studio helps homeowners and investors turn available space into a practical small second dwelling, with clear guidance from the first site review through to permit-ready documentation.",
+  sub: "",
+  cta: { label: "Start Your Project", href: "/contact-us?service=granny-flat-building-design" },
+};
+
+export const grannyFlatIntroV2 = {
+  eyebrow: "— Granny Flat Design",
+  titlePre: "Custom Granny Flat Design for Melbourne Properties",
+  paragraphs: [
+    "A granny flat, also known as a small second dwelling, can provide additional living space without the need to move or substantially change the existing home.",
+    "At Manzel Studio, we design granny flats around the property, existing home, access, privacy, natural light and intended use.",
+    "Whether the space is intended for family members, ageing relatives, independent living, guests or rental purposes, our approach starts with understanding how the small second dwelling needs to work for you and the site.",
+    "We can assist from early feasibility and concept design through to detailed drawings, consultant coordination and documentation for the relevant planning and building approval stages.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const grannyFlatWhatWeDesignV2 = {
+  eyebrow: "— Granny Flat Designs We Help With",
+  titlePre: "Granny flat designs we ",
+  titleEm: "can help with.",
+  lead: "From compact studios to larger family layouts, the right granny flat depends on your site, budget and intended use.",
+  cards: [
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img5-1.png"),
+      num: "01 / Detached",
+      title: "Detached Granny Flats",
+      body: "A separate small second dwelling positioned within the available area of the property, subject to site conditions and applicable requirements.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential4.png"),
+      num: "02 / Attached",
+      title: "Attached Small Second Dwellings",
+      body: "Small second dwelling solutions connected to or incorporated with an existing home where the property and design allow.",
+    },
+    {
+      image: "/images/granny-flat/compact-studio.jpg", // client-supplied studio render
+      num: "03 / Compact",
+      title: "Compact One-Bedroom Granny Flats",
+      body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential5.png"), // swapped: homes-img2.png has glitchy rendered-tree artifacts baked into the source file
+      num: "04 / Larger / Accessible",
+      title: "Larger or Accessibility-Focused Dwellings",
+      body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential2.png"),
+      num: "05 / Constrained Sites",
+      title: "Custom Designs for Constrained Sites",
+      body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
+    },
+    {
+      image: img("/resources/c0173968/snippet/snippet-106/images/homes-img7.png"),
+      num: "06 / Family & Investment",
+      title: "Flexible Family and Investment Use",
+      body: "Granny flats can be designed around family accommodation, ageing relatives, independent living or rental use, depending on the project and applicable requirements.",
+    },
+  ],
+};
+
+export const grannyFlatFaqsV2 = [
+  {
+    q: "What is a granny flat?",
+    a: "A granny flat is commonly used to describe a self-contained small second dwelling located on the same property as an existing home. The applicable requirements depend on the property and proposed development.",
+  },
+  {
+    q: "Can you design a custom granny flat?",
+    a: "Yes. We develop custom designs around your property, intended use, site constraints and project requirements.",
+  },
+  {
+    q: "Can a granny flat be designed for rental use?",
+    a: "A small second dwelling can potentially be designed for rental use, subject to the property's suitability and applicable requirements. We can discuss your intended use during the initial consultation.",
+  },
+  {
+    q: "Can you design a granny flat for ageing parents?",
+    a: "Yes. Where appropriate, the design can consider accessibility, practical circulation, storage, bathroom layouts and other requirements relevant to the occupants.",
+  },
+  {
+    q: "Will my granny flat need a planning permit?",
+    a: "The answer depends on the property and proposed design. Manzel Studio can assess the project and help establish the relevant approval pathway.",
+  },
+  {
+    q: "Do you provide building permit drawings?",
+    a: "Yes. Building permit documentation can be included within the agreed project scope.",
+  },
+  {
+    q: "Do you work with existing homes and builders?",
+    a: "Yes. We design small second dwellings in relation to existing properties and can coordinate with client-nominated builders and appointed consultants.",
+  },
+  {
+    q: "How long does the granny flat design and permit process take?",
+    a: "Timeframes vary depending on the property, council and the complexity of the design. We can give a more specific indication once we understand your site and project during the initial consultation.",
+  },
+  {
+    q: "Is there a minimum block size for a granny flat in Victoria?",
+    a: "There is no single figure that applies to every property. Block size, existing setbacks, overlays and other site-specific controls all affect what is feasible, so an early site assessment is the best way to confirm what your property can support.",
+  },
+];
+
+export const grannyFlatCtaV2 = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Start Your ",
+  titleEm: "Granny Flat",
+  titlePost: " Project",
+  body: "Whether you want to create a private space for family, accommodate ageing relatives, support independent living or explore a small second dwelling investment, the first step is understanding what your property can support. Book a Free Consultation with Manzel Studio to discuss your granny flat building design project.",
+  primaryCta: {
+    label: "Start Your Project",
+    href: "/contact-us?service=granny-flat-building-design",
+  },
+};
+
 // ===== Building Permit Drawings page =====
 // NOTE: hero/card images below reuse existing site photos (distinct from the
 // Rooming House / Granny Flat pages' sets) - client's own project photos are
