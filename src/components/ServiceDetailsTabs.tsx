@@ -13,7 +13,10 @@ import Reveal from "./Reveal";
 // five separate scrolling blocks. Standalone: built only for this page, does
 // not touch any shared component used elsewhere on the site.
 
-type TypesPanel = { kind: "types"; cards: { image: string; num: string; title: string; body: string }[] };
+type TypesPanel = {
+  kind: "types";
+  cards: { image: string; num: string; title: string; body: string; fit?: "cover" | "contain" }[];
+};
 type ListPanel = { kind: "list"; items: { title: string; body: string }[] };
 type AccordionPanel = { kind: "accordion"; items: { num: string; label: string; body: string }[] };
 type ProcessPanel = { kind: "process"; phases: { num: string; tag: string; title: string; body: string }[] };
@@ -75,14 +78,21 @@ export default function ServiceDetailsTabs({
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {panel.cards.map((c) => (
                     <article key={c.title}>
-                      <div className="relative mb-4 aspect-[3/2] w-full overflow-hidden">
+                      <div className="relative mb-4 aspect-[3/2] w-full overflow-hidden bg-white">
                         {c.image.endsWith(".svg") ? (
                           // Placeholder graphics render as plain <img> since next/image
                           // blocks local SVGs without a next.config.ts change, which
                           // would affect every other page's image handling.
                           <img src={c.image} alt={c.title} className="h-full w-full object-cover" />
                         ) : (
-                          <Image src={c.image} alt={c.title} fill quality={70} className="object-cover" sizes="(min-width: 640px) 33vw, 100vw" />
+                          <Image
+                            src={c.image}
+                            alt={c.title}
+                            fill
+                            quality={70}
+                            className={c.fit === "contain" ? "object-contain" : "object-cover"}
+                            sizes="(min-width: 640px) 33vw, 100vw"
+                          />
                         )}
                       </div>
                       <div className="mb-1.5 text-[12px] font-medium uppercase tracking-[0.14em] text-muted">{c.num}</div>

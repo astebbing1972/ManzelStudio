@@ -1473,7 +1473,7 @@ export const roomingHouseWhatWeDesignV2 = {
   lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
   cards: [
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/rooming-house/purpose-built-floorplan.jpg", // client-supplied 9-room floor plan
       num: "01 / Purpose-Built",
       title: "Purpose-Built Rooming Houses",
       body: "Designing accommodation with individually rented bedrooms and shared facilities, planned around the site and intended resident group.",
@@ -1784,37 +1784,39 @@ export const grannyFlatWhatWeDesignV2 = {
   lead: "From compact studios to larger family layouts, the right granny flat depends on your site, budget and intended use.",
   cards: [
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
+      image: "/images/granny-flat/detached-render-v3.jpg", // client-supplied render, cropped and rotated to landscape
       num: "01 / Detached",
       title: "Detached Granny Flats",
       body: "A separate small second dwelling positioned within the available area of the property, subject to site conditions and applicable requirements.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
+      image: "/images/granny-flat/attached-floorplan-v2.png", // client-supplied floor plan, shown in full (not cropped)
       num: "02 / Attached",
+      fit: "contain" as const,
       title: "Attached Small Second Dwellings",
       body: "Small second dwelling solutions connected to or incorporated with an existing home where the property and design allow.",
     },
     {
-      image: "/images/granny-flat/compact-studio.jpg", // client-supplied studio render
+      image: "/images/granny-flat/compact-studio-v2.jpg", // client-supplied studio render, rotated and cropped to landscape
       num: "03 / Compact",
       title: "Compact One-Bedroom Granny Flats",
       body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
+      image: "/images/granny-flat/larger-floorplan-rotated.png", // client-supplied floor plan, rotated 90deg, shown in full (not cropped)
       num: "04 / Larger / Accessible",
+      fit: "contain" as const,
       title: "Larger or Accessibility-Focused Dwellings",
       body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
+      image: "/images/granny-flat/constrained-site-render.jpg", // client-supplied render, narrow layout, rotated to landscape
       num: "05 / Constrained Sites",
       title: "Custom Designs for Constrained Sites",
       body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's granny flat project photos
+      image: "/images/placeholder-project.svg", // placeholder: source floor plan is portrait with text labels that would be sideways if rotated to fit this landscape card
       num: "06 / Family & Investment",
       title: "Flexible Family and Investment Use",
       body: "Granny flats can be designed around family accommodation, ageing relatives, independent living or rental use, depending on the project and applicable requirements.",
@@ -2178,13 +2180,13 @@ export const buildingPermitWhatWeDesignV2 = {
       body: "Documentation for projects involving multiple dwellings, subject to the project scope and applicable requirements.",
     },
     {
-      image: img("/template/c0173968/images/inner-project-3.jpg"),
+      image: "/images/placeholder-project.svg", // placeholder: previous stock photo (a kitchen interior) didn't represent a granny flat/small dwelling
       num: "04 / Granny Flats",
       title: "Granny Flats and Small Second Dwellings",
       body: "Building permit drawings for small second dwelling projects following the relevant design and approval pathway.",
     },
     {
-      image: img("/template/c0173968/images/inner-project-2.jpg"),
+      image: "/images/placeholder-project.svg", // placeholder: previous stock photo (a backyard patio) didn't represent a rooming house
       num: "05 / Rooming Houses",
       title: "Rooming Houses",
       body: "Detailed documentation for rooming house projects, coordinated with the wider project requirements.",
