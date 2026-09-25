@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, serviceJsonLd, faqJsonLd } from "@/lib/seo";
-import ServiceHero from "@/components/ServiceHero";
+import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
 import ServiceIntro from "@/components/ServiceIntro";
-import WhatWeDesign from "@/components/WhatWeDesign";
+import WhatWeDesignContain from "@/components/WhatWeDesignContain";
 import MultiResidential from "@/components/MultiResidential";
 import WhatsIncluded from "@/components/WhatsIncluded";
 import ServiceProcess from "@/components/ServiceProcess";
@@ -17,22 +17,22 @@ import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
 import {
-  grannyFlatHero,
+  grannyFlatHeroV2,
   trustBar,
-  grannyFlatIntro,
-  grannyFlatWhatWeDesign,
-  grannyFlatCapability,
+  grannyFlatIntroV2,
+  grannyFlatWhatWeDesignV2,
+  grannyFlatCapabilityV2,
   grannyFlatWhatsIncluded,
-  grannyFlatProcess,
+  grannyFlatProcessV2,
   grannyFlatWhyManzel,
   grannyFlatSuburbs,
-  grannyFlatFaqs,
-  grannyFlatCta,
+  grannyFlatFaqsV2,
+  grannyFlatCtaV2,
 } from "@/lib/content";
 
 const title = "Granny Flat Building Designer Melbourne | Manzel Studio";
 const description =
-  "Custom granny flat designs in Melbourne by Manzel Studio. Practical secondary dwelling design from site assessment and concept through to permit documentation.";
+  "Custom granny flat (small second dwelling) design in Melbourne by Manzel Studio, from site assessment and concept through to permit-ready documentation.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -51,26 +51,22 @@ export default function GrannyFlatBuildingDesign() {
           path: "/granny-flat-building-design",
         })}
       />
-      <JsonLd data={faqJsonLd(grannyFlatFaqs)} />
+      <JsonLd data={faqJsonLd(grannyFlatFaqsV2)} />
       <Header />
       <Breadcrumbs items={[{ name: "Granny Flat Building Design", path: "/granny-flat-building-design" }]} />
       <main className="flex-1">
-        <ServiceHero {...grannyFlatHero} />
+        <ServiceHeroNoCta {...grannyFlatHeroV2} />
         <TrustBar items={trustBar} />
-        <ServiceIntro {...grannyFlatIntro} />
-        <WhatWeDesign {...grannyFlatWhatWeDesign} />
-        <MultiResidential {...grannyFlatCapability} />
+        <ServiceIntro {...grannyFlatIntroV2} />
+        <WhatWeDesignContain {...grannyFlatWhatWeDesignV2} />
+        <MultiResidential {...grannyFlatCapabilityV2} />
         <WhatsIncluded {...grannyFlatWhatsIncluded} />
-        <ServiceProcess {...grannyFlatProcess} />
+        <ServiceProcess {...grannyFlatProcessV2} />
         <WhyManzel {...grannyFlatWhyManzel} />
-        {/* ServiceFeaturedProjects intentionally omitted - no granny flat
-            project examples supplied yet (client brief marks these "will be
-            provided"). Add a `grannyFlatProjects` array to content.ts and
-            slot <ServiceFeaturedProjects /> back in here once photos land. */}
         <Suburbs {...grannyFlatSuburbs} />
         <Testimonials />
-        <Faq items={grannyFlatFaqs} />
-        <ServiceCta {...grannyFlatCta} />
+        <Faq items={grannyFlatFaqsV2} />
+        <ServiceCta {...grannyFlatCtaV2} />
       </main>
       <Footer />
     </>

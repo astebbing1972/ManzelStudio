@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, serviceJsonLd, faqJsonLd } from "@/lib/seo";
-import ServiceHero from "@/components/ServiceHero";
+import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
 import ServiceIntro from "@/components/ServiceIntro";
-import WhatWeDesign from "@/components/WhatWeDesign";
+import WhatWeDesignContain from "@/components/WhatWeDesignContain";
 import MultiResidential from "@/components/MultiResidential";
 import WhatsIncluded from "@/components/WhatsIncluded";
 import ServiceProcess from "@/components/ServiceProcess";
@@ -17,19 +17,19 @@ import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
 import {
-  buildingPermitHero,
+  buildingPermitHeroV2,
   trustBar,
-  buildingPermitIntro,
-  buildingPermitWhatWeDesign,
-  buildingPermitSurveyorIntro,
+  buildingPermitIntroV2,
+  buildingPermitWhatWeDesignV2,
+  buildingPermitSurveyorIntroV2,
   buildingPermitWhatsIncluded,
-  buildingPermitProcess,
-  buildingPermitPlanningIntro,
+  buildingPermitProcessV2,
+  buildingPermitPlanningIntroV2,
   buildingPermitCapability,
   buildingPermitWhyManzel,
   buildingPermitSuburbs,
-  buildingPermitFaqs,
-  buildingPermitCta,
+  buildingPermitFaqsV2,
+  buildingPermitCtaV2,
 } from "@/lib/content";
 
 const title = "Building Permit Drawings Melbourne | Manzel Studio";
@@ -53,28 +53,24 @@ export default function BuildingPermitDrawings() {
           path: "/building-permit-drawings",
         })}
       />
-      <JsonLd data={faqJsonLd(buildingPermitFaqs)} />
+      <JsonLd data={faqJsonLd(buildingPermitFaqsV2)} />
       <Header />
       <Breadcrumbs items={[{ name: "Building Permit Drawings", path: "/building-permit-drawings" }]} />
       <main className="flex-1">
-        <ServiceHero {...buildingPermitHero} />
+        <ServiceHeroNoCta {...buildingPermitHeroV2} />
         <TrustBar items={trustBar} />
-        <ServiceIntro {...buildingPermitIntro} />
-        <WhatWeDesign {...buildingPermitWhatWeDesign} />
-        <ServiceIntro {...buildingPermitSurveyorIntro} />
+        <ServiceIntro {...buildingPermitIntroV2} />
+        <WhatWeDesignContain {...buildingPermitWhatWeDesignV2} />
+        <ServiceIntro {...buildingPermitSurveyorIntroV2} />
         <WhatsIncluded {...buildingPermitWhatsIncluded} />
-        <ServiceProcess {...buildingPermitProcess} />
-        <ServiceIntro {...buildingPermitPlanningIntro} />
+        <ServiceProcess {...buildingPermitProcessV2} />
+        <ServiceIntro {...buildingPermitPlanningIntroV2} />
         <MultiResidential {...buildingPermitCapability} />
         <WhyManzel {...buildingPermitWhyManzel} />
-        {/* ServiceFeaturedProjects intentionally omitted - no project
-            examples supplied yet for this page. Add a
-            `buildingPermitProjects` array to content.ts and slot
-            <ServiceFeaturedProjects /> back in here once photos land. */}
         <Suburbs {...buildingPermitSuburbs} />
         <Testimonials />
-        <Faq items={buildingPermitFaqs} />
-        <ServiceCta {...buildingPermitCta} />
+        <Faq items={buildingPermitFaqsV2} />
+        <ServiceCta {...buildingPermitCtaV2} />
       </main>
       <Footer />
     </>

@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, serviceJsonLd, faqJsonLd } from "@/lib/seo";
-import ServiceHero from "@/components/ServiceHero";
+import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
 import ServiceIntro from "@/components/ServiceIntro";
-import WhatWeDesign from "@/components/WhatWeDesign";
+import WhatWeDesignContain from "@/components/WhatWeDesignContain";
 import MultiResidential from "@/components/MultiResidential";
 import WhatsIncluded from "@/components/WhatsIncluded";
 import ServiceProcess from "@/components/ServiceProcess";
@@ -17,17 +17,17 @@ import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
 import {
-  roomingHouseHero,
+  roomingHouseHeroV2,
   trustBar,
   roomingHouseIntro,
-  roomingHouseWhatWeDesign,
+  roomingHouseWhatWeDesignV2,
   roomingHouseCapability,
   roomingHouseWhatsIncluded,
-  roomingHouseProcess,
+  roomingHouseProcessV2,
   roomingHouseWhyManzel,
   roomingHouseSuburbs,
   roomingHouseFaqs,
-  roomingHouseCta,
+  roomingHouseCtaV2,
 } from "@/lib/content";
 
 const title = "Rooming House Building Designer Melbourne | Manzel Studio";
@@ -55,22 +55,18 @@ export default function RoomingHouseBuildingDesign() {
       <Header />
       <Breadcrumbs items={[{ name: "Rooming House Building Design", path: "/rooming-house-building-design" }]} />
       <main className="flex-1">
-        <ServiceHero {...roomingHouseHero} />
+        <ServiceHeroNoCta {...roomingHouseHeroV2} />
         <TrustBar items={trustBar} />
         <ServiceIntro {...roomingHouseIntro} />
-        <WhatWeDesign {...roomingHouseWhatWeDesign} />
+        <WhatWeDesignContain {...roomingHouseWhatWeDesignV2} />
         <MultiResidential {...roomingHouseCapability} />
         <WhatsIncluded {...roomingHouseWhatsIncluded} />
-        <ServiceProcess {...roomingHouseProcess} />
+        <ServiceProcess {...roomingHouseProcessV2} />
         <WhyManzel {...roomingHouseWhyManzel} />
-        {/* ServiceFeaturedProjects intentionally omitted - no rooming house
-            project examples supplied yet (client brief marks these "will be
-            provided"). Add a `roomingHouseProjects` array to content.ts and
-            slot <ServiceFeaturedProjects /> back in here once photos land. */}
         <Suburbs {...roomingHouseSuburbs} />
         <Testimonials />
         <Faq items={roomingHouseFaqs} />
-        <ServiceCta {...roomingHouseCta} />
+        <ServiceCta {...roomingHouseCtaV2} />
       </main>
       <Footer />
     </>

@@ -619,7 +619,7 @@ export const residentialHero = {
   titleEm: "Melbourne",
   lead: "Bespoke homes, extensions, and renovations designed around the way you live.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=residential-building-design" },
   secondaryCta: { label: "View Residential Projects", href: "/our-projects" },
 };
 
@@ -743,7 +743,7 @@ export const residentialProcess = {
       body: "Construction support and final details help bring the project together with care.",
     },
   ],
-  cta: { label: "Start Your Project", href: "/contact-us" },
+  cta: { label: "Start Your Project", href: "/contact-us?service=residential-building-design" },
 };
 
 export const whyManzel = {
@@ -855,7 +855,7 @@ export const residentialCta = {
   titleEm: "next home",
   titlePost: " to life.",
   body: "Your next home starts with a simple conversation. Share your ideas, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=residential-building-design" },
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
@@ -868,7 +868,7 @@ export const commercialHero = {
   titleEm: "",
   lead: "Registered building designers for offices, retail and industrial spaces across Melbourne and Victoria.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=commercial-building-design" },
   secondaryCta: { label: "View Commercial Projects", href: "/our-projects" },
 };
 
@@ -960,7 +960,7 @@ export const commercialProcess = {
   titlePost: "",
   lead: "Every Manzel Studio project follows the same trusted four-phase process. You'll always know what stage we're at and what's next.",
   phases: residentialProcess.phases,
-  cta: { label: "Start Your Project", href: "/contact-us" },
+  cta: { label: "Start Your Project", href: "/contact-us?service=commercial-building-design" },
 };
 
 export const commercialWhyManzel = {
@@ -1044,7 +1044,7 @@ export const commercialCta = {
   titleEm: "",
   titlePost: "",
   body: "Your next commercial space starts with a simple conversation. Share your ideas, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=commercial-building-design" },
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
@@ -1057,7 +1057,7 @@ export const healthHero = {
   titleEm: "",
   lead: "Healthcare environments designed for healing, comfort, and efficiency.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=health-space-design" },
   secondaryCta: { label: "View Health Space Projects", href: "/our-projects" },
 };
 
@@ -1149,7 +1149,7 @@ export const healthProcess = {
   titlePost: "",
   lead: "Every Manzel Studio project follows the same trusted four-phase process. You'll always know what stage we're at and what's next.",
   phases: residentialProcess.phases,
-  cta: { label: "Start Your Project", href: "/contact-us" },
+  cta: { label: "Start Your Project", href: "/contact-us?service=health-space-design" },
 };
 
 export const healthWhyManzel = {
@@ -1244,7 +1244,7 @@ export const healthCta = {
   titleEm: "",
   titlePost: "",
   body: "Your next health space starts with a simple conversation. Share your goals, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=health-space-design" },
   secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
 };
 
@@ -1399,6 +1399,13 @@ export const roomingHouseProcess = {
   cta: { label: "Book a Free Consultation", href: "/contact-us" },
 };
 
+// Same phases as roomingHouseProcess, just with the embedded CTA wired to
+// this page's own service-specific enquiry link instead of the generic one.
+export const roomingHouseProcessV2 = {
+  ...roomingHouseProcess,
+  cta: { label: "Start Your Project", href: "/contact-us?service=rooming-house-building-design" },
+};
+
 export const roomingHouseWhyManzel = {
   eyebrow: "— Why Manzel",
   titlePre: "Why choose ",
@@ -1473,37 +1480,37 @@ export const roomingHouseWhatWeDesignV2 = {
   lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
   cards: [
     {
-      image: "/images/rooming-house/purpose-built-floorplan.jpg", // client-supplied 9-room floor plan
+      image: "/images/rooming-house/purpose-built-floorplan-v2.jpg", // client-supplied 9-room floor plan, trimmed to remove excess whitespace
       num: "01 / Purpose-Built",
       title: "Purpose-Built Rooming Houses",
       body: "Designing accommodation with individually rented bedrooms and shared facilities, planned around the site and intended resident group.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
       num: "02 / Student Accommodation",
       title: "Student Accommodation",
       body: "Functional layouts designed around student living, with consideration for private rooms, shared amenities, circulation, storage and communal spaces.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
       num: "03 / Conversions",
       title: "Existing Building Conversions",
       body: "Assessing suitable existing buildings and developing layouts that can accommodate the proposed rooming house use, subject to site and approval requirements.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
       num: "04 / Renovations",
       title: "Rooming House Renovations and Upgrades",
       body: "Improving an existing rooming house through reconfiguration, upgrades and better use of available space.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
       num: "05 / Extensions",
       title: "Extensions and Reconfiguration",
       body: "Exploring opportunities to increase bedroom numbers, improve shared facilities or reorganise existing spaces where the site and approval requirements allow.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder pending client's rooming house project photos
+      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
       num: "06 / Site-Specific",
       title: "Site-Specific Developments",
       body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
@@ -1684,6 +1691,13 @@ export const grannyFlatProcess = {
   cta: { label: "Book a Free Consultation", href: "/contact-us" },
 };
 
+// Same phases as grannyFlatProcess, just with the embedded CTA wired to this
+// page's own service-specific enquiry link instead of the generic one.
+export const grannyFlatProcessV2 = {
+  ...grannyFlatProcess,
+  cta: { label: "Start Your Project", href: "/contact-us?service=granny-flat-building-design" },
+};
+
 export const grannyFlatWhyManzel = {
   eyebrow: "— Why Manzel",
   titlePre: "Why choose Manzel Studio for ",
@@ -1790,36 +1804,58 @@ export const grannyFlatWhatWeDesignV2 = {
       body: "A separate small second dwelling positioned within the available area of the property, subject to site conditions and applicable requirements.",
     },
     {
-      image: "/images/granny-flat/attached-floorplan-v2.png", // client-supplied floor plan, shown in full (not cropped)
+      image: "/images/granny-flat/larger-floorplan-v5.png", // client-supplied floor plan, trimmed and rotated to landscape
       num: "02 / Attached",
-      fit: "contain" as const,
       title: "Attached Small Second Dwellings",
       body: "Small second dwelling solutions connected to or incorporated with an existing home where the property and design allow.",
     },
     {
-      image: "/images/granny-flat/compact-studio-v2.jpg", // client-supplied studio render, rotated and cropped to landscape
+      image: "/images/granny-flat/compact-studio-v3.jpg", // client-supplied studio render, rotated and trimmed so content is centered
       num: "03 / Compact",
       title: "Compact One-Bedroom Granny Flats",
       body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
     },
     {
-      image: "/images/granny-flat/larger-floorplan-rotated.png", // client-supplied floor plan, rotated 90deg, shown in full (not cropped)
+      image: "/images/placeholder-project.png", // placeholder pending client's larger/accessible-dwelling project photos
       num: "04 / Larger / Accessible",
-      fit: "contain" as const,
       title: "Larger or Accessibility-Focused Dwellings",
       body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
     },
     {
-      image: "/images/granny-flat/constrained-site-render.jpg", // client-supplied render, narrow layout, rotated to landscape
+      image: "/images/granny-flat/constrained-site-render-v3.jpg", // client-supplied render, narrow layout, rotated to landscape (kept uncropped to preserve the drop-shadow effect)
       num: "05 / Constrained Sites",
       title: "Custom Designs for Constrained Sites",
       body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder: source floor plan is portrait with text labels that would be sideways if rotated to fit this landscape card
+      image: "/images/granny-flat/family-floorplan-v4.png", // client-supplied floor plan, trimmed and rotated to landscape
       num: "06 / Family & Investment",
       title: "Flexible Family and Investment Use",
       body: "Granny flats can be designed around family accommodation, ageing relatives, independent living or rental use, depending on the project and applicable requirements.",
+    },
+  ],
+};
+
+export const grannyFlatCapabilityV2 = {
+  eyebrow: "— Designed Around Your Home",
+  titlePre: "Designing a Granny Flat Around ",
+  titleEm: "Your Existing Home",
+  lead: "A small second dwelling should work as part of the property rather than feeling like an afterthought. Our design process considers how the new dwelling relates to the existing home, the site and the people who will use it.",
+  items: [
+    {
+      num: "01 /",
+      label: "Existing Home, Access & Entry",
+      body: "We consider the relationship between the proposed granny flat and the existing dwelling, including access, outlook and overall site use. Practical access to the small second dwelling is considered from the early planning stages.",
+    },
+    {
+      num: "02 /",
+      label: "Privacy, Light & Orientation",
+      body: "We consider sightlines, window placement, outdoor areas and the relationship between the two dwellings. The design can respond to orientation, available openings and site conditions to create comfortable, functional living spaces.",
+    },
+    {
+      num: "03 /",
+      label: "Site Use, Services & Accessibility",
+      body: "Where relevant, parking, vehicle access, landscaping and outdoor areas are considered alongside the building footprint, along with existing site services and, where relevant to the brief, accessibility, practical storage and efficient internal layouts.",
     },
   ],
 };
@@ -2019,6 +2055,13 @@ export const buildingPermitProcess = {
   cta: { label: "Book a Free Consultation", href: "/contact-us" },
 };
 
+// Same phases as buildingPermitProcess, just with the embedded CTA wired to
+// this page's own service-specific enquiry link instead of the generic one.
+export const buildingPermitProcessV2 = {
+  ...buildingPermitProcess,
+  cta: { label: "Start Your Project", href: "/contact-us?service=building-permit-drawings" },
+};
+
 export const buildingPermitPlanningIntro = {
   eyebrow: "— Planning to Building Permit",
   titlePre: "From Planning Permit to Building Permit",
@@ -2027,6 +2070,40 @@ export const buildingPermitPlanningIntro = {
     "Once planning approval has been obtained, the endorsed design and any relevant planning conditions can be reviewed before progressing into detailed building permit documentation.",
     "Manzel Studio can then develop the architectural drawings, coordinate consultant information and incorporate relevant planning conditions into the building permit documentation.",
     "The exact sequence depends on the project and approval pathway, so requirements are confirmed at the beginning of each engagement.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+// Trimmed copies of buildingPermitIntro / buildingPermitSurveyorIntro /
+// buildingPermitPlanningIntro - same three-section layout, shorter paragraphs
+// per Mohamed's feedback to cut repetitive content. Kept separate from the
+// originals so building-permit-drawings-v2 keeps rendering unchanged.
+export const buildingPermitIntroV2 = {
+  eyebrow: "— Building Permit Drawings",
+  titlePre: "Detailed Building Permit Drawings for Your Project",
+  paragraphs: [
+    "Building permit drawings turn an established design into detailed, coordinated documentation for assessment, consultant coordination and construction.",
+    "We prepare building permit drawings for residential and commercial projects across Melbourne and Victoria, whether your design is already developed or still needs further development. The drawing package is tailored to each project and the appointed building surveyor's requirements, rather than a standard template.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const buildingPermitSurveyorIntroV2 = {
+  eyebrow: "— Working With Consultants",
+  titlePre: "Working With Your Building Surveyor and Consultants",
+  paragraphs: [
+    "Building permit documentation often involves a building surveyor, structural engineer, energy rater and other specialists. We coordinate the architectural information with this wider project documentation and communicate directly with your building surveyor to clarify requirements.",
+    "Each consultant remains responsible for their own reports, calculations and professional advice.",
+  ],
+  cta: { label: "More About Us", href: "/about-us" },
+};
+
+export const buildingPermitPlanningIntroV2 = {
+  eyebrow: "— Planning to Building Permit",
+  titlePre: "From Planning Permit to Building Permit",
+  paragraphs: [
+    "Where a project requires both planning and building permits, we review the endorsed design and any planning conditions before progressing into detailed building permit documentation.",
+    "The exact sequence depends on the project and approval pathway, so requirements are confirmed at the start of each engagement.",
   ],
   cta: { label: "More About Us", href: "/about-us" },
 };
@@ -2180,13 +2257,13 @@ export const buildingPermitWhatWeDesignV2 = {
       body: "Documentation for projects involving multiple dwellings, subject to the project scope and applicable requirements.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder: previous stock photo (a kitchen interior) didn't represent a granny flat/small dwelling
+      image: "/images/placeholder-project.png", // placeholder: previous stock photo (a kitchen interior) didn't represent a granny flat/small dwelling
       num: "04 / Granny Flats",
       title: "Granny Flats and Small Second Dwellings",
       body: "Building permit drawings for small second dwelling projects following the relevant design and approval pathway.",
     },
     {
-      image: "/images/placeholder-project.svg", // placeholder: previous stock photo (a backyard patio) didn't represent a rooming house
+      image: "/images/placeholder-project.png", // placeholder: previous stock photo (a backyard patio) didn't represent a rooming house
       num: "05 / Rooming Houses",
       title: "Rooming Houses",
       body: "Detailed documentation for rooming house projects, coordinated with the wider project requirements.",
