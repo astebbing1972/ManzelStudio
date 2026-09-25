@@ -20,16 +20,16 @@ export default function WhatWeDesignContain({
   cards: { image: string; num: string; title: string; body: string }[];
 }) {
   return (
-    <section className="bg-paper px-6 py-[100px] md:px-10 md:py-[125px]">
+    <section className="bg-paper px-6 py-20 md:px-10 md:py-28">
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
-          <div className="mx-auto mb-[70px] max-w-[780px] text-center">
-            <div className="eyebrow mb-[18px]">{eyebrow}</div>
-            <h2 className="text-[32px] font-medium leading-[1.15] tracking-[-0.044em] text-black sm:text-[46px] md:text-[60px] md:leading-[1.1]">
+          <div className="mx-auto mb-12 max-w-[780px] text-center">
+            <div className="eyebrow mb-2.5">{eyebrow}</div>
+            <h2 className="text-[24px] font-medium leading-[1.2] tracking-[-0.04em] text-black sm:text-[34px] md:text-[42px] md:leading-[1.1]">
               {titlePre}
               <em className="not-italic text-aubergine">{titleEm}</em>
             </h2>
-            <p className="mt-5 text-[16px] text-ink-2">{lead}</p>
+            <p className="mt-3 text-[14px] text-ink-2">{lead}</p>
           </div>
         </Reveal>
 

@@ -2088,24 +2088,28 @@ export const buildingPermitIntroV2 = {
   cta: { label: "More About Us", href: "/about-us" },
 };
 
-export const buildingPermitSurveyorIntroV2 = {
-  eyebrow: "— Working With Consultants",
-  titlePre: "Working With Your Building Surveyor and Consultants",
-  paragraphs: [
-    "Building permit documentation often involves a building surveyor, structural engineer, energy rater and other specialists. We coordinate the architectural information with this wider project documentation and communicate directly with your building surveyor to clarify requirements.",
-    "Each consultant remains responsible for their own reports, calculations and professional advice.",
+// Combines buildingPermitSurveyorIntro + buildingPermitPlanningIntro into a
+// single accordion-style section (same shape as MultiResidentialCompact,
+// used elsewhere on this page) instead of two lopsided two-column
+// ServiceIntro blocks whose short paragraph counts left the heading column
+// with a lot of dead space beneath it.
+export const buildingPermitConsultantsAccordion = {
+  eyebrow: "— Working With Your Project Team",
+  titlePre: "Coordinated from ",
+  titleEm: "planning to permit.",
+  lead: "Building permit drawings rarely exist in isolation. Here's how we coordinate with your consultants and the wider approval process.",
+  items: [
+    {
+      num: "01 /",
+      label: "Working With Your Building Surveyor and Consultants",
+      body: "Building permit documentation often involves a building surveyor, structural engineer, energy rater and other specialists. We coordinate the architectural information with this wider project documentation and communicate directly with your building surveyor to clarify requirements. Each consultant remains responsible for their own reports, calculations and professional advice.",
+    },
+    {
+      num: "02 /",
+      label: "From Planning Permit to Building Permit",
+      body: "Where a project requires both planning and building permits, we review the endorsed design and any planning conditions before progressing into detailed building permit documentation. The exact sequence depends on the project and approval pathway, so requirements are confirmed at the start of each engagement.",
+    },
   ],
-  cta: { label: "More About Us", href: "/about-us" },
-};
-
-export const buildingPermitPlanningIntroV2 = {
-  eyebrow: "— Planning to Building Permit",
-  titlePre: "From Planning Permit to Building Permit",
-  paragraphs: [
-    "Where a project requires both planning and building permits, we review the endorsed design and any planning conditions before progressing into detailed building permit documentation.",
-    "The exact sequence depends on the project and approval pathway, so requirements are confirmed at the start of each engagement.",
-  ],
-  cta: { label: "More About Us", href: "/about-us" },
 };
 
 export const buildingPermitCapability = {

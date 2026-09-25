@@ -5,16 +5,16 @@ import JsonLd from "@/components/JsonLd";
 import { buildMetadata, serviceJsonLd, faqJsonLd } from "@/lib/seo";
 import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
-import ServiceIntro from "@/components/ServiceIntro";
+import ServiceIntroCompact from "@/components/ServiceIntroCompact";
 import WhatWeDesignContain from "@/components/WhatWeDesignContain";
-import MultiResidential from "@/components/MultiResidential";
-import WhatsIncluded from "@/components/WhatsIncluded";
-import ServiceProcess from "@/components/ServiceProcess";
-import WhyManzel from "@/components/WhyManzel";
-import Suburbs from "@/components/Suburbs";
-import Testimonials from "@/components/Testimonials";
-import Faq from "@/components/Faq";
-import ServiceCta from "@/components/ServiceCta";
+import MultiResidentialCompact from "@/components/MultiResidentialCompact";
+import WhatsIncludedCompact from "@/components/WhatsIncludedCompact";
+import ServiceProcessCompact from "@/components/ServiceProcessCompact";
+import WhyManzelCompact from "@/components/WhyManzelCompact";
+import SuburbsCompact from "@/components/SuburbsCompact";
+import TestimonialsCompact from "@/components/TestimonialsCompact";
+import FaqCompact from "@/components/FaqCompact";
+import ServiceCtaCompact from "@/components/ServiceCtaCompact";
 import Footer from "@/components/Footer";
 import {
   grannyFlatHeroV2,
@@ -57,16 +57,16 @@ export default function GrannyFlatBuildingDesign() {
       <main className="flex-1">
         <ServiceHeroNoCta {...grannyFlatHeroV2} />
         <TrustBar items={trustBar} />
-        <ServiceIntro {...grannyFlatIntroV2} />
+        <ServiceIntroCompact {...grannyFlatIntroV2} />
         <WhatWeDesignContain {...grannyFlatWhatWeDesignV2} />
-        <MultiResidential {...grannyFlatCapabilityV2} />
-        <WhatsIncluded {...grannyFlatWhatsIncluded} />
-        <ServiceProcess {...grannyFlatProcessV2} />
-        <WhyManzel {...grannyFlatWhyManzel} />
-        <Suburbs {...grannyFlatSuburbs} />
-        <Testimonials />
-        <Faq items={grannyFlatFaqsV2} />
-        <ServiceCta {...grannyFlatCtaV2} />
+        <MultiResidentialCompact {...grannyFlatCapabilityV2} />
+        <WhatsIncludedCompact {...grannyFlatWhatsIncluded} />
+        <ServiceProcessCompact {...grannyFlatProcessV2} />
+        <WhyManzelCompact {...grannyFlatWhyManzel} />
+        <SuburbsCompact {...grannyFlatSuburbs} />
+        <TestimonialsCompact />
+        <FaqCompact items={grannyFlatFaqsV2} />
+        <ServiceCtaCompact {...grannyFlatCtaV2} />
       </main>
       <Footer />
     </>
