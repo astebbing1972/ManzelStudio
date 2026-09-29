@@ -595,9 +595,19 @@ export const memberBadges = [
   { alt: "HIA", image: img("/template/c0173968/images/proud-member-img4.png") },
 ];
 
-// PREVIEW ONLY - not linked into the live footer yet. Splits the old
-// footerNav into Services + Company so the 3 new service pages have a place
-// to go once Mohamed approves adding them to site navigation.
+// Live footer's current single-column nav - keep exactly as-is until the
+// Services/Company split below is approved and Footer.tsx is updated to use it.
+export const footerNav = [
+  { label: "Residential", href: "/residential-building-design" },
+  { label: "Commercial", href: "/commercial-building-design" },
+  { label: "Health Spaces", href: "/health-space-design" },
+  { label: "Assessment", href: "/site-assessment" },
+  { label: "Contact Us", href: "/contact-us" },
+];
+
+// PREVIEW ONLY - not linked into the live footer yet. Splits footerNav into
+// Services + Company so the 3 new service pages have a place to go once
+// Mohamed approves adding them to site navigation.
 export const footerServicesNav = [
   { label: "Residential", href: "/residential-building-design" },
   { label: "Commercial", href: "/commercial-building-design" },
