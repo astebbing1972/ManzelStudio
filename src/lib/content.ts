@@ -595,11 +595,24 @@ export const memberBadges = [
   { alt: "HIA", image: img("/template/c0173968/images/proud-member-img4.png") },
 ];
 
-export const footerNav = [
+// PREVIEW ONLY - not linked into the live footer yet. Splits the old
+// footerNav into Services + Company so the 3 new service pages have a place
+// to go once Mohamed approves adding them to site navigation.
+export const footerServicesNav = [
   { label: "Residential", href: "/residential-building-design" },
   { label: "Commercial", href: "/commercial-building-design" },
   { label: "Health Spaces", href: "/health-space-design" },
-  { label: "Assessment", href: "/site-assessment" },
+  { label: "Granny Flat Building Design", href: "/granny-flat-building-design" },
+  { label: "Rooming House Building Design", href: "/rooming-house-building-design" },
+  { label: "Building Permit Drawings", href: "/building-permit-drawings" },
+  { label: "Site Assessment", href: "/site-assessment" },
+];
+
+export const footerCompanyNav = [
+  { label: "About Us", href: "/about-us" },
+  { label: "Portfolio", href: "/our-projects" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -1269,10 +1282,10 @@ export const roomingHouseIntro = {
   eyebrow: "— Rooming House Design",
   titlePre: "Rooming House Building Design for Practical Shared Living",
   paragraphs: [
-    "A well-designed rooming house needs to balance private accommodation with comfortable, functional shared spaces.",
-    "At Manzel Studio, we design rooming houses around the way residents will use the property. This can include individually rented bedrooms with shared kitchens, living areas, laundries and outdoor spaces, depending on the project brief and site.",
-    "Our rooming house building design service can begin with an assessment of the site's opportunities and constraints, followed by concept planning, efficient bedroom and shared-space layouts, design development, consultant coordination and documentation for the relevant approval pathway.",
-    "Whether you are developing a purpose-built property, adapting an existing building or upgrading an established rooming house, we help turn the project requirements into a clear and coordinated design.",
+    "Rooming House (Residential 1B developments) require a careful balance between private accommodation and comfortable, functional shared spaces.",
+    "At Manzel Studio, we specialise in creating **High-yield designs** tailored to the unique requirements of Rooming House developments.",
+    "Our experienced team understands the specific needs of these projects and is dedicated to maximising profitability while creating comfortable and appealing living spaces for residents.",
+    "Whether you are developing a purpose-built property, adapting an existing building, or upgrading an established Rooming House, we help transform your project requirement into a clear, coordinated, and practical design.",
   ],
   cta: { label: "More About Us", href: "/about-us" },
 };
@@ -1346,6 +1359,40 @@ export const roomingHouseCapability = {
   ],
 };
 
+// Replaces the roomingHouseWhatWeDesignV2 6-card image grid on the main
+// page, per Ali's request: one photo instead of the card arrangement, with
+// this profitability-focused content.
+export const roomingHouseProfitSection = {
+  eyebrow: "— Rooming House Building Design",
+  titlePre: "Designed for Profit. ",
+  titleEm: "Built for Success.",
+  lead: "How We Can Help Maximise the Profitability of Your Rooming House",
+  image: "/images/rooming-house/profitability-render.png",
+  imageAlt: "3D render of a purpose-built rooming house floor plan with nine private bedrooms",
+  items: [
+    {
+      num: "01",
+      title: "Maximising Space Efficiency",
+      body: "We specialise in designing efficient room layouts that make the most of the available space. Our designs carefully balance the number of bedrooms with the required shared common areas, creating an effective layout that maximises rental-income potential.",
+    },
+    {
+      num: "02",
+      title: "Cost-Effective Design",
+      body: "We focus on delivering economical designs while maintaining a high standard of quality. Our team carefully considers construction materials, energy efficiency and ongoing maintenance requirements to help reduce long-term costs and maximise return on investment.",
+    },
+    {
+      num: "03",
+      title: "Compliance with Environmental Health Regulations",
+      body: "Rooming houses must meet a range of safety, health and amenity requirements. We develop our designs in accordance with the relevant regulations, helping prevent compliance issues while supporting a safe and comfortable environment for residents.",
+    },
+    {
+      num: "04",
+      title: "Accommodation Market Analysis",
+      body: "To support the success of the rooming house, we consider market demand, the likely target demographic and their specific accommodation needs. This helps shape a design that appeals to potential residents and supports strong occupancy and consistent rental income.",
+    },
+  ],
+};
+
 export const roomingHouseWhatsIncluded = {
   eyebrow: "— What's Included",
   titlePre: "What's Included in Our ",
@@ -1403,21 +1450,18 @@ export const roomingHouseProcess = {
 // this page's own service-specific enquiry link instead of the generic one.
 export const roomingHouseProcessV2 = {
   ...roomingHouseProcess,
-  cta: { label: "Start Your Project", href: "/contact-us?service=rooming-house-building-design" },
+  cta: { label: "Discuss Your Rooming House Project", href: "/contact-us?service=rooming-house-building-design" },
 };
 
 export const roomingHouseWhyManzel = {
   eyebrow: "— Why Manzel",
   titlePre: "Why choose ",
   titleEm: "Manzel Studio?",
-  lead: "Rooming house projects require practical planning, careful space allocation and coordinated documentation. At Manzel Studio, our approach combines building design knowledge with construction awareness to create functional, approval-conscious designs.",
+  lead: "Clients choose Manzel Studio for practical design thinking, clear communication and coordinated support from early feasibility through to documentation.",
   items: [
-    { title: "Practical Design Thinking", body: "We focus on how the building needs to work for residents, operators and the property." },
-    { title: "Clear Communication", body: "We keep the process structured and communicate clearly about project requirements, documentation and next steps." },
-    { title: "Construction Awareness", body: "Our building design approach considers how the design translates into documentation and construction." },
-    { title: "Coordinated Documentation", body: "We coordinate architectural information with appointed consultants and the relevant approval requirements." },
-    { title: "Melbourne & Regional Victoria", body: "We work across Melbourne and regional Victoria, adapting our approach to the specific property and project requirements." },
-    { title: "Registered Building Practitioners", body: "As registered building practitioners, we bring hands-on design and documentation experience to every rooming house project." },
+    { title: "Practical Design Thinking", body: "Clients choose Manzel Studio for practical design thinking, clear communication and coordinated support from early feasibility through to documentation." },
+    { title: "Building Design Knowledge & Construction Awareness", body: "The team combines building-design knowledge with construction awareness, helping clients develop layouts that are functional, approval-conscious and mindful of project cost." },
+    { title: "Registered Building Practitioners", body: "As registered building practitioners, Manzel Studio works across Melbourne and regional Victoria and coordinates with the consultants required for each project." },
   ],
 };
 
@@ -1474,58 +1518,46 @@ export const roomingHouseCta = {
 // since their content didn't need to change, only how they're displayed.
 
 export const roomingHouseWhatWeDesignV2 = {
-  eyebrow: "— Rooming House Projects We Design",
-  titlePre: "Rooming house projects we ",
-  titleEm: "can help design.",
+  eyebrow: "— Rooming House Project Types",
+  titlePre: "Type of ",
+  titleEm: "rooming houses we can design.",
   lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
   cards: [
     {
       image: "/images/rooming-house/purpose-built-floorplan-v2.jpg", // client-supplied 9-room floor plan, trimmed to remove excess whitespace
-      num: "01 / Purpose-Built",
-      title: "Purpose-Built Rooming Houses",
-      body: "Designing accommodation with individually rented bedrooms and shared facilities, planned around the site and intended resident group.",
+      num: "01 / Single Storey",
+      title: "Proposed Single Storey Rooming House",
+      body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
     },
     {
       image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
-      num: "02 / Student Accommodation",
-      title: "Student Accommodation",
-      body: "Functional layouts designed around student living, with consideration for private rooms, shared amenities, circulation, storage and communal spaces.",
-    },
-    {
-      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
-      num: "03 / Conversions",
+      num: "02 / Conversions",
       title: "Existing Building Conversions",
       body: "Assessing suitable existing buildings and developing layouts that can accommodate the proposed rooming house use, subject to site and approval requirements.",
     },
     {
       image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
-      num: "04 / Renovations",
+      num: "03 / Renovations",
       title: "Rooming House Renovations and Upgrades",
-      body: "Improving an existing rooming house through reconfiguration, upgrades and better use of available space.",
-    },
-    {
-      image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
-      num: "05 / Extensions",
-      title: "Extensions and Reconfiguration",
       body: "Exploring opportunities to increase bedroom numbers, improve shared facilities or reorganise existing spaces where the site and approval requirements allow.",
     },
     {
       image: "/images/placeholder-project.png", // placeholder pending client's rooming house project photos
-      num: "06 / Site-Specific",
-      title: "Site-Specific Developments",
-      body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
+      num: "04 / Multi-Lot",
+      title: "Multi Rooming House on One Lot",
+      body: "Maximising site potential through multiple rooming house developments.",
     },
   ],
 };
 
 export const roomingHouseHeroV2 = {
-  image: "/images/rooming-house/floor-plan.webp", // client-supplied floor plan render
+  image: "/images/rooming-house/hero-render.png", // client's 3D render, cropped the same way as the other pages' hero photos
   eyebrow: "— Rooming House Service",
   titlePre: "Rooming House Building Designer ",
   titleEm: "Melbourne",
   lead: "Manzel Studio provides practical rooming house building design for students, workers and other residents, based on your site, project requirements and shared living needs. From early site assessment through to permit-ready documentation, we help create functional and comfortable rooming house accommodation.",
   sub: "",
-  cta: { label: "Start Your Project", href: "/contact-us?service=rooming-house-building-design" },
+  cta: { label: "Discuss Your Rooming House Project", href: "/contact-us?service=rooming-house-building-design" },
 };
 
 export const roomingHouseCtaV2 = {
@@ -1535,7 +1567,7 @@ export const roomingHouseCtaV2 = {
   titlePost: " Project",
   body: "Whether you are assessing a potential site, planning a new rooming house or adapting an existing property, the right design process starts with understanding what the site can support. Book a Free Consultation and talk to Manzel Studio about your rooming house building design project.",
   primaryCta: {
-    label: "Start Your Project",
+    label: "Discuss Your Rooming House Project",
     href: "/contact-us?service=rooming-house-building-design",
   },
 };
@@ -1695,7 +1727,7 @@ export const grannyFlatProcess = {
 // page's own service-specific enquiry link instead of the generic one.
 export const grannyFlatProcessV2 = {
   ...grannyFlatProcess,
-  cta: { label: "Start Your Project", href: "/contact-us?service=granny-flat-building-design" },
+  cta: { label: "Discuss Your Small Second Dwelling Project", href: "/contact-us?service=granny-flat-building-design" },
 };
 
 export const grannyFlatWhyManzel = {
@@ -1776,7 +1808,7 @@ export const grannyFlatHeroV2 = {
   titleEm: "Melbourne",
   lead: "Custom granny flat design shaped around your property, budget and long-term plans. Manzel Studio helps homeowners and investors turn available space into a practical small second dwelling, with clear guidance from the first site review through to permit-ready documentation.",
   sub: "",
-  cta: { label: "Start Your Project", href: "/contact-us?service=granny-flat-building-design" },
+  cta: { label: "Discuss Your Small Second Dwelling Project", href: "/contact-us?service=granny-flat-building-design" },
 };
 
 export const grannyFlatIntroV2 = {
@@ -1906,7 +1938,7 @@ export const grannyFlatCtaV2 = {
   titlePost: " Project",
   body: "Whether you want to create a private space for family, accommodate ageing relatives, support independent living or explore a small second dwelling investment, the first step is understanding what your property can support. Book a Free Consultation with Manzel Studio to discuss your granny flat building design project.",
   primaryCta: {
-    label: "Start Your Project",
+    label: "Discuss Your Small Second Dwelling Project",
     href: "/contact-us?service=granny-flat-building-design",
   },
 };
@@ -2059,7 +2091,7 @@ export const buildingPermitProcess = {
 // this page's own service-specific enquiry link instead of the generic one.
 export const buildingPermitProcessV2 = {
   ...buildingPermitProcess,
-  cta: { label: "Start Your Project", href: "/contact-us?service=building-permit-drawings" },
+  cta: { label: "Enquire About Building Permit Drawings", href: "/contact-us?service=building-permit-drawings" },
 };
 
 export const buildingPermitPlanningIntro = {
@@ -2233,7 +2265,7 @@ export const buildingPermitHeroV2 = {
   titleEm: "Melbourne",
   lead: "Clear, coordinated building permit drawings for residential and commercial projects across Melbourne and Victoria. Manzel Studio prepares detailed architectural documentation to support building permit applications, consultant coordination, builder pricing and construction clarity.",
   sub: "",
-  cta: { label: "Start Your Project", href: "/contact-us?service=building-permit-drawings" },
+  cta: { label: "Enquire About Building Permit Drawings", href: "/contact-us?service=building-permit-drawings" },
 };
 
 export const buildingPermitWhatWeDesignV2 = {
@@ -2261,20 +2293,8 @@ export const buildingPermitWhatWeDesignV2 = {
       body: "Documentation for projects involving multiple dwellings, subject to the project scope and applicable requirements.",
     },
     {
-      image: "/images/placeholder-project.png", // placeholder: previous stock photo (a kitchen interior) didn't represent a granny flat/small dwelling
-      num: "04 / Granny Flats",
-      title: "Granny Flats and Small Second Dwellings",
-      body: "Building permit drawings for small second dwelling projects following the relevant design and approval pathway.",
-    },
-    {
-      image: "/images/placeholder-project.png", // placeholder: previous stock photo (a backyard patio) didn't represent a rooming house
-      num: "05 / Rooming Houses",
-      title: "Rooming Houses",
-      body: "Detailed documentation for rooming house projects, coordinated with the wider project requirements.",
-    },
-    {
       image: img("/resources/c0173968/snippet/snippet-8857/images/commercial-img1.png"),
-      num: "06 / Commercial",
+      num: "04 / Commercial",
       title: "Commercial Projects",
       body: "Documentation for offices, retail, hospitality, healthcare, specialist spaces, fit-outs and other commercial projects within our agreed scope.",
     },
@@ -2312,7 +2332,7 @@ export const buildingPermitCtaV2 = {
   titlePost: " Documentation.",
   body: "Whether you have an established design ready for documentation or need help developing the project further, Manzel Studio can help you progress towards a clear, coordinated building permit drawing package. Book a Free Consultation to discuss your project, documentation requirements and next steps.",
   primaryCta: {
-    label: "Start Your Project",
+    label: "Enquire About Building Permit Drawings",
     href: "/contact-us?service=building-permit-drawings",
   },
 };
@@ -2939,6 +2959,164 @@ export const projectCta = {
   titlePost: "",
   body: "Whether you're planning a new home, renovation, extension, or commercial space, every great project starts with a conversation. Let's explore what's possible together.",
   primaryCta: { label: "Book a Free Consultation", href: "/contact-us" },
+  secondaryCta: { label: "See More of Our Work", href: "/our-projects" },
+};
+
+// ===== Healthspan Osteopathy project page (draft for client review) =====
+// Sourced from Healthspan_Osteopathy_Project_Content.pdf (confirmed facts,
+// client brief, design response, outcome, website-ready copy). Photography,
+// video and the clinic logo are still pending per that brief, so this page
+// uses placeholder-project.png for every image slot until those arrive -
+// do not swap in the unrelated "Healthspan Osteopathy - *" photos found
+// locally, since Mohamed's brief explicitly says professional photography
+// hasn't been taken yet and those files' provenance isn't confirmed.
+
+export const healthspanHero = {
+  image: "/images/placeholder-project.png", // pending professional photography (owner approval outstanding)
+  eyebrow: "— Healthspan Osteopathy · Clinic Fit-Out",
+  title: "Osteopathy Clinic Fit-Out in Craigieburn",
+  sub: "A blank commercial tenancy transformed into a clean, modern and welcoming health space with four private consulting rooms.",
+};
+
+export const healthspanSnapshot = [
+  { lbl: "Location", val: "Craigieburn" },
+  { lbl: "Council", val: "Hume City" },
+  { lbl: "Project Type", val: "Clinic Fit-Out" },
+  { lbl: "Internal Area", val: "68.4", valEm: "m²" },
+  { lbl: "Completed", val: "May 2026" },
+];
+
+export const healthspanOverview = {
+  eyebrow: "— At a Glance",
+  titlePre: "Project ",
+  titleEm: "Overview",
+  paragraphs: [
+    "Healthspan Osteopathy is a new clinic fit-out in Craigieburn designed by Manzel Studio from the early planning stage through to building-permit approval.",
+    "The brief called for four private consulting rooms supported by a reception, waiting area and staff room within an approximately 68.4 m² internal tenancy. The key design challenge was positioning the internal partitions around the existing exterior glazing - Manzel Studio developed an efficient layout that retained strong natural light, protected privacy and made effective use of the available floor area. A curved reception wall softened the arrival experience and guided clients naturally towards the consulting rooms.",
+  ],
+};
+
+export const healthspanBrief = {
+  eyebrow: "— The Client Brief",
+  titlePre: "A practical clinic fit-out balancing ",
+  titleEm: "function and atmosphere.",
+  lead: "The client asked Manzel Studio to design a practical and functional osteopathy clinic, obtain the developer's approval and prepare the documentation required to secure the building permit.",
+  goals: [
+    {
+      num: "01",
+      tag: "Four Private Consulting Rooms",
+      title: "A clinic built around private, comfortable consultation.",
+      body: "Four private consulting rooms supported by a reception, waiting area and staff room, with an efficient layout that supports comfortable movement for clients and practitioners.",
+    },
+    {
+      num: "02",
+      tag: "Clean, Modern & Welcoming",
+      title: "Fresh green tones for a lively, health-focused character.",
+      body: "A clean, modern and professional atmosphere brought to life with fresh green accents, reinforcing a natural and health-focused identity.",
+    },
+    {
+      num: "03",
+      tag: "Budget & Programme",
+      title: "Working within budget to progress the permit efficiently.",
+      body: "The design was developed within the client's agreed budget, with the building permit progressed efficiently to keep the project on track.",
+    },
+  ],
+};
+
+export const healthspanGallery = {
+  eyebrow: "— Photo Gallery",
+  titlePre: "Inside ",
+  titleEm: "Healthspan Osteopathy.",
+  lead: "Floor plans and elevations are available now; completed photography and video are pending the clinic owner's approval for a professional shoot.",
+  tiles: [
+    { tile: "t1", image: "/images/placeholder-project.png", alt: "Floor plan - pending" },
+    { tile: "t2", image: "/images/placeholder-project.png", alt: "Reception area - pending photography" },
+    { tile: "t3", image: "/images/placeholder-project.png", alt: "Consulting room - pending photography" },
+    { tile: "t4", image: "/images/placeholder-project.png", alt: "Waiting area - pending photography" },
+    { tile: "t5", image: "/images/placeholder-project.png", alt: "Staff room - pending photography" },
+    { tile: "t6", image: "/images/placeholder-project.png", alt: "Elevation - pending" },
+  ],
+};
+
+export const healthspanOutcome = [
+  {
+    num: "01",
+    eyebrow: "— The Design Challenge",
+    titlePre: "Positioning the layout around the existing ",
+    titleEm: "glazing and floor area.",
+    lead: "Every decision had to balance privacy, natural light and efficient use of an approximately 68.4 m² tenancy. Here's what shaped the approach:",
+    items: [
+      { icon: "depth", title: "Layout & Privacy", body: "Four enclosed consulting rooms, a reception, waiting area and staff room, each carefully sized for privacy and comfort." },
+      { icon: "frontage", title: "Natural Light & Glazing", body: "Internal partitions positioned in relation to the exterior glass walls and windows to retain strong natural light." },
+      { icon: "rowAccess", title: "Movement & Arrival", body: "A curved reception wall softened the arrival space and guided a smooth transition into the consulting-room corridor." },
+      { icon: "heritage", title: "Material & Character", body: "A clean overall finish with fresh green accents, rather than feature materials or custom joinery, defined the space's identity." },
+    ],
+  },
+  {
+    num: "02",
+    eyebrow: "— Outcome & Results",
+    titlePre: "A functional clinic, delivered on ",
+    titleEm: "budget and on time.",
+    lead: "The completed clinic balances functionality, compliance, quality and cost - and is now open and operating.",
+    items: [
+      { icon: "approval", title: "Building Permit", body: "Obtained in approximately two to three weeks, with all required permits and approvals secured." },
+      { icon: "yield", title: "On Budget", body: "The design was developed and delivered within the client's agreed budget." },
+      { icon: "streetscape", title: "Consultant Coordination", body: "Manzel Studio consulted with the client, developer, building surveyor and energy rater throughout." },
+      { icon: "outcome", title: "Completed & Operating", body: "The clinic is completed and operating, delivering a practical, high-quality and welcoming result." },
+    ],
+  },
+];
+
+export const healthspanJourney = {
+  eyebrow: "— The Journey",
+  titlePre: "Our four-phase ",
+  titleEm: "process,",
+  titlePost: " applied to Healthspan Osteopathy.",
+  lead: "Every Manzel Studio project follows the same trusted four-phase process. Here's what that looked like for this clinic fit-out.",
+  forLabel: "For Healthspan Osteopathy",
+  phases: [
+    {
+      icon: "discovery",
+      num: "01",
+      tag: "Phase One",
+      title: "Strategic Discovery",
+      body: "We explored the client's goals, site, budget, and opportunities to shape a clear project direction.",
+      forNote: "Confirmed the brief for four consulting rooms, reception, waiting area and staff room.",
+    },
+    {
+      icon: "concept",
+      num: "02",
+      tag: "Phase Two",
+      title: "Concept Development",
+      body: "Thoughtful concepts refined the design to align with the client's vision and the site's constraints.",
+      forNote: "Resolved the internal layout around the existing exterior glazing to protect privacy and light.",
+    },
+    {
+      icon: "docs",
+      num: "03",
+      tag: "Phase Three",
+      title: "Documentation & Permits",
+      body: "Detailed drawings and a coordinated permit package supported a smooth approval process.",
+      forNote: "Building permit obtained in approximately two to three weeks.",
+    },
+    {
+      icon: "support",
+      num: "04",
+      tag: "Phase Four",
+      title: "Support & Final Styling",
+      body: "We support construction, coordinate key details, and help bring the final design to life.",
+      forNote: "Project completed and the clinic is now open and operating.",
+    },
+  ],
+};
+
+export const healthspanCta = {
+  eyebrow: "— Start Your Project",
+  titlePre: "Thinking about a health space of ",
+  titleEm: "your own?",
+  titlePost: "",
+  body: "Whether you're planning a new clinic fit-out, renovation or health space, every great project starts with a conversation. Let's explore what's possible together.",
+  primaryCta: { label: "Discuss Your Health Space Project", href: "/contact-us?service=health-space-design" },
   secondaryCta: { label: "See More of Our Work", href: "/our-projects" },
 };
 

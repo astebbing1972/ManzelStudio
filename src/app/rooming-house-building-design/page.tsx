@@ -6,11 +6,11 @@ import { buildMetadata, serviceJsonLd, faqJsonLd } from "@/lib/seo";
 import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
 import ServiceIntroCompact from "@/components/ServiceIntroCompact";
+import SplitImageList from "@/components/SplitImageList";
 import WhatWeDesignContain from "@/components/WhatWeDesignContain";
 import MultiResidentialCompact from "@/components/MultiResidentialCompact";
 import WhatsIncludedCompact from "@/components/WhatsIncludedCompact";
 import ServiceProcessCompact from "@/components/ServiceProcessCompact";
-import WhyManzelCompact from "@/components/WhyManzelCompact";
 import SuburbsCompact from "@/components/SuburbsCompact";
 import TestimonialsCompact from "@/components/TestimonialsCompact";
 import FaqCompact from "@/components/FaqCompact";
@@ -20,11 +20,11 @@ import {
   roomingHouseHeroV2,
   trustBar,
   roomingHouseIntro,
+  roomingHouseProfitSection,
   roomingHouseWhatWeDesignV2,
   roomingHouseCapability,
   roomingHouseWhatsIncluded,
   roomingHouseProcessV2,
-  roomingHouseWhyManzel,
   roomingHouseSuburbs,
   roomingHouseFaqs,
   roomingHouseCtaV2,
@@ -58,11 +58,11 @@ export default function RoomingHouseBuildingDesign() {
         <ServiceHeroNoCta {...roomingHouseHeroV2} />
         <TrustBar items={trustBar} />
         <ServiceIntroCompact {...roomingHouseIntro} />
+        <SplitImageList {...roomingHouseProfitSection} />
         <WhatWeDesignContain {...roomingHouseWhatWeDesignV2} />
         <MultiResidentialCompact {...roomingHouseCapability} />
         <WhatsIncludedCompact {...roomingHouseWhatsIncluded} />
         <ServiceProcessCompact {...roomingHouseProcessV2} />
-        <WhyManzelCompact {...roomingHouseWhyManzel} />
         <SuburbsCompact {...roomingHouseSuburbs} />
         <TestimonialsCompact />
         <FaqCompact items={roomingHouseFaqs} />

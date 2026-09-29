@@ -48,6 +48,7 @@ export default function ProjectJourney({
   titlePost,
   lead,
   phases,
+  forLabel = "For The Avenue",
 }: {
   eyebrow: string;
   titlePre: string;
@@ -55,6 +56,7 @@ export default function ProjectJourney({
   titlePost: string;
   lead: string;
   phases: Phase[];
+  forLabel?: string;
 }) {
   return (
     <section className="bg-paper px-6 py-[120px] md:px-10">
@@ -91,7 +93,7 @@ export default function ProjectJourney({
                 <p className="text-[14.5px] leading-[1.6] text-ink-2">{ph.body}</p>
                 <div className="mt-auto pt-[18px] text-[13.5px] italic leading-[1.55] text-ink-2">
                   <span className="mb-1.5 block text-[10px] font-medium not-italic uppercase tracking-[0.28em] text-aubergine">
-                    For The Avenue
+                    {forLabel}
                   </span>
                   {ph.forNote}
                 </div>
