@@ -23,7 +23,7 @@ export default function About() {
   return (
     <section className="w-full bg-[linear-gradient(239deg,rgba(0,0,0,0)_9.95%,rgba(0,0,0,0.06)_63.49%)]">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-10 px-6 py-12 md:py-28 lg:grid-cols-2 lg:items-center lg:gap-x-16 lg:px-10">
-        <Reveal className="relative order-2 aspect-[4/3] w-full overflow-hidden lg:order-1 lg:aspect-auto lg:h-[497px]">
+        <Reveal eager className="relative order-2 aspect-[4/3] w-full overflow-hidden lg:order-1 lg:aspect-auto lg:h-[497px]">
           {aboutSlides.map((src, i) => (
             <div
               key={src}
@@ -45,7 +45,7 @@ export default function About() {
           ))}
         </Reveal>
 
-        <Reveal delay={120} className="order-1 lg:order-2">
+        <Reveal eager delay={120} className="order-1 lg:order-2">
           <div>
             <div className="eyebrow mb-4">— About Us</div>
             <h2 className="about-heading mb-4 font-medium tracking-[-0.044em] text-black">

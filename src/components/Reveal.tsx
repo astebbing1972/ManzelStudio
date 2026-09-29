@@ -6,14 +6,20 @@ export default function Reveal({
   children,
   className = "",
   delay = 0,
+  eager = false,
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
+  /** Renders already revealed, no fade-in - for content that sits in the
+   * initial viewport, where the scroll-reveal animation only costs Speed
+   * Index with nothing to reveal from (nothing above it to scroll past). */
+  eager?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (eager) return;
     const el = ref.current;
     if (!el) return;
 
@@ -49,7 +55,7 @@ export default function Reveal({
   return (
     <div
       ref={ref}
-      className={`reveal ${className}`}
+      className={`reveal ${eager ? "in-view" : ""} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
