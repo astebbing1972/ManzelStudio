@@ -27,10 +27,16 @@ function ArrowIcon({ flipped = false }: { flipped?: boolean }) {
 
 export default function Sectors() {
   const [index, setIndex] = useState(0);
+  const [revealed, setRevealed] = useState(() => new Set([0]));
   const total = sectors.length;
   const sector = sectors[index];
 
-  const go = (dir: 1 | -1) => setIndex((v) => (v + dir + total) % total);
+  const go = (dir: 1 | -1) =>
+    setIndex((v) => {
+      const next = (v + dir + total) % total;
+      setRevealed((prev) => (prev.has(next) ? prev : new Set(prev).add(next)));
+      return next;
+    });
 
   return (
     <section className="bg-[#fbfbfb] px-6 pb-14 pt-12 md:px-10 md:pb-[150px] md:pt-[90px]">
@@ -73,14 +79,16 @@ export default function Sectors() {
                   i === index ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <Image
-                  src={s.image}
-                  alt={s.title}
-                  fill
-                  quality={70}
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 42vw, 100vw"
-                />
+                {revealed.has(i) && (
+                  <Image
+                    src={s.image}
+                    alt={s.title}
+                    fill
+                    quality={70}
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 42vw, 100vw"
+                  />
+                )}
               </div>
             ))}
           </div>
