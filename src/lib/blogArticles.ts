@@ -1895,4 +1895,296 @@ export const blogArticles: Record<string, Article> = {
       },
     ],
   },
+
+  "retail-fit-out-vs-new-retail-build": {
+    slug: "retail-fit-out-vs-new-retail-build",
+    intro: [
+      "Opening a retail space in Melbourne usually comes down to one of two starting points: fitting out an existing tenancy, or building from a vacant shell or a completely new structure. Both can get you to the same result - a functioning shop - but they follow very different approval pathways, timelines and design decisions.",
+      "Choosing the wrong path early, or not realising which path you're actually on, is one of the most common causes of delay for retail projects. A fit-out that looks straightforward can trigger a full planning permit if the use is changing. A new build can be significantly simplified if the site already has appropriate zoning and services in place.",
+      "This guide is written for retailers, franchise operators and landlords weighing up a fit-out against a new build, and outlines what a [building designer](/commercial-building-design) typically manages on each path.",
+    ],
+    sections: [
+      {
+        heading: "What Counts as a Retail Fit-Out",
+        paragraphs: [
+          "A retail fit-out generally means working within an existing tenancy shell - the building structure, external walls and often the services connections are already in place. The scope is usually the shopfront, internal partitions, flooring, lighting, fixtures, joinery, a point-of-sale counter and any back-of-house storage or staff area.",
+          "Fit-outs are common in shopping centres, strip shopping precincts and mixed-use developments, where the base building has already received its planning and building approvals and each new tenant fits out their own space to suit their brand and operations.",
+        ],
+      },
+      {
+        heading: "What Counts as a New Retail Build",
+        paragraphs: [
+          "A new retail build means constructing the structure itself, whether that's a standalone shop, a small strip of shops, or a retail component within a larger [commercial development](/commercial-building-design). This includes structural work, roofing, external walls, services infrastructure and typically a planning permit for the building and the proposed use.",
+          "A new build gives more control over layout, orientation, signage zones and future flexibility, but it comes with a longer approvals timeline and a broader scope of consultants - structural, services and sometimes traffic engineers, in addition to the building designer.",
+        ],
+      },
+      {
+        heading: "Approvals: Fit-Out vs New Build",
+        leadIn: "The two paths usually differ across three key approval questions:",
+        table: {
+          headers: ["Question", "Retail Fit-Out", "New Retail Build"],
+          rows: [
+            [
+              "Planning permit required?",
+              "Often no, if the retail use is already approved for the tenancy and no external changes are proposed",
+              "Usually yes, for the new building and the proposed use",
+            ],
+            [
+              "Building permit required?",
+              "Yes, for the fit-out works themselves",
+              "Yes, for the new structure and all fit-out works",
+            ],
+            [
+              "Typical additional approvals",
+              "Landlord/centre management approval, food safety registration if hospitality",
+              "Services authority approvals, car parking and loading requirements, stormwater",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Design Considerations for a Retail Fit-Out",
+        paragraphs: [
+          "Even within an existing shell, a fit-out has to satisfy the same accessibility and safety requirements as any other commercial space, including compliant access, egress widths and sanitary facilities under the [National Construction Code](https://ncc.abcb.gov.au/).",
+          "Shopfront changes are frequently subject to heritage or design and development overlays, particularly along established shopping strips, so signage and façade treatments should be checked against the relevant [planning scheme](https://www.planning.vic.gov.au/guides-and-resources/guides/guide-to-victorias-planning-system/planning-permits) before they're finalised.",
+          "If the tenancy involves food preparation, food safety registration and kitchen exhaust requirements need to be factored into the layout early, since retrofitting extraction after fit-out drawings are locked in is expensive.",
+          "Lease make-good obligations also shape what can be altered. Reviewing the lease before finalising the design avoids proposing changes the landlord won't approve, or that will need to be reversed at the end of the tenancy.",
+        ],
+      },
+      {
+        heading: "Design Considerations for a New Retail Build",
+        paragraphs: [
+          "A new build needs to respond to car parking rates, loading bay requirements and setback controls set by the local planning scheme, all of which affect how much of the site can actually be built on.",
+          "Streetscape and façade requirements are usually more prescriptive for a new structure than for a fit-out, especially in activity centres where councils are protecting a consistent shopfront rhythm.",
+          "Stormwater management, easements and the structural interface with any adjoining tenancies also need to be resolved at the design stage, since these are harder and more expensive to change once footings are in.",
+        ],
+      },
+      {
+        heading: "How a Building Designer Helps With Either Path",
+        paragraphs: [
+          "For a fit-out, a building designer typically reviews the existing tenancy conditions, confirms what can be altered under the lease and centre guidelines, and prepares the drawings needed for a building permit.",
+          "For a new build, the process usually starts with a [feasibility and site assessment](/site-assessment) to confirm zoning, overlays and what the site can support, followed by concept design, planning permit documentation, and coordination with structural and services engineers through to building permit stage.",
+          "In both cases, the goal is the same: a design that meets the relevant approvals with the fewest possible revisions, and a fit-out or building that actually works for how the retailer operates day to day.",
+        ],
+      },
+      {
+        heading: "Choosing the Right Path for Your Business",
+        leadIn: "Which path suits a project usually comes down to the site and the business, not preference alone:",
+        subsections: [
+          {
+            heading: "When a fit-out makes sense",
+            paragraph: "The tenancy already has an approved retail use, the shell and services are adequate, and changes are mostly internal - layout, finishes, signage and fixtures.",
+          },
+          {
+            heading: "When a new build makes sense",
+            paragraph: "No suitable existing tenancy is available, the business needs a purpose-built layout the existing stock can't provide, or the opportunity includes land that isn't yet built on.",
+          },
+        ],
+      },
+    ],
+    conclusion: [
+      "A retail fit-out and a new retail build can lead to the same outcome, but they are different projects with different approval pathways, timelines and risks. Understanding which one you're actually undertaking - and confirming it early with council or your landlord - avoids the most common source of delay.",
+      "For most tenancy fit-outs, the priority is confirming what's already approved and working within it efficiently. For a new build, the priority is a proper feasibility review before committing to a design.",
+      "If you're weighing up a fit-out against a new build for a retail project in Melbourne, our [commercial building design](/commercial-building-design) team can help assess the site and the approval pathway before you commit. [Get in touch](/contact-us?service=commercial-building-design) to talk through your project.",
+    ],
+    faqs: [
+      {
+        q: "Do I need a planning permit for a retail fit-out?",
+        a: "Often not, if the retail use is already approved for the tenancy and you're not changing the external appearance of the building. A planning permit is more likely if the use is changing, the tenancy sits in a heritage or design overlay, or the shopfront is being significantly altered.",
+      },
+      {
+        q: "How long does a retail fit-out take to get approved in Melbourne?",
+        a: "A straightforward fit-out with no planning permit required can often be approved for a building permit within a few weeks, depending on the building surveyor's workload. A fit-out that does trigger a planning permit will take considerably longer, in line with standard council assessment timeframes.",
+      },
+      {
+        q: "What's the difference between a Building Permit and a Planning Permit for retail projects?",
+        a: "A planning permit considers whether the proposed use and built form are appropriate for the site under the local planning scheme. A building permit confirms the construction itself complies with the National Construction Code and other building regulations. Many fit-outs only need a building permit; new builds usually need both.",
+      },
+      {
+        q: "Can a building designer manage both the fit-out and the new build pathway?",
+        a: "Yes. A [building designer](/commercial-building-design) can assess which pathway applies to your site, prepare the required drawings and documentation, and coordinate with council, certifiers and other consultants through to approval, whether the project is a fit-out or a new build.",
+      },
+    ],
+  },
+
+  "industrial-warehouse-building-design-compliance-victoria": {
+    slug: "industrial-warehouse-building-design-compliance-victoria",
+    intro: [
+      "Industrial and warehouse projects in Victoria carry a layer of compliance that most commercial fit-outs don't have to deal with. Zoning restricts what a site can actually be used for, environmental regulations can apply well before construction starts, and the building code treats large industrial floor plates differently to a standard office or shop.",
+      "Getting these basics wrong early is one of the most common ways an industrial project loses months, whether that's discovering a proposed use isn't permitted in the zone, or finding out a stormwater or trade waste agreement should have been sought before design was finalised.",
+      "This guide walks through the zoning, planning, building code and environmental compliance basics for an industrial or warehouse building in Victoria, and where a [building designer](/commercial-building-design) fits into the process.",
+    ],
+    sections: [
+      {
+        heading: "Zoning and Land Use for Industrial Sites",
+        paragraphs: [
+          "Most industrial and warehouse development in Victoria sits within an Industrial 1, 2 or 3 Zone (IN1Z, IN2Z, IN3Z), each with different restrictions on the type and scale of use permitted, buffer distances to sensitive uses, and amenity considerations for surrounding land.",
+          "Some warehouse and storage uses are also permitted, with conditions, in a Commercial 2 Zone. Before any design work starts, it's worth confirming the zone, any overlays that apply to the site, and whether the proposed use is a section 1 (as-of-right), section 2 (permit required) or prohibited use under the [planning scheme](https://www.planning.vic.gov.au/guides-and-resources/guides/guide-to-victorias-planning-system/planning-permits).",
+        ],
+      },
+      {
+        heading: "Planning Permit Triggers for Warehouses",
+        paragraphs: [
+          "Even where the use itself doesn't need a permit, a planning permit is commonly triggered by the scale of the building, car parking and loading provision, buffer distances to residential or other sensitive uses, or specific overlay requirements such as environmental significance or development contributions.",
+          "Car parking and loading bay requirements in particular can significantly affect how much of a site can actually be built on, so these should be checked against the relevant parking rates before the building footprint is locked in.",
+        ],
+      },
+      {
+        heading: "Building Code Requirements for Industrial Buildings",
+        paragraphs: [
+          "Industrial buildings are typically classified under the [National Construction Code](https://ncc.abcb.gov.au/) as Class 7 (storage) or Class 8 (laboratory or production) buildings, each carrying its own fire safety, structural and access requirements.",
+          "Large floor plates common to warehouses bring specific requirements around travel distances to exits, fire compartmentation, and essential safety measures such as fire hydrants, hose reels and sprinkler systems, particularly for high-storage racking configurations.",
+        ],
+      },
+      {
+        heading: "Environmental and Safety Compliance",
+        leadIn: "Depending on the proposed use, an industrial project can involve approvals well beyond standard planning and building permits:",
+        list: [
+          "**EPA Victoria** - certain scheduled activities or higher-risk uses may require a works approval or licence from the [EPA](https://www.epa.vic.gov.au/) before construction or operation can begin",
+          "**Trade waste agreements** - discharges to sewer beyond typical domestic levels usually need approval from the relevant water authority",
+          "**WorkSafe Victoria** - high-risk plant, dangerous goods storage and certain construction activities may fall under [WorkSafe](https://www.worksafe.vic.gov.au/) requirements",
+          "**Overlay checks** - bushfire management, flood and environmental significance overlays can all affect what's achievable on a given site",
+        ],
+      },
+      {
+        heading: "Structural and Services Considerations",
+        paragraphs: [
+          "Warehouse and industrial buildings typically use portal frame or similar long-span structures, which need to be coordinated early with a structural engineer, particularly where mezzanine floors, racking systems or crane runways are involved.",
+          "Loading docks, dock levellers and hardstand areas need to be sized for the vehicles actually using the site, not just a generic standard, while services - three-phase power, compressed air, or specialised ventilation - should be confirmed with the operator before floor plans are finalised.",
+        ],
+      },
+      {
+        heading: "Working With a Building Designer on an Industrial Project",
+        paragraphs: [
+          "An industrial project usually moves through a [feasibility and site assessment](/site-assessment) to confirm zoning, overlays and permit triggers, followed by concept design, planning permit documentation, and coordination with structural, fire and services engineers through to building permit stage.",
+          "Because approvals can be staged - planning permit first, building permit once the design is locked in - having one point of contact managing the sequence helps avoid gaps between what's approved at each stage and what's actually being built.",
+        ],
+      },
+      {
+        heading: "Typical Approvals for an Industrial or Warehouse Project",
+        table: {
+          headers: ["Approval", "Typical Trigger", "Authority"],
+          rows: [
+            ["Planning Permit", "New building, change of use, or overlay requirements", "Local council"],
+            ["Building Permit", "Any new structure or major alteration", "Registered building surveyor"],
+            ["EPA Works Approval / Licence", "Scheduled or higher-risk activities", "EPA Victoria"],
+            ["Trade Waste Agreement", "Discharge to sewer beyond domestic levels", "Local water authority"],
+          ],
+        },
+      },
+    ],
+    conclusion: [
+      "Industrial and warehouse projects carry more compliance layers than most commercial builds, but they're manageable when zoning, planning and environmental requirements are checked before design work locks in a layout that doesn't fit them.",
+      "The earlier a site's zoning, overlays and likely permit triggers are understood, the fewer surprises there are once drawings are being prepared for lodgement.",
+      "If you're planning an industrial or warehouse project in Victoria, our [commercial building design](/commercial-building-design) team can help confirm what applies to your site before you commit to a design. [Get in touch](/contact-us?service=commercial-building-design) to discuss your project.",
+    ],
+    faqs: [
+      {
+        q: "What zone allows a warehouse in Victoria?",
+        a: "Warehouses are typically permitted, with or without a permit depending on scale and location, in Industrial 1, 2 and 3 Zones, and in some cases in a Commercial 2 Zone. The specific zone and any overlays on the site determine exactly what's permitted and what triggers a planning permit.",
+      },
+      {
+        q: "Do all industrial buildings need EPA approval?",
+        a: "No. EPA Victoria approval is generally only required for scheduled or higher-risk activities, such as certain manufacturing processes, waste handling or activities with a significant environmental risk. Many standard storage and distribution warehouses don't trigger EPA requirements, but it's worth checking against the intended use.",
+      },
+      {
+        q: "What's the difference between a Building Permit and an EPA works approval?",
+        a: "A building permit confirms the construction itself complies with the National Construction Code and building regulations. An EPA works approval separately assesses the environmental impact of a proposed activity or process, and applies only to certain scheduled activities - a project can need one, both or neither depending on the use.",
+      },
+      {
+        q: "Can an existing warehouse be converted to a different industrial use without a new planning permit?",
+        a: "It depends on the zone and whether the new use falls into the same permit category as the existing approved use. Some changes of use within the same zone don't need a new permit, while others do - this is worth confirming with council or a building designer before committing to a new tenant or use.",
+      },
+    ],
+  },
+
+  "medical-centre-design-workflow-patient-experience": {
+    slug: "medical-centre-design-workflow-patient-experience",
+    intro: [
+      "Designing a medical centre or clinic involves more than a standard commercial fit-out. Clinical workflow, infection control, accessibility and patient comfort all shape the layout from the earliest planning stages, well before finishes or furniture are chosen.",
+      "A design that looks efficient on paper can create real friction in practice if reception, waiting, consulting and clean/dirty utility areas aren't sequenced properly, or if a treatment room ends up without the services a practitioner actually needs.",
+      "This guide covers the workflow, compliance and patient-experience factors that shape [healthcare building design](/health-space-design), whether the project is a new clinic, an expansion, or a change of use from a standard retail or office tenancy.",
+    ],
+    sections: [
+      {
+        heading: "Why Medical Centre Design Is Different From a Standard Fit-Out",
+        paragraphs: [
+          "A retail or office fit-out is largely about presentation and functional layout. A medical centre adds a clinical dimension: the movement of patients, staff, equipment and waste through the space all need to be planned so they don't conflict with each other.",
+          "Getting this sequencing wrong doesn't just create inefficiency - it can compromise infection control, patient privacy and staff safety, all of which are harder and more expensive to fix after the fit-out is built than before it's designed.",
+        ],
+      },
+      {
+        heading: "Planning for Patient and Clinical Workflow",
+        paragraphs: [
+          "A typical medical centre layout separates the space into a public zone (reception, waiting, accessible entry), a clinical zone (consult and treatment rooms) and a staff-only zone (clean and dirty utility, staff room, administration).",
+          "Consult rooms are usually positioned so patients don't need to pass through clinical or staff-only areas to reach them, while treatment rooms with more involved procedures benefit from being grouped near clean utility and closer to a separate access point where possible.",
+          "Getting the flow right early reduces cross-traffic between patients and staff, shortens the distance clinicians travel between rooms, and makes the space easier to manage as patient numbers grow.",
+        ],
+      },
+      {
+        heading: "Compliance Requirements for Healthcare Spaces",
+        paragraphs: [
+          "Building classification affects what's required: a hospital or day procedure centre is typically classified as a Class 9a health-care building under the [National Construction Code](https://ncc.abcb.gov.au/), with more stringent fire and services requirements, while many general practice and allied health clinics are classified as Class 5 or 6, closer to a standard office or shop.",
+          "Regardless of classification, accessible entry, circulation and sanitary facilities need to meet [AS1428.1](https://www.abcb.gov.au/resources/standards) accessibility requirements, and infection control considerations - hand hygiene stations, surface finishes, and separation of clean and dirty processes - should be built into the layout rather than added afterwards.",
+          "For larger or more complex projects, the [Australasian Health Facility Guidelines](https://healthfacilityguidelines.com.au/) provide a widely used reference framework for room sizes, adjacencies and services, even where they aren't a mandatory requirement for a smaller clinic.",
+        ],
+      },
+      {
+        heading: "Mechanical, Services and Fitout Considerations",
+        paragraphs: [
+          "Ventilation and air changes matter more in a clinical setting than a standard office, particularly in treatment rooms, so mechanical services should be scoped with the intended clinical use in mind, not a generic commercial standard.",
+          "Acoustic privacy between consult rooms is a common oversight - partition walls that meet a basic commercial standard may still allow conversations to be overheard next door, which matters for both patient comfort and privacy obligations.",
+          "Power, data and, where relevant, medical gas or specialised equipment requirements should be confirmed with the practitioners who'll use the space before the services layout is finalised, since retrofitting these after fit-out is far more disruptive.",
+        ],
+      },
+      {
+        heading: "Designing for Patient Experience",
+        paragraphs: [
+          "Natural light, clear wayfinding and a comfortable, unhurried waiting area all reduce the anxiety many patients feel before an appointment, and contribute to how the practice is perceived overall.",
+          "Simple layout choices - a reception desk that's visible on entry, clear separation between the waiting area and clinical corridors, and consult rooms that don't feel clinical to the point of being cold - go a long way toward making a clinic feel considered rather than purely functional.",
+        ],
+      },
+      {
+        heading: "Approvals Pathway for a Medical Centre or Clinic Fit-Out",
+        leadIn: "A medical centre project typically follows a similar approvals sequence to other commercial fit-outs, with a few additional checks:",
+        subsections: [
+          {
+            heading: "Planning permit",
+            paragraph: "Usually triggered by a change of use, particularly where the tenancy wasn't previously used for healthcare, or where car parking requirements differ from the previous use.",
+          },
+          {
+            heading: "Building permit",
+            paragraph: "Required for the fit-out works themselves, assessed against the building's classification and the National Construction Code.",
+          },
+          {
+            heading: "Registration and licensing",
+            paragraph: "Certain premises and services may need to be registered with the relevant health department or regulatory body before opening - this should be checked against the specific services being offered.",
+          },
+        ],
+      },
+    ],
+    conclusion: [
+      "Medical centre design succeeds when clinical workflow, compliance and patient comfort are planned together from the start, rather than treated as separate problems to solve in sequence. The layout, services and finishes all need to support how the practice actually operates day to day.",
+      "We recently delivered this approach on our [Healthspan Osteopathy project page](/project-healthspan-osteopathy), balancing clinical workflow with a calm, patient-focused fit-out.",
+      "If you're planning a medical centre, clinic or allied health fit-out, our [health space design](/health-space-design) team can help plan the workflow and compliance requirements before the design is locked in. [Get in touch](/contact-us?service=health-space-design) to discuss your project.",
+    ],
+    faqs: [
+      {
+        q: "Do medical centres need a different building classification to a normal shop?",
+        a: "It depends on the type of care provided. Hospitals and day procedure centres are typically classified as Class 9a health-care buildings under the National Construction Code, with more stringent requirements, while many general practice and allied health clinics fall under Class 5 or 6, closer to a standard office or shop.",
+      },
+      {
+        q: "What is AusHFG and does it apply to small clinics?",
+        a: "The Australasian Health Facility Guidelines (AusHFG) are a widely used reference for healthcare facility planning, covering room sizes, adjacencies and services. They aren't mandatory for every small clinic, but they're a useful benchmark for getting room sizing and workflow right, even on a smaller project.",
+      },
+      {
+        q: "How much floor area does a small medical clinic typically need per consult room?",
+        a: "This varies by the type of consultation and equipment involved, but a standard consult room generally needs enough space for an examination table, desk, seating for the patient and, where relevant, a support person, plus clear circulation space. A building designer can confirm a suitable size once the clinical brief is known.",
+      },
+      {
+        q: "Can an existing retail tenancy be converted into a medical centre?",
+        a: "Often yes, but it typically requires a planning permit for the change of use, and the fit-out will need to address accessibility, infection control and services requirements that a retail tenancy usually isn't built for. A [feasibility check](/site-assessment) early on can confirm whether a specific tenancy is a good fit before committing to a lease.",
+      },
+    ],
+  },
 };
