@@ -499,7 +499,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Opening a retail space in Melbourne usually means choosing between fitting out an existing tenancy or starting from a vacant shell or new build. The two paths trigger different approvals, timelines and design decisions, and picking the wrong one early can cost weeks of unnecessary delay.",
     categories: ["commercial-design", "planning-permits"],
-    metaTitle: "Retail Fit-Out vs New Retail Build Melbourne | Manzel Studio",
+    metaTitle: "Retail Fit-Out vs New Build Melbourne | Manzel Studio",
     metaDescription:
       "Planning a retail space in Melbourne? Compare retail fit-out and new retail build approvals, timelines and design requirements before you commit.",
     imageAlt: "Retail Fit-Out vs New Retail Build: What a Building Designer Handles",
@@ -525,7 +525,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Warehouses and industrial facilities in Victoria carry compliance layers that go beyond a standard commercial project, from industrial zoning and EPA requirements to fire safety for large floor plates. This guide covers the basics before you design or build.",
     categories: ["commercial-design", "planning-permits"],
-    metaTitle: "Industrial & Warehouse Building Design Compliance Victoria | Manzel Studio",
+    metaTitle: "Industrial & Warehouse Design Victoria | Manzel Studio",
     metaDescription:
       "Planning an industrial or warehouse building in Victoria? Learn the zoning, planning permit, building code and EPA compliance basics to check first.",
     imageAlt: "Industrial & Warehouse Building Design: Compliance Basics for Victoria",
@@ -550,7 +550,7 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Designing a medical centre or clinic involves more than a standard commercial fit-out. Clinical workflow, infection control, accessibility and patient comfort all shape the layout from the earliest planning stages, well before finishes are chosen.",
     categories: ["commercial-design", "planning-permits"],
-    metaTitle: "Medical Centre Design Melbourne: Workflow & Compliance | Manzel Studio",
+    metaTitle: "Medical Centre Design Melbourne | Manzel Studio",
     metaDescription:
       "Planning a medical centre or clinic fit-out in Melbourne? Learn how clinical workflow, compliance and patient experience shape the design.",
     imageAlt: "Medical Centre Design: Workflow, Compliance and Patient Experience",

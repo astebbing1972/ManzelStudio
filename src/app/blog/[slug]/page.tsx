@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPost from "@/components/BlogPost";
 import JsonLd from "@/components/JsonLd";
-import { buildMetadata, articleJsonLd } from "@/lib/seo";
+import { buildMetadata, articleJsonLd, faqJsonLd } from "@/lib/seo";
 import { blogPosts, blogCategories } from "@/lib/content";
 import { blogArticles } from "@/lib/blogArticles";
 
@@ -55,6 +55,7 @@ export default async function BlogPostPage({
           keywords: post.keywords,
         })}
       />
+      {article.faqs.length > 0 && <JsonLd data={faqJsonLd(article.faqs)} />}
       <BlogPost post={post} article={article} />
     </>
   );
