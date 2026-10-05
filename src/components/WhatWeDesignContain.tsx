@@ -43,7 +43,27 @@ export default function WhatWeDesignContain({
               <Reveal key={c.title} delay={i * 100} className={isLoneLastCard ? "sm:col-start-2" : ""}>
                 <article>
                   <div className="relative mb-6 h-[220px] w-full overflow-hidden bg-white md:h-[260px]">
-                    <Image src={c.image} alt={c.title} fill quality={70} className="object-contain" sizes="(min-width: 640px) 33vw, 100vw" />
+                    {/* Blurred cover-fill backdrop so every card reads at a
+                     * consistent visual weight regardless of each image's
+                     * native aspect ratio, instead of inconsistent bare
+                     * white space around some images and not others. */}
+                    <Image
+                      src={c.image}
+                      alt=""
+                      aria-hidden
+                      fill
+                      quality={30}
+                      className="scale-110 object-cover opacity-60 blur-xl"
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                    />
+                    <Image
+                      src={c.image}
+                      alt={c.title}
+                      fill
+                      quality={70}
+                      className="object-contain"
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                    />
                   </div>
                   <div className="mb-2 text-[12px] font-medium uppercase tracking-[0.18em] text-muted">{c.num}</div>
                   <h3 className="mb-2.5 text-[22px] font-medium leading-[1.25] text-ink">{c.title}</h3>

@@ -37,6 +37,12 @@ const icons: Record<string, React.ReactNode> = {
       <path d="M14 8l3 3" />
     </svg>
   ),
+  completion: (
+    <svg {...iconProps}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M8 12.5l2.5 2.5L16 9.5" />
+    </svg>
+  ),
 };
 
 type Phase = { icon: string; num: string; tag: string; title: string; body: string; forNote: string };

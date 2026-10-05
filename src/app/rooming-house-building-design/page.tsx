@@ -7,7 +7,7 @@ import ServiceHeroNoCta from "@/components/ServiceHeroNoCta";
 import TrustBar from "@/components/TrustBar";
 import ServiceIntroCompact from "@/components/ServiceIntroCompact";
 import SplitImageList from "@/components/SplitImageList";
-import WhatWeDesignContain from "@/components/WhatWeDesignContain";
+import SplitImageTypes from "@/components/SplitImageTypes";
 import MultiResidentialCompact from "@/components/MultiResidentialCompact";
 import WhatsIncludedCompact from "@/components/WhatsIncludedCompact";
 import ServiceProcessCompact from "@/components/ServiceProcessCompact";
@@ -21,7 +21,7 @@ import {
   trustBar,
   roomingHouseIntro,
   roomingHouseProfitSection,
-  roomingHouseWhatWeDesignV2,
+  roomingHouseProjectTypesSplit,
   roomingHouseCapability,
   roomingHouseWhatsIncluded,
   roomingHouseProcessV2,
@@ -59,7 +59,7 @@ export default function RoomingHouseBuildingDesign() {
         <TrustBar items={trustBar} />
         <ServiceIntroCompact {...roomingHouseIntro} />
         <SplitImageList {...roomingHouseProfitSection} />
-        <WhatWeDesignContain {...roomingHouseWhatWeDesignV2} />
+        <SplitImageTypes {...roomingHouseProjectTypesSplit} />
         <MultiResidentialCompact {...roomingHouseCapability} />
         <WhatsIncludedCompact {...roomingHouseWhatsIncluded} />
         <ServiceProcessCompact {...roomingHouseProcessV2} />

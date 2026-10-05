@@ -1636,8 +1636,43 @@ export const roomingHouseWhatWeDesignV2 = {
   ],
 };
 
+// Replaces the 4-card placeholder grid above with a single real floor plan
+// beside the 4 project types, per Mohamed's request to avoid showing
+// several "image coming soon" placeholders until more photos are supplied.
+export const roomingHouseProjectTypesSplit = {
+  eyebrow: "— Rooming House Project Types",
+  titlePre: "Type of ",
+  titleEm: "rooming houses we can design.",
+  lead: "Every project is different, and the appropriate design approach depends on the property, proposed use, planning requirements and project scope.",
+  image: "/images/rooming-house/purpose-built-floorplan-v2.jpg",
+  imageAlt: "Purpose-built single storey rooming house floor plan with nine private bedrooms",
+  items: [
+    {
+      num: "01 / Single Storey",
+      title: "Proposed Single Storey Rooming House",
+      body: "Creating a design specifically around the property's dimensions, access, constraints, opportunities and intended use rather than relying on a standard layout.",
+    },
+    {
+      num: "02 / Conversions",
+      title: "Existing Building Conversions",
+      body: "Assessing suitable existing buildings and developing layouts that can accommodate the proposed rooming house use, subject to site and approval requirements.",
+    },
+    {
+      num: "03 / Renovations",
+      title: "Rooming House Renovations and Upgrades",
+      body: "Exploring opportunities to increase bedroom numbers, improve shared facilities or reorganise existing spaces where the site and approval requirements allow.",
+    },
+    {
+      num: "04 / Multi-Lot",
+      title: "Multi Rooming House on One Lot",
+      body: "Maximising site potential through multiple rooming house developments.",
+    },
+  ],
+};
+
 export const roomingHouseHeroV2 = {
   image: "/images/rooming-house/hero-render.png", // client's 3D render, cropped the same way as the other pages' hero photos
+  imageMaxWidth: 1055, // native width - avoids upscale softness on wide screens
   eyebrow: "— Rooming House Service",
   titlePre: "Rooming House Building Designer ",
   titleEm: "Melbourne",
@@ -1934,13 +1969,13 @@ export const grannyFlatWhatWeDesignV2 = {
       body: "Efficiently planned smaller dwellings designed to make practical use of available space.",
     },
     {
-      image: "/images/placeholder-project.png", // placeholder pending client's larger/accessible-dwelling project photos
+      image: "/images/granny-flat/family-floorplan-v4.png", // client-supplied 2-bedroom floor plan, same trimmed landscape version as card 6
       num: "04 / Larger / Accessible",
       title: "Larger or Accessibility-Focused Dwellings",
       body: "More generous layouts or accessibility considerations where the site, project requirements and applicable regulations allow.",
     },
     {
-      image: "/images/granny-flat/constrained-site-render-v3.jpg", // client-supplied render, narrow layout, rotated to landscape (kept uncropped to preserve the drop-shadow effect)
+      image: "/images/granny-flat/constrained-site-render-v4.jpg", // client-supplied render, narrow layout, rotated to landscape, trimmed so the building fills the frame like the other cards
       num: "05 / Constrained Sites",
       title: "Custom Designs for Constrained Sites",
       body: "Design solutions for properties with unusual dimensions, limited access or other site constraints.",
@@ -3186,11 +3221,11 @@ export const healthspanJourney = {
       forNote: "Building permit obtained in approximately two to three weeks.",
     },
     {
-      icon: "support",
+      icon: "completion",
       num: "04",
       tag: "Phase Four",
-      title: "Support & Final Styling",
-      body: "We support construction, coordinate key details, and help bring the final design to life.",
+      title: "Project Completion",
+      body: "Documentation and permits were finalised and handed over, with the completed clinic now open and operating.",
       forNote: "Project completed and the clinic is now open and operating.",
     },
   ],
