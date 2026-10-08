@@ -97,12 +97,12 @@ export default function Footer() {
             ©{year} <strong className="font-medium text-white/80">MANZEL STUDIO.</strong> All rights reserved. ABN 36
             678 778 437. | Powered by{" "}
             <a
-              href="https://www.webcommander.com/"
+              href="https://www.effektivweb.com.au/solution-effektai-content"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-white/80 transition-colors duration-500 hover:text-white"
             >
-              WebCommander
+              EffektAI
             </a>
           </p>
 
