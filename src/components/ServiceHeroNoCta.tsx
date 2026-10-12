@@ -12,14 +12,6 @@ export default function ServiceHeroNoCta({
   lead,
   sub,
   cta,
-  imageMaxWidth,
-  imageAspect,
-  imageScale,
-  feather,
-  mobileZoom,
-  mobilePosition,
-  phone,
-  fit,
   compact,
 }: {
   image: string;
@@ -47,7 +39,7 @@ export default function ServiceHeroNoCta({
 }) {
   return (
     <section className={`relative min-h-[520px] overflow-hidden bg-ink md:flex md:items-center ${compact ? "md:min-h-[560px]" : "md:min-h-[640px]"}`}>
-      <HeroBackdrop image={image} alt={`${titlePre}${titleEm}`} imageMaxWidth={imageMaxWidth} imageAspect={imageAspect} imageScale={imageScale} feather={feather} mobileZoom={mobileZoom} mobilePosition={mobilePosition} phone={phone} fit={fit} />
+      <HeroBackdrop image={image} />
       <div className={`relative z-10 mx-auto w-full max-w-[1400px] px-6 py-28 [text-shadow:0_1px_14px_rgba(0,0,0,0.65)] md:px-10 md:[text-shadow:none] ${compact ? "md:py-20" : "md:py-28"}`}>
         <div className="max-w-[760px]">
           <div className="mb-[18px] text-[11px] font-medium uppercase tracking-[0.28em] text-white/80">
