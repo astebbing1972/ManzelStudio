@@ -1672,7 +1672,11 @@ export const roomingHouseProjectTypesSplit = {
 
 export const roomingHouseHeroV2 = {
   image: "/images/rooming-house/hero-render.png", // client's 3D render, cropped the same way as the other pages' hero photos
-  imageMaxWidth: 1055, // native width - avoids upscale softness on wide screens
+  imageMaxWidth: 1055, // native width - no upscaling
+  imageAspect: 1055 / 590,
+  imageScale: 0.95,
+  feather: 2,
+  compact: true,
   eyebrow: "— Rooming House Service",
   titlePre: "Rooming House Building Designer ",
   titleEm: "Melbourne",
@@ -1923,7 +1927,8 @@ export const grannyFlatCta = {
 // above since their content didn't change, only how they're displayed.
 
 export const grannyFlatHeroV2 = {
-  image: "/images/granny-flat/hero.jpg", // client-supplied preferred image
+  image: "/images/granny-flat/hero-cropped.jpg", // client-supplied preferred image, trimmed of surrounding blank space
+  imageAspect: 1000 / 560,
   eyebrow: "— Granny Flat Service",
   titlePre: "Granny Flat Building Designer ",
   titleEm: "Melbourne",
@@ -2380,6 +2385,7 @@ export const buildingPermitCta = {
 // current images on this page can remain.
 
 export const buildingPermitHeroV2 = {
+  fit: "cover" as const, // photo-style render, not a floor plan
   image: img("/resources/c0173968/snippet/snippet-8848/images/commercial-banner-image-3.png"),
   eyebrow: "— Building Permit Drawings Service",
   titlePre: "Building Permit Drawings ",
@@ -2390,19 +2396,20 @@ export const buildingPermitHeroV2 = {
 };
 
 export const buildingPermitWhatWeDesignV2 = {
+  fit: "cover" as const, // photos, not floor plans - fill each frame
   eyebrow: "— Different Project Types",
   titlePre: "Building permit documentation for ",
   titleEm: "different project types.",
   lead: "From new homes to commercial fit-outs, the right drawing package looks different for every project type.",
   cards: [
     {
-      image: img("/resources/c0173968/snippet/snippet-106/images/multi-residential8.png"),
+      image: "/images/building-permit/new-homes-frontage.jpg", // client-supplied photo: house frontage with car
       num: "01 / New Homes",
       title: "New Homes",
       body: "Detailed documentation for new residential buildings, developed from the established design.",
     },
     {
-      image: img("/template/c0173968/images/inner-project-1.jpg"),
+      image: "/images/building-permit/renovations-rear-yard.jpg", // client-supplied photo: rear yard, garage and sliding doors
       num: "02 / Renovations",
       title: "Renovations and Extensions",
       body: "Existing and proposed drawings, demolition information and detailed documentation for alterations and additions.",

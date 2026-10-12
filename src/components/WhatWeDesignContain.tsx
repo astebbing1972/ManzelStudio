@@ -12,12 +12,15 @@ export default function WhatWeDesignContain({
   titleEm,
   lead,
   cards,
+  fit = "contain",
 }: {
   eyebrow: string;
   titlePre: string;
   titleEm: string;
   lead: string;
   cards: { image: string; num: string; title: string; body: string }[];
+  /** "cover" fills each frame (photos); "contain" keeps floor plans uncropped. */
+  fit?: "contain" | "cover";
 }) {
   return (
     <section className="bg-paper px-6 py-20 md:px-10 md:py-28">
@@ -47,21 +50,23 @@ export default function WhatWeDesignContain({
                      * consistent visual weight regardless of each image's
                      * native aspect ratio, instead of inconsistent bare
                      * white space around some images and not others. */}
-                    <Image
-                      src={c.image}
-                      alt=""
-                      aria-hidden
-                      fill
-                      quality={30}
-                      className="scale-110 object-cover opacity-60 blur-xl"
-                      sizes="(min-width: 640px) 33vw, 100vw"
-                    />
+                    {fit === "contain" && (
+                      <Image
+                        src={c.image}
+                        alt=""
+                        aria-hidden
+                        fill
+                        quality={30}
+                        className="scale-110 object-cover opacity-60 blur-xl"
+                        sizes="(min-width: 640px) 33vw, 100vw"
+                      />
+                    )}
                     <Image
                       src={c.image}
                       alt={c.title}
                       fill
                       quality={70}
-                      className="object-contain"
+                      className={fit === "cover" ? "object-cover" : "object-contain"}
                       sizes="(min-width: 640px) 33vw, 100vw"
                     />
                   </div>
