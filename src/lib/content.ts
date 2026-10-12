@@ -2385,7 +2385,7 @@ export const buildingPermitCta = {
 // current images on this page can remain.
 
 export const buildingPermitHeroV2 = {
-  fit: "cover" as const, // photo-style render, not a floor plan
+  imageAspect: 1941 / 544,
   image: img("/resources/c0173968/snippet/snippet-8848/images/commercial-banner-image-3.png"),
   eyebrow: "— Building Permit Drawings Service",
   titlePre: "Building Permit Drawings ",

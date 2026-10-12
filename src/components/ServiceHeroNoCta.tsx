@@ -16,6 +16,9 @@ export default function ServiceHeroNoCta({
   imageAspect,
   imageScale,
   feather,
+  mobileZoom,
+  mobilePosition,
+  phone,
   fit,
   compact,
 }: {
@@ -27,6 +30,9 @@ export default function ServiceHeroNoCta({
   imageAspect?: number;
   imageScale?: number;
   feather?: number;
+  mobileZoom?: number;
+  mobilePosition?: string;
+  phone?: "plan" | "cover";
   /** Shorter banner, for images that would otherwise leave blank bands above/below. */
   compact?: boolean;
   fit?: "contain" | "cover";
@@ -40,9 +46,9 @@ export default function ServiceHeroNoCta({
   cta?: { label: string; href: string };
 }) {
   return (
-    <section className={`relative overflow-hidden bg-ink md:flex md:items-center ${compact ? "md:min-h-[560px]" : "md:min-h-[640px]"}`}>
-      <HeroBackdrop image={image} alt={`${titlePre}${titleEm}`} imageMaxWidth={imageMaxWidth} imageAspect={imageAspect} imageScale={imageScale} feather={feather} fit={fit} />
-      <div className={`relative z-10 mx-auto w-full max-w-[1400px] px-6 py-12 md:px-10 ${compact ? "md:py-20" : "md:py-28"}`}>
+    <section className={`relative min-h-[520px] overflow-hidden bg-ink md:flex md:items-center ${compact ? "md:min-h-[560px]" : "md:min-h-[640px]"}`}>
+      <HeroBackdrop image={image} alt={`${titlePre}${titleEm}`} imageMaxWidth={imageMaxWidth} imageAspect={imageAspect} imageScale={imageScale} feather={feather} mobileZoom={mobileZoom} mobilePosition={mobilePosition} phone={phone} fit={fit} />
+      <div className={`relative z-10 mx-auto w-full max-w-[1400px] px-6 py-28 [text-shadow:0_1px_14px_rgba(0,0,0,0.65)] md:px-10 md:[text-shadow:none] ${compact ? "md:py-20" : "md:py-28"}`}>
         <div className="max-w-[760px]">
           <div className="mb-[18px] text-[11px] font-medium uppercase tracking-[0.28em] text-white/80">
             {eyebrow}
