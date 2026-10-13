@@ -11,9 +11,9 @@ export const nav = [
       { label: "Residential", href: "/residential-building-design" },
       { label: "Commercial", href: "/commercial-building-design" },
       { label: "Health Spaces", href: "/health-space-design" },
-      { label: "Site Assessment", href: "/site-assessment" },
       { label: "Granny Flat", href: "/granny-flat-building-design" },
       { label: "Rooming House", href: "/rooming-house-building-design" },
+      { label: "Site Assessment", href: "/site-assessment" },
       { label: "Building Permit Drawings", href: "/building-permit-drawings" },
     ],
   },
@@ -693,8 +693,8 @@ export const footerServicesNav = [
   { label: "Health Spaces", href: "/health-space-design" },
   { label: "Granny Flat", href: "/granny-flat-building-design" },
   { label: "Rooming House", href: "/rooming-house-building-design" },
-  { label: "Building Permit Drawings", href: "/building-permit-drawings" },
   { label: "Site Assessment", href: "/site-assessment" },
+  { label: "Building Permit Drawings", href: "/building-permit-drawings" },
 ];
 
 export const footerCompanyNav = [
