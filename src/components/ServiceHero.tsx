@@ -18,7 +18,7 @@ export default function ServiceHero({
   lead: string;
   sub: string;
   primaryCta: { label: string; href: string };
-  secondaryCta: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
 }) {
   return (
     <section className="relative min-h-[520px] overflow-hidden bg-ink md:flex md:min-h-[640px] md:items-center">
@@ -38,12 +38,14 @@ export default function ServiceHero({
             <a href={primaryCta.href} className="btn-fill">
               {primaryCta.label} <span className="arr" />
             </a>
-            <a
-              href={secondaryCta.href}
+            {secondaryCta && (
+              <a
+                href={secondaryCta.href}
               className="flex h-[54px] items-center gap-3.5 border border-white px-8 text-[11px] font-medium uppercase tracking-[0.22em] text-white transition-colors duration-300 hover:bg-white hover:text-ink"
             >
               {secondaryCta.label}
             </a>
+            )}
           </div>
         </div>
       </div>

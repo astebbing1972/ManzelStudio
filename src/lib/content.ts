@@ -721,8 +721,7 @@ export const residentialHero = {
   titleEm: "Melbourne",
   lead: "Bespoke homes, extensions, and renovations designed around the way you live.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=residential-building-design" },
-  secondaryCta: { label: "View Residential Projects", href: "/our-projects" },
+  primaryCta: { label: "Discuss Your Residential Project", href: "/contact-us?service=residential-building-design" },
 };
 
 export const trustBar = [
@@ -845,7 +844,7 @@ export const residentialProcess = {
       body: "Construction support and final details help bring the project together with care.",
     },
   ],
-  cta: { label: "Start Your Project", href: "/contact-us?service=residential-building-design" },
+  cta: { label: "Discuss Your Residential Project", href: "/contact-us?service=residential-building-design" },
 };
 
 export const whyManzel = {
@@ -957,8 +956,7 @@ export const residentialCta = {
   titleEm: "next home",
   titlePost: " to life.",
   body: "Your next home starts with a simple conversation. Share your ideas, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=residential-building-design" },
-  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+  primaryCta: { label: "Discuss Your Residential Project", href: "/contact-us?service=residential-building-design" },
 };
 
 // ===== Commercial Building Design page =====
@@ -970,8 +968,7 @@ export const commercialHero = {
   titleEm: "",
   lead: "Registered building designers for offices, retail and industrial spaces across Melbourne and Victoria.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=commercial-building-design" },
-  secondaryCta: { label: "View Commercial Projects", href: "/our-projects" },
+  primaryCta: { label: "Discuss Your Commercial Project", href: "/contact-us?service=commercial-building-design" },
 };
 
 export const commercialIntro = {
@@ -1062,7 +1059,7 @@ export const commercialProcess = {
   titlePost: "",
   lead: "Every Manzel Studio project follows the same trusted four-phase process. You'll always know what stage we're at and what's next.",
   phases: residentialProcess.phases,
-  cta: { label: "Start Your Project", href: "/contact-us?service=commercial-building-design" },
+  cta: { label: "Discuss Your Commercial Project", href: "/contact-us?service=commercial-building-design" },
 };
 
 export const commercialWhyManzel = {
@@ -1146,8 +1143,7 @@ export const commercialCta = {
   titleEm: "",
   titlePost: "",
   body: "Your next commercial space starts with a simple conversation. Share your ideas, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=commercial-building-design" },
-  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+  primaryCta: { label: "Discuss Your Commercial Project", href: "/contact-us?service=commercial-building-design" },
 };
 
 // ===== Health Space Design page =====
@@ -1159,8 +1155,7 @@ export const healthHero = {
   titleEm: "",
   lead: "Healthcare environments designed for healing, comfort, and efficiency.",
   sub: "Building Dreams, Designing Excellence",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=health-space-design" },
-  secondaryCta: { label: "View Health Space Projects", href: "/our-projects" },
+  primaryCta: { label: "Discuss Your Health Space Project", href: "/contact-us?service=health-space-design" },
 };
 
 export const healthIntro = {
@@ -1251,7 +1246,7 @@ export const healthProcess = {
   titlePost: "",
   lead: "Every Manzel Studio project follows the same trusted four-phase process. You'll always know what stage we're at and what's next.",
   phases: residentialProcess.phases,
-  cta: { label: "Start Your Project", href: "/contact-us?service=health-space-design" },
+  cta: { label: "Discuss Your Health Space Project", href: "/contact-us?service=health-space-design" },
 };
 
 export const healthWhyManzel = {
@@ -1346,8 +1341,7 @@ export const healthCta = {
   titleEm: "",
   titlePost: "",
   body: "Your next health space starts with a simple conversation. Share your goals, explore what's possible, and get clear guidance on the best way forward.",
-  primaryCta: { label: "Book a Free Consultation", href: "/contact-us?service=health-space-design" },
-  secondaryCta: { label: "Call 0411 847 852", href: "tel:0411847852" },
+  primaryCta: { label: "Discuss Your Health Space Project", href: "/contact-us?service=health-space-design" },
 };
 
 // ===== Rooming House Building Design page =====
@@ -2511,7 +2505,7 @@ export const siteAssessmentPlans = {
     price: "$198",
     unit: "one-off",
     blurb: "Prevent expensive mistakes with an early site review.",
-    cta: { label: "Order Assessment", href: "/contact-us" },
+    cta: { label: "Order Assessment", href: "/contact-us?service=site-assessment" },
     features: [
       "Analysis of restrictions, including zoning and covenants",
       "How many dwellings can fit",
@@ -2529,7 +2523,7 @@ export const siteAssessmentPlans = {
     unit: "one-off",
     blurb:
       "Best for new developers needing extra guidance with their site review. It goes beyond the basics to test whether the numbers truly stack up. You'll get a clear, evidence-based go / no-go verdict before you commit.",
-    cta: { label: "Order Feasibility Assessment", href: "/contact-us" },
+    cta: { label: "Order Feasibility Assessment", href: "/contact-us?service=site-assessment" },
     groups: [
       {
         cat: "Site & Planning",
