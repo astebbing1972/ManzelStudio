@@ -16,6 +16,8 @@ import TestimonialsCompact from "@/components/TestimonialsCompact";
 import FaqCompact from "@/components/FaqCompact";
 import ServiceCtaCompact from "@/components/ServiceCtaCompact";
 import Footer from "@/components/Footer";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/lib/relatedServices";
 import {
   grannyFlatHeroV2,
   trustBar,
@@ -38,7 +40,6 @@ export const metadata: Metadata = buildMetadata({
   title,
   description,
   path: "/granny-flat-building-design",
-  noindex: true, // draft page for client review - remove once approved and linked from the site
 });
 
 export default function GrannyFlatBuildingDesign() {
@@ -66,6 +67,7 @@ export default function GrannyFlatBuildingDesign() {
         <SuburbsCompact {...grannyFlatSuburbs} />
         <TestimonialsCompact />
         <FaqCompact items={grannyFlatFaqsV2} />
+        <RelatedServices items={relatedServices("residential", "roomingHouse", "buildingPermit")} />
         <ServiceCtaCompact {...grannyFlatCtaV2} />
       </main>
       <Footer />

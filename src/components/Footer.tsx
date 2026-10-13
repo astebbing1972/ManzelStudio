@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { footerLogo, footerNav, memberBadges, socials, teamMembers } from "@/lib/content";
+import { footerLogo, footerServicesNav, footerCompanyNav, memberBadges, socials, teamMembers } from "@/lib/content";
 import { InstagramIcon, LinkedinIcon, PinterestIcon, XIcon } from "./icons";
 
 const socialIcons: Record<string, React.ReactNode> = {
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-14 border-b border-white/20 py-16 md:grid-cols-4 md:gap-10">
+        <div className="grid grid-cols-1 gap-14 border-b border-white/20 py-16 md:grid-cols-5 md:gap-10">
           <div className="md:col-span-2">
             <Image src={footerLogo} alt="Manzel Studio" width={180} height={44} className="mb-6" />
             <p className="max-w-sm text-[17px] leading-[30px] text-white">
@@ -77,9 +77,24 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-5 text-[18px] font-bold text-white">Explore</h4>
+            <h4 className="mb-5 text-[18px] font-bold text-white">Services</h4>
             <nav className="flex flex-col gap-0">
-              {footerNav.map((item) => (
+              {footerServicesNav.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="border-b-0 py-0 pb-[18px] text-[17px] leading-[1.3] text-white transition-colors duration-500 hover:text-white/70"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h4 className="mb-5 text-[18px] font-bold text-white">Company</h4>
+            <nav className="flex flex-col gap-0">
+              {footerCompanyNav.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}

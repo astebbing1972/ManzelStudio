@@ -17,6 +17,8 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/lib/relatedServices";
 import {
   residentialHero,
   trustBar,
@@ -75,6 +77,7 @@ export default function ResidentialBuildingDesign() {
         <Suburbs {...suburbs} />
         <Testimonials />
         <Faq items={residentialFaqs} />
+        <RelatedServices items={relatedServices("grannyFlat", "roomingHouse", "buildingPermit")} />
         <ServiceCta {...residentialCta} />
       </main>
       <Footer />

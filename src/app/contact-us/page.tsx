@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import InnerBanner from "@/components/InnerBanner";
@@ -22,7 +23,9 @@ export default function ContactUs() {
       <Breadcrumbs items={[{ name: "Contact Us", path: "/contact-us" }]} />
       <main className="flex-1">
         <InnerBanner {...contactHero} />
-        <ContactSection {...contactInfo} />
+        <Suspense fallback={null}>
+          <ContactSection {...contactInfo} />
+        </Suspense>
         <ContactMap embedUrl={contactMapEmbed} />
       </main>
       <Footer />

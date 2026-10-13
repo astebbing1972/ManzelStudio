@@ -15,4 +15,7 @@ declare module "react" {
   interface TextareaHTMLAttributes<T> extends HTMLAttributes<T> {
     toolparamdescription?: string;
   }
+  interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
+    toolparamdescription?: string;
+  }
 }

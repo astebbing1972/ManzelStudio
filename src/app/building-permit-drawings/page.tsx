@@ -16,6 +16,8 @@ import TestimonialsCompact from "@/components/TestimonialsCompact";
 import FaqCompact from "@/components/FaqCompact";
 import ServiceCtaCompact from "@/components/ServiceCtaCompact";
 import Footer from "@/components/Footer";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/lib/relatedServices";
 import {
   buildingPermitHeroV2,
   trustBar,
@@ -39,7 +41,6 @@ export const metadata: Metadata = buildMetadata({
   title,
   description,
   path: "/building-permit-drawings",
-  noindex: true, // draft page for client review - remove once approved and linked from the site
 });
 
 export default function BuildingPermitDrawings() {
@@ -68,6 +69,7 @@ export default function BuildingPermitDrawings() {
         <SuburbsCompact {...buildingPermitSuburbs} />
         <TestimonialsCompact />
         <FaqCompact items={buildingPermitFaqsV2} />
+        <RelatedServices items={relatedServices("residential", "commercial", "grannyFlat", "roomingHouse")} />
         <ServiceCtaCompact {...buildingPermitCtaV2} />
       </main>
       <Footer />

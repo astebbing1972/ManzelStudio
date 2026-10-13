@@ -1,4 +1,4 @@
-import Image from "next/image";
+import HeroBackdrop from "./HeroBackdrop";
 
 export default function ServiceHero({
   image,
@@ -11,6 +11,7 @@ export default function ServiceHero({
   secondaryCta,
 }: {
   image: string;
+  imageAspect?: number;
   eyebrow: string;
   titlePre: string;
   titleEm: string;
@@ -20,10 +21,9 @@ export default function ServiceHero({
   secondaryCta: { label: string; href: string };
 }) {
   return (
-    <section className="relative flex min-h-[520px] items-center overflow-hidden md:min-h-[640px]">
-      <Image src={image} alt={`${titlePre}${titleEm}`} fill priority quality={70} className="object-cover" sizes="100vw" />
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 py-28 md:px-10">
+    <section className="relative min-h-[520px] overflow-hidden bg-ink md:flex md:min-h-[640px] md:items-center">
+      <HeroBackdrop image={image} />
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 py-28 [text-shadow:0_1px_14px_rgba(0,0,0,0.65)] md:px-10 md:[text-shadow:none]">
         <div className="max-w-[760px]">
           <div className="mb-[18px] text-[11px] font-medium uppercase tracking-[0.28em] text-white/80">
             {eyebrow}

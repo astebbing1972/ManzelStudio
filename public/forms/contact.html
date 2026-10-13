@@ -16,10 +16,12 @@
 -->
 <form name="contact" method="POST" data-netlify="true" netlify="true" data-netlify-honeypot="bot-field">
   <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="subject" value="" />
   <p style="position:absolute; left:-9999px;">
     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
   </p>
 
+  <label>Reason for Contacting <select name="reason"><option value="">General Enquiry</option></select></label>
   <label>First Name <input type="text" name="firstName" /></label>
   <label>Last Name <input type="text" name="lastName" /></label>
   <label>Email Address <input type="email" name="email" /></label>

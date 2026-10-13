@@ -17,6 +17,8 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/lib/relatedServices";
 import {
   commercialHero,
   trustBar,
@@ -75,6 +77,7 @@ export default function CommercialBuildingDesign() {
         <Suburbs {...commercialSuburbs} />
         <Testimonials />
         <Faq items={commercialFaqs} />
+        <RelatedServices items={relatedServices("buildingPermit", "roomingHouse")} />
         <ServiceCta {...commercialCta} />
       </main>
       <Footer />

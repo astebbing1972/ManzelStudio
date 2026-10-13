@@ -14,6 +14,8 @@ import AssessmentBeforeOrder from "@/components/AssessmentBeforeOrder";
 import Faq from "@/components/Faq";
 import ServiceCta from "@/components/ServiceCta";
 import Footer from "@/components/Footer";
+import RelatedServices from "@/components/RelatedServices";
+import { relatedServices } from "@/lib/relatedServices";
 import {
   siteAssessmentHero,
   siteAssessmentTrustBar,
@@ -63,6 +65,7 @@ export default function SiteAssessment() {
           items={siteAssessmentFaqs}
           lead="Everything you need to know before getting started — from what's included to timelines, costs, and what happens next."
         />
+        <RelatedServices items={relatedServices("grannyFlat", "roomingHouse", "buildingPermit")} />
         <ServiceCta {...siteAssessmentCta} />
       </main>
       <Footer />

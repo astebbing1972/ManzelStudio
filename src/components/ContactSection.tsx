@@ -1,8 +1,69 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Reveal from "./Reveal";
 import { InstagramIcon, LinkedinIcon, PinterestIcon, XIcon } from "./icons";
+
+// Keyed by each service page's own route slug, so a page's CTA can link to
+// /contact-us?service=<its-own-folder-name> without a separate lookup to
+// maintain. Reason/subject/message/buttonLabel copy is Mohamed's approved
+// text from Manzel_Studio_Service_Contact_Messages.pdf - kept verbatim.
+export const SERVICE_ENQUIRIES: Record<
+  string,
+  { reason: string; subject: string; buttonLabel: string; message: string }
+> = {
+  "rooming-house-building-design": {
+    reason: "Rooming House Building Design",
+    subject: "Rooming House Building Design Enquiry",
+    buttonLabel: "Discuss Your Rooming House Project",
+    message:
+      "Hi Manzel Studio,\nI'm interested in discussing a rooming house building design project.\nProperty address:\nIs this a new build or conversion:\nProposed number of rooms/residents:\nCurrent project stage:\nExisting plans or property documents available:\nPreferred timeframe:\nAdditional details:",
+  },
+  "granny-flat-building-design": {
+    reason: "Small Second Dwelling (Granny Flat) Design",
+    subject: "Small Second Dwelling Design Enquiry",
+    buttonLabel: "Discuss Your Small Second Dwelling Project",
+    message:
+      "Hi Manzel Studio,\nI'm interested in exploring a small second dwelling for my property.\nProperty address:\nIntended use of the dwelling:\nPreferred number of bedrooms:\nExisting home or site plans available:\nCurrent project stage:\nPreferred timeframe:\nAdditional details:",
+  },
+  "building-permit-drawings": {
+    reason: "Building Permit Drawings",
+    subject: "Building Permit Drawings Enquiry",
+    buttonLabel: "Enquire About Building Permit Drawings",
+    message:
+      "Hi Manzel Studio,\nI require building permit drawings and would like to discuss what documentation is needed for my project.\nProperty address:\nProject type:\nBrief description of the proposed works:\nCurrent design or approval stage:\nPlanning permit obtained, required or unknown:\nExisting drawings or reports available:\nRequired timeframe:\nAdditional details:",
+  },
+  "residential-building-design": {
+    reason: "Residential Building Design",
+    subject: "Residential Building Design Enquiry",
+    buttonLabel: "Discuss Your Residential Project",
+    message:
+      "Hi Manzel Studio,\nI'm interested in discussing a residential building design project.\nProperty address:\nProject type - new home, extension, renovation or multi-dwelling:\nBrief description of what I would like to achieve:\nCurrent project stage:\nExisting plans or property documents available:\nApproximate budget, if known:\nPreferred timeframe:\nAdditional details:",
+  },
+  "commercial-building-design": {
+    reason: "Commercial Building Design",
+    subject: "Commercial Building Design Enquiry",
+    buttonLabel: "Discuss Your Commercial Project",
+    message:
+      "Hi Manzel Studio,\nI'm interested in discussing a commercial building design project.\nPremises address:\nBusiness or commercial use:\nProject type - new building, fit-out, renovation or development:\nBrief description of the project:\nCurrent project or approval stage:\nTarget opening or completion date:\nExisting plans or documents available:\nAdditional details:",
+  },
+  "health-space-design": {
+    reason: "Health Space Design",
+    subject: "Health Space Design Enquiry",
+    buttonLabel: "Discuss Your Health Space Project",
+    message:
+      "Hi Manzel Studio,\nI'm interested in discussing the design of a healthcare or clinical space.\nProperty or premises address:\nType of healthcare service or facility:\nNew build, fit-out, renovation or expansion:\nRequired consulting, treatment or support spaces:\nCurrent project or approval stage:\nTarget opening or completion date:\nExisting plans or documents available:\nAdditional details:",
+  },
+  "site-assessment": {
+    reason: "Site or Feasibility Assessment",
+    subject: "Site Assessment Enquiry",
+    buttonLabel: "Start Your Site Assessment",
+    message:
+      "Hi Manzel Studio,\nI'm interested in assessing the development potential of a property.\nProperty address:\nAssessment required - Site Assessment, Feasibility Assessment or unsure:\nDo I currently own the property:\nWhat I am considering for the site:\nPreferred number or type of dwellings, if known:\nAny known site concerns or restrictions:\nRelevant documents available:\nAdditional details:",
+  },
+};
+const REASON_OPTIONS = Object.values(SERVICE_ENQUIRIES).map((s) => s.reason);
 
 const socialIcons: Record<string, React.ReactNode> = {
   Instagram: <InstagramIcon />,
@@ -18,6 +79,7 @@ type FormState = {
   phone: string;
   address: string;
   hearAbout: string;
+  reason: string;
   message: string;
 };
 
@@ -28,11 +90,12 @@ const initialState: FormState = {
   phone: "",
   address: "",
   hearAbout: "",
+  reason: "",
   message: "",
 };
 
 const inputClass =
-  "w-full border-b border-line bg-transparent py-3 text-[15px] text-ink placeholder:text-muted focus:border-ink focus:outline-none";
+  "w-full border-b border-line bg-transparent py-2 text-[15px] text-ink placeholder:text-muted focus:border-ink focus:outline-none";
 
 export default function ContactSection({
   title,
@@ -49,14 +112,40 @@ export default function ContactSection({
   emailUs: { email: string; href: string; instagramHref: string };
   social: { label: string; href: string }[];
 }) {
+  const searchParams = useSearchParams();
   const [form, setForm] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
+  // Pre-fill (not lock) the reason and message when arriving from a
+  // service page's own CTA, e.g. /contact-us?service=granny-flat-building-design.
+  // Both stay editable - this is a starting point, not a forced value.
+  useEffect(() => {
+    const service = searchParams.get("service");
+    const match = service ? SERVICE_ENQUIRIES[service] : undefined;
+    if (match) {
+      setForm((f) => ({ ...f, reason: match.reason, message: match.message }));
+    }
+  }, [searchParams]);
+
+  const subject = form.reason
+    ? Object.values(SERVICE_ENQUIRIES).find((s) => s.reason === form.reason)?.subject ??
+      `${form.reason} Enquiry`
+    : "General Enquiry";
+
   const update = (field: keyof FormState) => (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => setForm((f) => ({ ...f, [field]: e.target.value }));
+
+  // Manually changing the reason also swaps in that service's prefilled
+  // message template (still fully editable afterwards), matching what
+  // happens when arriving via a service page's own CTA.
+  const updateReason = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const reason = e.target.value;
+    const match = Object.values(SERVICE_ENQUIRIES).find((s) => s.reason === reason);
+    setForm((f) => ({ ...f, reason, message: match ? match.message : "" }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -196,20 +285,53 @@ export default function ContactSection({
                 netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
-                className="space-y-6"
+                className="space-y-4"
                 toolname="requestBuildingDesignConsultation"
                 tooldescription="Submit a contact enquiry to Manzel Studio, a Melbourne building design studio, to request a free consultation or ask a question about a residential, commercial, or health-space project. Requires the user to review and click Submit themselves - this tool fills the form but does not send it."
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="subject" value={subject} />
                 <p className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
                   <label>
                     Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field" />
                   </label>
                 </p>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div>
+                  <label htmlFor="reason" className="mb-1 block text-[13px] font-medium text-ink-2">
+                    Reason for Contacting
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="reason"
+                      name="reason"
+                      value={form.reason}
+                      onChange={updateReason}
+                      className={`${inputClass} appearance-none bg-white pr-6`}
+                      toolparamdescription="What the enquirer is contacting about - the specific service, if any, or general enquiry"
+                    >
+                      <option value="">General Enquiry</option>
+                      {REASON_OPTIONS.map((reason) => (
+                        <option key={reason} value={reason}>
+                          {reason}
+                        </option>
+                      ))}
+                    </select>
+                    <svg
+                      width="10"
+                      height="6"
+                      viewBox="0 0 10 6"
+                      fill="none"
+                      className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2"
+                    >
+                      <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="firstName" className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                    <label htmlFor="firstName" className="mb-1 block text-[13px] font-medium text-ink-2">
                       First Name <span className="text-red-600">*</span>
                     </label>
                     <input
@@ -224,7 +346,7 @@ export default function ContactSection({
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                    <label htmlFor="lastName" className="mb-1 block text-[13px] font-medium text-ink-2">
                       Last Name <span className="text-red-600">*</span>
                     </label>
                     <input
@@ -240,40 +362,42 @@ export default function ContactSection({
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="email" className="mb-1.5 block text-[13px] font-medium text-ink-2">
-                    Email Address <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    required
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={update("email")}
-                    className={inputClass}
-                    toolparamdescription="The enquirer's email address"
-                  />
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="email" className="mb-1 block text-[13px] font-medium text-ink-2">
+                      Email Address <span className="text-red-600">*</span>
+                    </label>
+                    <input
+                      required
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={form.email}
+                      onChange={update("email")}
+                      className={inputClass}
+                      toolparamdescription="The enquirer's email address"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="mb-1 block text-[13px] font-medium text-ink-2">
+                      Phone Number <span className="text-red-600">*</span>
+                    </label>
+                    <input
+                      required
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={form.phone}
+                      onChange={update("phone")}
+                      className={inputClass}
+                      toolparamdescription="The enquirer's phone number"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="mb-1.5 block text-[13px] font-medium text-ink-2">
-                    Phone Number <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    required
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={form.phone}
-                    onChange={update("phone")}
-                    className={inputClass}
-                    toolparamdescription="The enquirer's phone number"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="address" className="mb-1.5 block text-[13px] font-medium text-ink-2">Address of Site</label>
+                  <label htmlFor="address" className="mb-1 block text-[13px] font-medium text-ink-2">Address of Site</label>
                   <input
                     type="text"
                     id="address"
@@ -286,7 +410,7 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label htmlFor="hearAbout" className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="hearAbout" className="mb-1 block text-[13px] font-medium text-ink-2">
                     How Did You Hear About Us?
                   </label>
                   <input
@@ -300,12 +424,12 @@ export default function ContactSection({
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="mb-1.5 block text-[13px] font-medium text-ink-2">
+                  <label htmlFor="message" className="mb-1 block text-[13px] font-medium text-ink-2">
                     Message <span className="text-red-600">*</span>
                   </label>
                   <textarea
                     required
-                    rows={4}
+                    rows={10}
                     id="message"
                     name="message"
                     value={form.message}
