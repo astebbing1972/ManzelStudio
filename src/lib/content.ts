@@ -691,8 +691,8 @@ export const footerServicesNav = [
   { label: "Residential", href: "/residential-building-design" },
   { label: "Commercial", href: "/commercial-building-design" },
   { label: "Health Spaces", href: "/health-space-design" },
-  { label: "Granny Flat Building Design", href: "/granny-flat-building-design" },
-  { label: "Rooming House Building Design", href: "/rooming-house-building-design" },
+  { label: "Granny Flat", href: "/granny-flat-building-design" },
+  { label: "Rooming House", href: "/rooming-house-building-design" },
   { label: "Building Permit Drawings", href: "/building-permit-drawings" },
   { label: "Site Assessment", href: "/site-assessment" },
 ];
