@@ -95,18 +95,18 @@ export default function Sectors() {
         </div>
       </Reveal>
 
-      <div className="relative z-10 mx-auto mt-[22px] flex max-w-[1400px] justify-center gap-2.5 lg:mt-[-70px] lg:justify-end">
+      <div className="pointer-events-none relative z-10 mx-auto mt-[22px] flex max-w-[1400px] justify-center gap-2.5 lg:mt-[-70px] lg:justify-end">
         <button
           aria-label="Previous sector"
           onClick={() => go(-1)}
-          className="grid h-[50px] w-[50px] place-items-center rounded-full bg-black transition-opacity duration-300 hover:opacity-80"
+          className="pointer-events-auto grid h-[50px] w-[50px] place-items-center rounded-full bg-black transition-opacity duration-300 hover:opacity-80"
         >
           <ArrowIcon flipped />
         </button>
         <button
           aria-label="Next sector"
           onClick={() => go(1)}
-          className="grid h-[50px] w-[50px] place-items-center rounded-full bg-black transition-opacity duration-300 hover:opacity-80"
+          className="pointer-events-auto grid h-[50px] w-[50px] place-items-center rounded-full bg-black transition-opacity duration-300 hover:opacity-80"
         >
           <ArrowIcon />
         </button>
