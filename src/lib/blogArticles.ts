@@ -24,7 +24,7 @@ export type ArticleSection = {
   heading: string;
   level?: 2 | 3;
   image?: { src: string; alt: string };
-  banner?: { src: string; alt: string; aspect?: string };
+  banner?: { src: string; alt: string; aspect?: string; maxWidth?: number };
   leadIn?: string | string[];
   paragraphs?: string[];
   list?: string[];
@@ -2184,6 +2184,197 @@ export const blogArticles: Record<string, Article> = {
       {
         q: "Can an existing retail tenancy be converted into a medical centre?",
         a: "Often yes, but it typically requires a planning permit for the change of use, and the fit-out will need to address accessibility, infection control and services requirements that a retail tenancy usually isn't built for. A [feasibility check](/site-assessment) early on can confirm whether a specific tenancy is a good fit before committing to a lease.",
+      },
+    ],
+  },
+
+  "how-to-choose-a-granny-flat-designer-melbourne": {
+    slug: "how-to-choose-a-granny-flat-designer-melbourne",
+    intro: [
+      "Planning a granny flat is an opportunity to create additional living space, accommodate family members or make better use of your property's potential. However, choosing the right design involves more than selecting a floor plan or deciding how many bedrooms you need.",
+      "An experienced granny flat building designer can help you assess your property, understand design constraints and develop a practical layout that suits your requirements. From site orientation and privacy to building documentation and permit considerations, the decisions made during the design stage can influence the entire project.",
+      "If you are considering a granny flat in Melbourne, understanding what makes a good design and how to select the right professional can help you take the next step with greater confidence.",
+    ],
+    sections: [
+      {
+        heading: "What Should You Look for in a Granny Flat Building Designer?",
+        paragraphs: [
+          "The right designer should understand how to balance your vision with the practical requirements of your property. A design that looks attractive on paper may not be suitable for your block, budget or intended use.",
+          "When comparing building designers, consider these important factors.",
+        ],
+      },
+      {
+        heading: "Experience With Small Second Dwelling Design",
+        level: 3,
+        paragraphs: [
+          "Granny flats have different design requirements from conventional homes. The designer needs to consider the relationship between the existing house and the proposed dwelling, available outdoor space, access, privacy and site constraints.",
+          "Ask about their experience with residential projects, small second dwellings and similar properties. Reviewing relevant projects can help you understand their approach to space planning and practical design.",
+        ],
+      },
+      {
+        heading: "Knowledge of Victorian Planning and Building Requirements",
+        level: 3,
+        paragraphs: [
+          "Before committing to a design, it is important to understand which planning controls and building requirements apply to your property.",
+          "Requirements may vary depending on the location, zoning, overlays, site dimensions and proposed development. A knowledgeable designer can help identify the relevant considerations and explain which documentation and approvals may be needed.",
+        ],
+      },
+      {
+        heading: "A Design Process That Considers Your Budget",
+        level: 3,
+        paragraphs: [
+          "Your budget should influence the design from the beginning. An experienced designer can help prioritise essential features, explore suitable layouts and avoid unnecessary complexity.",
+          "It is also important to distinguish design and documentation fees from construction costs. Site preparation, drainage, utility connections, consultant fees and other project expenses may affect the overall budget.",
+        ],
+      },
+      {
+        heading: "Five Design Factors That Can Make a Granny Flat Work Better",
+        banner: {
+          src: "/images/blog/granny-flat-design-factors.jpg",
+          alt: "Infographic of five granny flat design factors: site suitability, floor plan efficiency, privacy and access, natural light, and accessibility",
+          aspect: "1536/1024",
+          maxWidth: 780,
+        },
+        paragraphs: [
+          "The success of a granny flat depends on how well it responds to the site and the people who will use it. These five considerations deserve attention before finalising the floor plan.",
+        ],
+      },
+      {
+        heading: "1. Site Suitability and Available Space",
+        level: 3,
+        paragraphs: [
+          "Every property presents different opportunities and constraints. A narrow block, sloping site or property with existing structures may require a different design approach from a relatively open, level block. Our article on [designing a home on a narrow block](/blog/designing-a-home-on-a-narrow-block) explains how tight sites can still work well.",
+          "A [site assessment](/site-assessment) should consider property boundaries, setbacks, easements, access, drainage, existing services and relevant planning controls.",
+          "Understanding these conditions early helps establish what may be feasible before you invest in detailed drawings. This guide to [essential steps in an architectural site analysis](/blog/essential-steps-architectural-site-analysis) covers what a thorough review involves.",
+        ],
+      },
+      {
+        heading: "2. Floor Plan and Space Efficiency",
+        level: 3,
+        paragraphs: [
+          "A well-designed granny flat makes efficient use of its available floor area without sacrificing everyday comfort.",
+          "Open-plan living areas, practical kitchen layouts, built-in storage and carefully positioned doors can help create a more functional interior. The relationship between bedrooms, bathrooms and living spaces should also reflect how the occupants will use the dwelling.",
+          "For example, a one-bedroom granny flat may suit a single occupant or couple, while a two-bedroom layout may be more appropriate for a small family or longer-term shared living.",
+          "The best option depends on the available space, intended use and applicable requirements rather than floor area alone.",
+        ],
+      },
+      {
+        heading: "3. Privacy and Independent Access",
+        level: 3,
+        paragraphs: [
+          "Privacy is particularly important when a granny flat shares a property with an existing home.",
+          "Window placement, entrance locations, fencing and outdoor areas should be considered together. A thoughtfully positioned entrance can provide a greater sense of independence, while suitable screening can reduce direct overlooking between the two dwellings.",
+          "It is also worth considering pedestrian access, parking arrangements where applicable and how occupants will reach their dwelling without unnecessarily disrupting the main household.",
+        ],
+      },
+      {
+        heading: "4. Natural Light, Orientation and Ventilation",
+        level: 3,
+        paragraphs: [
+          "A compact dwelling can feel more spacious when natural light and ventilation are considered from the beginning.",
+          "Building orientation, window placement, shading and internal room arrangements all influence comfort. Where the site allows, positioning living spaces to benefit from suitable daylight and providing effective ventilation can support a more comfortable indoor environment.",
+          "These decisions should also be coordinated with energy-efficiency requirements and the overall design.",
+        ],
+      },
+      {
+        heading: "5. Accessibility and Long-Term Flexibility",
+        level: 3,
+        paragraphs: [
+          "If the granny flat is intended for ageing parents or occupants with mobility needs, accessibility should be part of the initial brief.",
+          "Depending on the occupants' requirements, useful considerations may include step-free access, practical doorway widths, suitable bathroom layouts and sufficient circulation space.",
+          "Even when the dwelling is initially intended for guests or adult children, flexible design decisions can help it remain useful as household needs change.",
+        ],
+      },
+      {
+        heading: "What Granny Flat Approvals Do You Need in Melbourne?",
+        paragraphs: [
+          "Understanding the approval process is an important part of planning a small second dwelling in Victoria.",
+          "A small second dwelling is generally defined as a self-contained dwelling of 60 square metres or less, located on the same lot as an existing home and containing the required kitchen, bathroom and toilet facilities.",
+          "Under Victoria's planning framework, some eligible small second dwellings can be built without a planning permit. However, this exemption is subject to applicable conditions, and factors such as zoning, overlays and other planning controls can affect the approval pathway.",
+          "A building permit is always required for a small second dwelling. Other requirements may also apply depending on the site and proposal. Clear [building permit drawings](/building-permit-drawings) are an important part of that application.",
+          "Before finalising your plans, check the property's circumstances and confirm the applicable requirements with the relevant authorities and building professionals.",
+          "You can consult the Victorian Government's [Small Second Homes Guide](https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/small-second-dwellings) for further information.",
+          "Working with a building designer early can help you identify potential constraints, understand the documentation required and make informed decisions before moving towards construction. If a permit is needed, our guide on [how to get a planning permit approved faster](/blog/how-to-get-a-planning-permit-approved-faster) explains how preparation can reduce delays.",
+        ],
+      },
+      {
+        heading: "How Much Does Granny Flat Design Cost?",
+        leadIn: [
+          "The cost of designing a granny flat depends on the complexity of the project and the services included in the designer's proposal.",
+          "Factors that may influence the design fee include:",
+        ],
+        list: [
+          "The size and complexity of the proposed dwelling.",
+          "The condition, slope and constraints of the site.",
+          "The level of customisation required.",
+          "The drawings, reports and documentation included.",
+          "The need for additional consultants or approval support.",
+          "The number of design revisions and changes to the original brief.",
+        ],
+        paragraphs: [
+          "When comparing quotes, look beyond the initial price. Confirm what is included, which services may cost extra and whether the proposal covers the documentation needed for the relevant approval stages.",
+          "A clear scope of work helps you understand the likely design costs before committing to the project.",
+        ],
+      },
+      {
+        heading: "What Should You Prepare Before Meeting a Building Designer?",
+        leadIn: [
+          "Preparing a few details before your first consultation can make the design process more productive.",
+          "Consider gathering:",
+        ],
+        list: [
+          "Your property address and any available site plans.",
+          "Your approximate design and construction budget.",
+          "Your preferred number of bedrooms and bathrooms.",
+          "Information about who will occupy the granny flat.",
+          "Examples of layouts or architectural styles you prefer.",
+          "Any known access, drainage or site limitations.",
+          "Your intended project timeframe.",
+        ],
+        paragraphs: [
+          "You do not need to have every detail decided. An initial discussion can help clarify your priorities, identify questions that need further investigation and establish a suitable direction for the design. Our [custom home design checklist](/blog/custom-home-design-checklist) is also a useful starting point for thinking through your priorities.",
+        ],
+      },
+      {
+        heading: "Why Work With Manzel Studio for Granny Flat Building Design?",
+        banner: {
+          src: "/images/blog/granny-flat-why-manzel-studio.jpg",
+          alt: "Manzel Studio building designer reviewing granny flat floor plans with a client in Melbourne",
+          aspect: "1536/1024",
+          maxWidth: 780,
+        },
+        paragraphs: [
+          "Choosing a building designer is about finding a professional who understands your goals and can translate them into a practical design. If you are unsure which type of professional suits your project, this guide to the [difference between a building designer, architect and draftsman](/blog/building-designer-vs-architect-vs-draftsman-australia) may help.",
+          "Manzel Studio approaches residential building design by considering the property's characteristics, the client's requirements and the practicalities of construction. The aim is to develop a design that balances functionality, appearance and budget while addressing the relevant documentation and approval requirements.",
+          "From early feasibility considerations to concept development and detailed drawings, the design process should help you understand your options and make informed decisions at each stage.",
+          "Whether you are planning additional accommodation for family members or exploring a small second dwelling for another permitted residential use, a site-specific design can help you evaluate the opportunities available to you.",
+        ],
+      },
+      {
+        heading: "Start Planning Your Granny Flat",
+        paragraphs: [
+          "A successful granny flat begins with understanding your property, defining your priorities and choosing a design approach that responds to both.",
+          "The right granny flat building designer can help you evaluate site constraints, make better use of available space and prepare for the next stages of your project.",
+          "If you are planning a granny flat in Melbourne or elsewhere in Victoria, explore [Manzel Studio's granny flat building design services](https://www.manzelstudio.com.au/granny-flat-building-design) to learn more about the design process and discuss your project requirements.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a planning permit for a granny flat in Victoria?",
+        a: "Often not. Under Victoria's rules, many small second dwellings of 60 square metres or less can be built without a planning permit, but the exemption does not apply where special planning controls, such as flooding or environmental overlays, affect the property. Confirm your property's circumstances with the relevant authorities before finalising plans.",
+      },
+      {
+        q: "How big can a small second dwelling be?",
+        a: "A small second dwelling is generally defined as a self-contained dwelling of 60 square metres or less, located on the same lot as an existing home and containing the required kitchen, bathroom and toilet facilities.",
+      },
+      {
+        q: "Is a building permit required for a granny flat?",
+        a: "Yes. A building permit is always required for a small second dwelling, even where a planning permit is not needed. It covers siting, amenity, design and safety requirements.",
+      },
+      {
+        q: "What should I look for in a granny flat building designer?",
+        a: "Look for experience with small second dwellings, knowledge of Victorian planning and building requirements, and a design process that considers your budget from the start. Ask to see relevant projects and confirm exactly what is included in the quote.",
       },
     ],
   },

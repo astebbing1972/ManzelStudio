@@ -138,15 +138,18 @@ export default function BlogPost({ post, article }: { post: Post; article: Artic
                     {section.banner && (
                       <div
                         className="relative mb-6 w-full overflow-hidden rounded-2xl"
-                        style={{ aspectRatio: section.banner.aspect?.replace("/", " / ") ?? "1080 / 693" }}
+                        style={{
+                          aspectRatio: section.banner.aspect?.replace("/", " / ") ?? "1080 / 693",
+                          ...(section.banner.maxWidth ? { maxWidth: section.banner.maxWidth } : {}),
+                        }}
                       >
                         <Image
                           src={section.banner.src}
                           alt={section.banner.alt}
                           fill
-                          quality={70}
+                          quality={section.banner.maxWidth ? 90 : 70}
                           className="object-cover"
-                          sizes="(min-width: 768px) 900px, 100vw"
+                          sizes={section.banner.maxWidth ? "(min-width: 768px) 1080px, 100vw" : "(min-width: 768px) 900px, 100vw"}
                         />
                       </div>
                     )}

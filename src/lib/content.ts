@@ -325,6 +325,8 @@ export type BlogPost = {
   metaDescription?: string;
   imageAlt?: string;
   keywords?: string[];
+  /** Opt in to richer Article schema (image set, word count, topics). */
+  extendedSchema?: boolean;
 };
 
 export const blogPosts: BlogPost[] = [
@@ -565,6 +567,31 @@ export const blogPosts: BlogPost[] = [
       "clinic design Melbourne",
       "health space design Melbourne",
     ],
+  },
+  {
+    title: "How to Choose a Granny Flat Building Designer in Melbourne",
+    href: "/blog/how-to-choose-a-granny-flat-designer-melbourne",
+    image: "/images/blog/how-to-choose-a-granny-flat-designer-melbourne.jpg",
+    imageLarge: "/images/blog/how-to-choose-a-granny-flat-designer-melbourne.jpg",
+    date: "Thu, 15 Oct 2026",
+    author: "Manzel Studio",
+    excerpt:
+      "Choosing a granny flat design involves more than a floor plan. Here's what to look for in a designer, what affects design and what approvals may apply.",
+    excerptLong:
+      "Planning a granny flat is an opportunity to create additional living space, but choosing the right design involves more than selecting a floor plan. Here's what to look for in a Melbourne building designer, five design factors that make a granny flat work better, and how approvals and costs fit in.",
+    categories: ["residential-design", "planning-permits"],
+    metaTitle: "Granny Flat Building Designer Melbourne: What to Know",
+    metaDescription:
+      "Looking for a granny flat building designer in Melbourne? Explore design considerations, site suitability, costs and approval requirements with Manzel Studio.",
+    imageAlt: "Granny Flat Building Designer in Melbourne - design advice, site considerations, approvals and next steps",
+    keywords: [
+      "granny flat building designer",
+      "granny flat designer Melbourne",
+      "granny flat design",
+      "secondary dwelling design",
+      "granny flat plans Victoria",
+    ],
+    extendedSchema: true,
   },
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

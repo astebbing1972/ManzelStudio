@@ -31,6 +31,29 @@ export async function generateMetadata({
   });
 }
 
+function schemaExtras(post: (typeof blogPosts)[number], article: (typeof blogArticles)[string]) {
+  const text = [
+    ...article.intro,
+    ...article.sections.flatMap((s) => [
+      s.heading,
+      ...(Array.isArray(s.leadIn) ? s.leadIn : s.leadIn ? [s.leadIn] : []),
+      ...(s.paragraphs ?? []),
+      ...(s.list ?? []),
+    ]),
+    ...(article.conclusion ?? []),
+    ...article.faqs.flatMap((f) => [f.q, f.a]),
+  ].join(" ");
+  const plain = text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*/g, "");
+  return {
+    wordCount: plain.split(/\s+/).filter(Boolean).length,
+    images: [
+      { url: post.imageLarge, caption: post.imageAlt ?? post.title },
+      ...article.sections.flatMap((s) => (s.banner ? [{ url: s.banner.src, caption: s.banner.alt }] : [])),
+    ],
+    about: post.keywords?.slice(0, 3) ?? [],
+  };
+}
+
 export default async function BlogPostPage({
   params,
 }: {
@@ -53,6 +76,7 @@ export default async function BlogPostPage({
           author: post.author,
           section: blogCategories.find((c) => c.key === post.categories[0])?.label,
           keywords: post.keywords,
+          extended: post.extendedSchema ? schemaExtras(post, article) : undefined,
         })}
       />
       {article.faqs.length > 0 && <JsonLd data={faqJsonLd(article.faqs)} />}

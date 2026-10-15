@@ -176,6 +176,7 @@ export function articleJsonLd({
   author = SITE_NAME,
   section,
   keywords,
+  extended,
 }: {
   title: string;
   description: string;
@@ -185,13 +186,17 @@ export function articleJsonLd({
   author?: string;
   section?: string;
   keywords?: string[];
+  /** Richer markup for a post: BlogPosting, a described image set, word count and topics. */
+  extended?: { images: { url: string; caption: string }[]; wordCount: number; about: string[] };
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": extended ? "BlogPosting" : "Article",
     headline: title,
     description,
-    image: absoluteUrl(image),
+    image: extended
+      ? extended.images.map((i) => ({ "@type": "ImageObject", url: absoluteUrl(i.url), caption: i.caption, description: i.caption }))
+      : absoluteUrl(image),
     datePublished,
     dateModified: datePublished,
     inLanguage: "en-AU",
@@ -200,5 +205,13 @@ export function articleJsonLd({
     mainEntityOfPage: absoluteUrl(path),
     ...(section ? { articleSection: section } : {}),
     ...(keywords && keywords.length ? { keywords: keywords.join(", ") } : {}),
+    ...(extended
+      ? {
+          wordCount: extended.wordCount,
+          isAccessibleForFree: true,
+          about: extended.about.map((name) => ({ "@type": "Thing", name })),
+          isPartOf: { "@type": "Blog", name: `${SITE_NAME} Blog`, url: absoluteUrl("/blog") },
+        }
+      : {}),
   };
 }
