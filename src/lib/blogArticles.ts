@@ -2378,4 +2378,225 @@ export const blogArticles: Record<string, Article> = {
       },
     ],
   },
+
+  "how-to-choose-a-rooming-house-designer-melbourne": {
+    slug: "how-to-choose-a-rooming-house-designer-melbourne",
+    intro: [
+      "A rooming house can look simple on paper: more bedrooms, shared facilities, one roof. In practice it sits under three separate sets of rules in Victoria, and a layout that ignores any one of them can stall at the permit stage or fail inspection after you've built it.",
+      "That's why the choice of rooming house building designer matters more than it does for a standard home. The right designer plans bedroom numbers around planning thresholds, sizes the kitchen and bathrooms to the minimum standards, and documents the building to the correct class from day one. This guide explains what those rules are, how they shape the floor plan, and what to ask before you hire anyone.",
+    ],
+    sections: [
+      {
+        heading: "Key Takeaways",
+        list: [
+          "In many residential zones, a rooming house with no more than 9 bedrooms, 12 residents and 300 m² of floor area can avoid a planning permit, though overlays can still trigger one.",
+          "A building permit is required, and a small rooming house is generally classified as a Class 1b building.",
+          "Consumer Affairs Victoria sets minimum standards for rooms, kitchens, bathrooms and laundries that directly affect the layout.",
+          "A good designer treats these limits as the starting brief, not something to fix later.",
+        ],
+      },
+      {
+        heading: "What Does a Rooming House Building Designer Do?",
+        paragraphs: [
+          "A rooming house building designer plans and documents accommodation where residents rent individual rooms and share facilities such as kitchens, bathrooms and laundries. The work covers site assessment, bedroom and shared-space layouts, planning and building permit drawings, and coordination with surveyors and engineers, so the building meets planning, building and rooming house standards.",
+          "The difference from general residential design is the brief. A family home is designed around one household. A rooming house is designed around up to a dozen people who may not know each other, each needing privacy, security and fair access to shared spaces. Every corridor, door swing and fridge allowance has a regulatory or practical reason behind it.",
+          "If you're still weighing up which kind of professional suits your project, our comparison of the [difference between a building designer, architect and draftsman](/blog/building-designer-vs-architect-vs-draftsman-australia) explains how the roles differ.",
+        ],
+      },
+      {
+        heading: "The Three Sets of Rules a Rooming House Must Satisfy",
+        leadIn:
+          "The approvals are where most rooming house projects go wrong, so it helps to see them side by side. Each one is administered by a different body and tests something different.",
+        table: {
+          headers: ["Rule set", "Who administers it", "What it controls", "Design impact"],
+          rows: [
+            [
+              "Planning (Clause 52.23 and zone/overlay controls)",
+              "Local council",
+              "Whether the use and buildings need a planning permit",
+              "Bedroom count, resident numbers and total floor area",
+            ],
+            [
+              "Building (National Construction Code)",
+              "Building surveyor (council or private)",
+              "Building classification, fire safety, access, structure",
+              "Class 1b vs Class 3 requirements, egress, smoke alarms",
+            ],
+            [
+              "Rooming house minimum standards",
+              "Consumer Affairs Victoria",
+              "Privacy, security and amenity for residents",
+              "Locks, power outlets, heating, kitchen and laundry capacity",
+            ],
+            [
+              "Public health registration",
+              "Local council (environmental health)",
+              "Registration of prescribed accommodation, hygiene, facility ratios",
+              "Toilet, shower and washbasin numbers",
+            ],
+          ],
+        },
+        paragraphs: [
+          "In short, a designer who only thinks about the planning permit is solving a quarter of the problem. The operator also needs a rooming house operator's licence from Consumer Affairs Victoria, which the design won't control but which your timeline should allow for.",
+        ],
+      },
+      {
+        heading: "Do You Need a Planning Permit for a Rooming House in Victoria?",
+        paragraphs: [
+          "Often not, if the rooming house stays small. Under Clause 52.23 of Victorian planning schemes, a rooming house in many residential zones is exempt from a planning permit when total floor area is no more than 300 square metres (excluding outbuildings), no more than 12 people are accommodated and no more than 9 bedrooms are provided.",
+          "Those three numbers are the most important figures in early rooming house design. Go to a tenth bedroom or a thirteenth resident and the project moves into a permit process that, according to [Frankston City Council's rooming house guidance](https://www.frankston.vic.gov.au/Planning-and-Building/Planning/Planning-FAQs/Rooming-House), will usually involve notifying neighbours and considering objections.",
+          "The exemption also has limits. Frankston notes that the Heritage Overlay, Bushfire Management Overlay, Special Building Overlay and Erosion Management Overlay can each require a planning permit for a rooming house, even one under the thresholds. Requirements vary between councils, so a designer should check the zone and overlays on VicPlan early and recommend written confirmation from council.",
+          "A careful [site assessment](/site-assessment) at this point saves the most money, because it tells you which pathway you're on before any drawings are paid for. If a permit is needed, our guide on [getting a planning permit approved faster](/blog/how-to-get-a-planning-permit-approved-faster) covers how preparation reduces delays.",
+        ],
+      },
+      {
+        heading: "Why Building Classification Changes the Whole Design",
+        paragraphs: [
+          "A rooming house always needs a building permit. [Darebin City Council](https://www.darebin.vic.gov.au/Business/Business-permits/Health-regulations/Rooming-house-regulations) states that a rooming house must be classified as a Class 1b building under the Building Code of Australia, and Frankston confirms a building permit is always required.",
+          "The [Building and Plumbing Commission](https://www.bpc.vic.gov.au/builders/delivering-safe-and-compliant-build/building-classes) describes Class 1b as a boarding house, guest house or hostel with no more than 12 occupants and a floor area not exceeding 300 m². Notice how closely that mirrors the planning thresholds.",
+          "Here's the catch. Shared accommodation that falls outside Class 1b is likely to be classified as Class 3, which brings considerably heavier fire-safety and accessibility requirements. A design that creeps past the limits by a single room can change the construction cost far more than one extra bedroom earns. Your designer should confirm the classification with the building surveyor before the layout is locked in, then carry it through the [building permit drawings](/building-permit-drawings).",
+        ],
+      },
+      {
+        heading: "How the Minimum Standards Shape the Floor Plan",
+        paragraphs: [
+          "The Victorian rooming house minimum standards are detailed and measurable, and they translate directly into floor area. [Consumer Affairs Victoria](https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/minimum-standards/rooming-house-minimum-standards) lists requirements for every resident's room and every shared facility.",
+        ],
+      },
+      {
+        heading: "In Each Resident's Room",
+        level: 3,
+        list: [
+          "A lock on the entry door that opens with a key from outside and without a key from inside.",
+          "At least two working power outlets for the resident, separate from those serving shared amenities.",
+          "Window coverings that give privacy, and since 26 February 2025, reasonably block light.",
+          "A fixed heater (required from 1 December 2025), with energy-efficient heating required from 1 December 2030.",
+        ],
+        paragraphs: [
+          "That 2030 heating requirement is worth designing for now. Choosing a compliant heater type and planning the electrical load at the design stage is cheaper than retrofitting every room in four years.",
+        ],
+      },
+      {
+        heading: "In the Shared Facilities",
+        level: 3,
+        leadIn:
+          "The shared-space standards are where layouts are won or lost, because they scale with the number of residents. Here's what Consumer Affairs Victoria and council public health rules require for residents without those facilities in their own room:",
+        table: {
+          headers: ["Facility", "Minimum requirement"],
+          rows: [
+            ["Oven and cooktop", "One working oven and four-burner cooktop per 12 residents"],
+            ["Refrigeration", "At least 400 litres per 4 residents, plus 28.5 litres for each additional resident"],
+            ["Food storage", "A lockable cupboard of at least 100 litres for each resident"],
+            ["Dining", "Enough chairs for the maximum occupancy, with tables that fit them"],
+            ["Toilets and bathrooms", "At least one toilet, and one bath or shower plus one washbasin, per 10 people"],
+            ["Laundry", "Trough with hot and cold water, washing machine space and drying facility per 12 residents"],
+          ],
+        },
+        paragraphs: [
+          "Run those numbers for a 12-resident house and the shared kitchen needs twelve 100-litre lockable cupboards on top of well over 400 litres of fridge space. That's a lot of joinery. A designer who has worked through these ratios before will size the kitchen correctly the first time, rather than discovering at the end that the fridges don't fit.",
+          "The general standards add more: an evacuation diagram in every room, ventilation to Building Code requirements, a window, peephole or intercom at the main entry, and freedom from mould and damp caused by the building structure.",
+        ],
+      },
+      {
+        heading: "Design Decisions That Affect Yield and Resident Experience",
+        leadIn:
+          "Compliance sets the floor. Good design decides whether the rooming house fills its rooms and keeps residents. Experienced rooming house designers spend most of their time on these trade-offs:",
+        list: [
+          "Ensuites vs shared bathrooms. Ensuites command higher rent and ease morning congestion, but they cost floor area and plumbing. Mixing both types can widen the market.",
+          "Bedroom size and shape. A room that fits a bed, desk and wardrobe without awkward corners rents faster than a larger room with a poor layout.",
+          "Acoustic separation. Placing wardrobes or bathrooms between bedrooms, and keeping the kitchen away from sleeping areas, reduces the noise complaints that drive turnover.",
+          "Circulation. Corridors cost area but earn nothing. Short, direct routes from the entry to each room keep more of the 300 m² working as rentable space.",
+          "Shared living space. A comfortable lounge or outdoor area makes a house feel like a home rather than a corridor of locked doors, which matters for longer-term tenants.",
+          "Maintenance. Durable finishes in kitchens, bathrooms and hallways reduce the ongoing cost of a building with heavy shared use.",
+        ],
+        paragraphs: [
+          "The target resident shapes all of this. Students, working professionals and key workers want different things, so the brief should start with who you expect to house.",
+        ],
+      },
+      {
+        heading: "New Build or Conversion: Which Suits Your Site?",
+        paragraphs: [
+          "A purpose-built rooming house gives the most control over yield, because every room, wall and service run is planned for shared living from the start. It also makes it easier to meet the minimum standards without compromise.",
+          "Converting an existing house can be faster and cheaper, but the existing structure sets the limits. Bedroom sizes, window positions, bathroom locations and fire separation may all need work, and a change of use still requires a building permit. Before committing to a conversion, ask your designer to test how many compliant rooms the building can genuinely hold, not just how many it could physically fit.",
+          "For projects heading toward multiple dwellings rather than shared rooms, our guide to [multi-unit development permits in Melbourne](/blog/multi-unit-development-permits-melbourne) covers that pathway instead.",
+        ],
+      },
+      {
+        heading: "Questions to Ask Before Hiring a Rooming House Designer",
+        leadIn:
+          "A short conversation will tell you whether a designer understands rooming houses or is learning on your project. These questions draw out the difference:",
+        ordered: true,
+        list: [
+          "Have you designed or documented rooming houses before, and can I see examples?",
+          "How will you check whether my property qualifies for the Clause 52.23 planning exemption?",
+          "Will the design be documented as a Class 1b building, and when will you confirm that with a building surveyor?",
+          "How do you allow for the Consumer Affairs Victoria minimum standards, including the 2030 heating requirement?",
+          "What does your fee include: concept design, planning documentation, building permit drawings, consultant coordination?",
+          "Which costs sit outside your scope, such as surveys, engineering or energy ratings?",
+        ],
+        paragraphs: [
+          "Clear, specific answers to questions two and three are the best sign you're talking to the right person.",
+        ],
+      },
+      {
+        heading: "What Affects the Cost of Rooming House Design?",
+        paragraphs: [
+          "Design fees depend on the scope rather than a fixed rate. The main factors are whether the project is a new build or a conversion, the condition and constraints of the site, whether a planning permit is required, the level of documentation needed for the building permit and how many consultants need coordinating.",
+          "When comparing quotes, line them up by what's included. A low fee that stops at concept drawings can cost more overall than a complete fee that carries the project through to permit-ready documentation.",
+        ],
+      },
+      {
+        heading: "What to Prepare Before Your First Meeting",
+        leadIn:
+          "You don't need every answer before talking to a designer, but a few details make the first meeting far more useful:",
+        list: [
+          "The property address and any existing plans or title documents",
+          "Your target number of rooms and the type of resident you expect",
+          "Whether you plan to build new, convert or upgrade an existing rooming house",
+          "Your approximate design and construction budget",
+          "Your preferred timeframe and any known site issues such as slope, easements or drainage",
+        ],
+        paragraphs: [
+          "The general thinking in our [guide to architectural site analysis](/blog/essential-steps-architectural-site-analysis) applies here too, and it's a useful way to spot constraints before your first meeting.",
+        ],
+      },
+      {
+        heading: "How Manzel Studio Approaches Rooming House Design",
+        paragraphs: [
+          "Manzel Studio designs purpose-built rooming houses, conversions, renovations and extensions across Melbourne. Our process starts with the site and the regulatory thresholds, then works toward a layout that balances bedroom numbers against the shared space residents need.",
+          "We focus on efficient room layouts, cost-effective construction and compliance with the relevant health, safety and amenity requirements, with documentation coordinated alongside building surveyors, engineers and energy raters. The aim is a rooming house that gets approved, appeals to its intended residents and stays practical to run.",
+          "You can read more about our [rooming house building designer services in Melbourne](/rooming-house-building-design), including what's included at each stage.",
+        ],
+      },
+      {
+        heading: "Start Planning Your Rooming House",
+        paragraphs: [
+          "The best rooming house projects are settled in the first few weeks: the right bedroom count, the right building class and shared spaces sized for the people who will live there. Get those decisions right and the rest of the project follows.",
+          "If you have a site in mind, a short conversation is the quickest way to find out what it can hold. [Discuss your rooming house project](/contact-us?service=rooming-house-building-design) with our team.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How many bedrooms can a rooming house have without a planning permit in Victoria?",
+        a: "Under Clause 52.23, a rooming house in many residential zones can provide up to 9 bedrooms for no more than 12 people, with a total floor area of 300 m² or less, without a planning permit. Overlays such as the Heritage Overlay can still require one, so confirm with your council.",
+      },
+      {
+        q: "Is a rooming house a Class 1b building?",
+        a: "A small rooming house is generally classified as Class 1b under the Building Code of Australia, which covers boarding houses with no more than 12 occupants and up to 300 m² of floor area. Larger shared accommodation is likely to be Class 3, with stricter fire-safety requirements.",
+      },
+      {
+        q: "Do I need a building permit to convert a house into a rooming house?",
+        a: "Yes. Victorian councils advise that a building permit is required for a rooming house, including when an existing house changes use to shared accommodation. A council or private building surveyor can issue it.",
+      },
+      {
+        q: "When does a property count as a rooming house?",
+        a: "Victorian councils generally treat a property as a rooming house when one or more rooms are available to rent and four or more people in total live there. The operator must then register the property with council and hold a rooming house operator's licence.",
+      },
+      {
+        q: "What should I look for in a rooming house building designer?",
+        a: "Look for direct experience with rooming houses, a clear method for checking the planning exemption and building classification, and knowledge of the Consumer Affairs Victoria minimum standards. Ask what the fee includes and whether the designer coordinates surveyors and engineers.",
+      },
+    ],
+  },
 };
