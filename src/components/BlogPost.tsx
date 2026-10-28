@@ -19,6 +19,7 @@ type Post = {
   author: string;
   categories: string[];
   imageAlt?: string;
+  imageAspect?: string;
 };
 
 export default function BlogPost({ post, article }: { post: Post; article: Article }) {
@@ -98,7 +99,10 @@ export default function BlogPost({ post, article }: { post: Post; article: Artic
               </Reveal>
 
               <Reveal>
-                <div className="relative mb-12 aspect-video w-full overflow-hidden">
+                <div
+                  className="relative mb-12 w-full overflow-hidden"
+                  style={{ aspectRatio: post.imageAspect?.replace("/", " / ") ?? "16 / 9" }}
+                >
                   <Image
                     src={post.imageLarge}
                     alt={post.imageAlt ?? post.title}

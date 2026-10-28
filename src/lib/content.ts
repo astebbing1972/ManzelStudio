@@ -324,6 +324,8 @@ export type BlogPost = {
   metaTitle?: string;
   metaDescription?: string;
   imageAlt?: string;
+  /** Cover image aspect ratio, e.g. "1536/1024". Defaults to 16/9. */
+  imageAspect?: string;
   keywords?: string[];
   /** Opt in to richer Article schema (image set, word count, topics). */
   extendedSchema?: boolean;
@@ -590,6 +592,34 @@ export const blogPosts: BlogPost[] = [
       "granny flat design",
       "secondary dwelling design",
       "granny flat plans Victoria",
+    ],
+    extendedSchema: true,
+  },
+  {
+    title: "How to Choose a Rooming House Building Designer in Melbourne",
+    href: "/blog/how-to-choose-a-rooming-house-designer-melbourne",
+    image: "/images/blog/how-to-choose-a-rooming-house-designer-melbourne.webp",
+    imageLarge: "/images/blog/how-to-choose-a-rooming-house-designer-melbourne.webp",
+    date: "Wed, 28 Oct 2026",
+    author: "Manzel Studio",
+    excerpt:
+      "Rooming houses sit under planning, building and minimum-standard rules in Victoria. Here's how they shape the design and what to ask a designer.",
+    excerptLong:
+      "A rooming house sits under three separate sets of rules in Victoria. Here's how the Clause 52.23 planning thresholds, Class 1b building classification and Consumer Affairs Victoria minimum standards shape the floor plan, and what to ask before hiring a rooming house building designer.",
+    categories: ["planning-permits", "residential-design"],
+    metaTitle: "Rooming House Building Designer: How to Choose Well",
+    metaDescription:
+      "Choosing a rooming house building designer in Melbourne? Learn the approvals, minimum standards and layout decisions that shape yield, plus what to ask.",
+    imageAlt:
+      "Modern three-storey rooming house in Melbourne with the Manzel Studio guide title How to Choose a Rooming House Building Designer",
+    imageAspect: "1536/950",
+    keywords: [
+      "rooming house building designer",
+      "rooming house designer Melbourne",
+      "rooming house design",
+      "rooming house planning permit Victoria",
+      "Class 1b building",
+      "rooming house minimum standards",
     ],
     extendedSchema: true,
   },
