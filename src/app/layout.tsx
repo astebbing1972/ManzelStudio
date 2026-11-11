@@ -54,6 +54,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${albertSans.variable}`}>
+      <head>
+        {/* ARD (Agentic Resource Discovery) manifest, for Lighthouse "Agentic Browsing" */}
+        <link rel="ard" href="/.well-known/ard.json" />
+      </head>
       <body className="antialiased min-h-screen flex flex-col">
         <JsonLd data={organizationJsonLd()} />
         <Analytics />
