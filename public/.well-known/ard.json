@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:manzelstudio.com.au:site:site-guide",
+      "displayName": "Manzel Studio site guide",
+      "description": "Guide for AI agents to Manzel Studio, a registered building design studio in Preston, Victoria, offering residential, commercial and health-space building design, drafting and permit documentation across Victoria.",
+      "type": "application/agent-skills+md",
+      "url": "https://www.manzelstudio.com.au/skills/site-guide/SKILL.md",
+      "representativeQueries": [
+        "building designer Melbourne",
+        "granny flat building designer Melbourne",
+        "healthcare building designer Melbourne",
+        "building permit drawings Melbourne",
+        "rooming house building designer Melbourne"
+      ]
+    }
+  ]
+}
