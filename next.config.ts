@@ -2,6 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   agentRules: false,
+  // Inline the site stylesheet (~11 KB) into each page instead of a
+  // render-blocking <link>: PageSpeed flagged it as the only render-blocking
+  // request (~340-380 ms). Same change as the SSOS site (Nov 2026).
+  experimental: {
+    inlineCss: true,
+  },
   async redirects() {
     return [
       {
