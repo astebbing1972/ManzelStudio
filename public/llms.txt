@@ -21,3 +21,7 @@ Manzel Studio provides building design, drafting, and permit documentation servi
 ## Blog
 
 - [Building Design Blog](https://www.manzelstudio.com.au/blog): Guides on planning permits, residential design, commercial spaces, and project tips for Melbourne and Victoria.
+
+## For agents
+
+- [Site guide for AI agents](https://www.manzelstudio.com.au/skills/site-guide/SKILL.md): what Manzel Studio offers, key pages, how to start an enquiry, and guidance for agents.
