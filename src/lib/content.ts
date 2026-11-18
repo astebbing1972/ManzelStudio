@@ -333,6 +333,30 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "What Is a Class 6 Building? A Victorian Guide for Shops, Cafés and Showrooms",
+    href: "/blog/class-6-building-victoria-retail-guide",
+    image: "/images/blog/class-6-building-victoria-retail-guide.png",
+    imageLarge: "/images/blog/class-6-building-victoria-retail-guide.png",
+    date: "Wed, 18 Nov 2026",
+    author: "Manzel Studio",
+    excerpt:
+      "A Class 6 building is generally a shop or other building used to sell goods or provide services directly to the public. Here's what counts, and why it matters.",
+    excerptLong:
+      "Planning to open a shop, café, restaurant or showroom in Melbourne? Before committing to a property or starting a fit-out, it is important to understand how the building is classified under the National Construction Code (NCC).",
+    categories: ["commercial-design", "planning-permits"],
+    metaTitle: "What Is a Class 6 Building? Victoria Retail Guide | Manzel Studio",
+    metaDescription:
+      "A Class 6 building is a shop or other building selling goods or services to the public. See examples, Class 5/7/8 differences and Victorian permit steps.",
+    imageAlt: "Smiley Café in Craigieburn, a Class 6 café fit-out designed by Manzel Studio",
+    keywords: [
+      "Class 6 building",
+      "Class 6 building Victoria",
+      "NCC building classification",
+      "shop fit-out permit Melbourne",
+      "retail building design Melbourne",
+    ],
+  },
+  {
     title: "Multi-Unit Planning Permits Melbourne: Requirements & Process",
     href: "/blog/multi-unit-development-permits-melbourne",
     image: "/images/blog/multi-unit-development-permits-melbourne.png",

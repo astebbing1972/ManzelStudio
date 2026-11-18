@@ -46,6 +46,469 @@ export type Article = {
 };
 
 export const blogArticles: Record<string, Article> = {
+  "class-6-building-victoria-retail-guide": {
+    slug: "class-6-building-victoria-retail-guide",
+    intro: [
+      "Planning to open a shop, café, restaurant or showroom in Melbourne? Before committing to a property or starting a [fit-out](/blog/retail-fit-out-vs-new-retail-build), it is important to understand how the building is classified under the [National Construction Code (NCC)](https://ncc.abcb.gov.au/ncc-navigator/building-classifications).",
+      "A Class 6 building is generally a shop or other building used to sell goods or provide services directly to the public. This classification covers many everyday commercial premises, including shops, cafés, restaurants, hairdressers, barbers and showrooms.",
+      "But not every commercial space is automatically Class 6. The way different parts of a property are used can affect its classification, building permit requirements, fire safety provisions and accessibility obligations.",
+      "This guide explains what counts as a Class 6 building, how it differs from other building classes, and what Melbourne business owners need to consider when obtaining planning and building approvals in Victoria.",
+    ],
+    sections: [
+      {
+        heading: "What Counts as a Class 6 Building?",
+        leadIn: [
+          "Under the National Construction Code (NCC), a Class 6 building is a shop or other building used for the retail sale of goods or the supply of services directly to the public.",
+          "In simple terms, if customers visit your premises to buy products, enjoy food and drinks, or receive a service, the property may fall under Class 6.",
+        ],
+        list: [
+          "**Retail shops:** Clothing shops, supermarkets, greengrocers, milk bars, convenience stores and specialty retailers",
+          "**Cafés and restaurants:** Premises where customers buy and consume food and beverages",
+          "**Hairdressers and barbers:** Businesses providing personal grooming services directly to customers",
+          "**Showrooms:** Spaces where products are displayed and sold to the public",
+          "**Service stations:** Premises providing fuel and associated retail services",
+          "**Public laundries:** Commercial laundry facilities serving customers",
+          "**Retail sections of hotels:** Shops, kiosks and certain dining or bar areas within accommodation buildings",
+        ],
+        paragraphs: [
+          "For Melbourne business owners, this matters most when leasing an existing shop, converting a warehouse into a showroom, or developing a new [hospitality venue](/commercial-building-design).",
+          "The class depends on how the space is actually used and laid out, not on the business name or what the real estate listing says.",
+          "Your building surveyor confirms the class, especially where more than one activity happens in the same premises.",
+        ],
+      },
+      {
+        heading: "Class 6 vs Class 5, 7, 8 and 9b: What Is the Difference?",
+        leadIn: "The NCC divides buildings into different classifications based primarily on their purpose and use. Understanding the difference is important because a property advertised as commercial premises may not be suitable for your intended business without additional building work or approvals.",
+        table: {
+          headers: ["Building class","Main purpose","Melbourne example","Common mix-up"],
+          rows: [
+            ["Class 5","Office buildings","Accountant’s office or corporate workplace","An office is not automatically a shop."],
+            ["Class 6","Retail sales and services to the public","Café on Sydney Road, barber shop or clothing boutique","A showroom may have a separate warehouse component."],
+            ["Class 7a","Car parking","Multi-storey public car park","Parking areas are not retail spaces."],
+            ["Class 7b","Storage and wholesale","Warehouse or wholesale distribution premises","A trade showroom may include both Class 6 and 7b areas."],
+            ["Class 8","Production and manufacturing","Factory or industrial workshop","A manufacturing workshop is different from a retail shop."],
+            ["Class 9b","Assembly buildings","Theatre, public hall or certain function venues","A venue designed for public assembly may not be Class 6."],
+          ],
+        },
+      },
+      {
+        heading: "Class 5 vs Class 6",
+        level: 3,
+        paragraphs: [
+          "Class 5 buildings are primarily used as offices for professional or commercial purposes. Examples include accounting practices, legal offices, consulting businesses and corporate workplaces.",
+          "Class 6 buildings, on the other hand, are used for retail sales or services supplied directly to the public. For example, an accounting firm’s office is generally Class 5, while a retail shop selling stationery or office supplies is generally Class 6.",
+        ],
+      },
+      {
+        heading: "Class 6 vs Class 7",
+        level: 3,
+        paragraphs: [
+          "Class 7 buildings include car parks (Class 7a) and buildings used for storage or wholesale purposes (Class 7b). A [warehouse](/blog/industrial-warehouse-building-design-compliance-victoria) where goods are stored and distributed is generally Class 7b. If customers visit a separate showroom to browse and buy products, that showroom may be Class 6.",
+        ],
+      },
+      {
+        heading: "Class 6 vs Class 8",
+        level: 3,
+        paragraphs: [
+          "Class 8 buildings are used for manufacturing, production, assembling, altering, repairing, packing or cleaning goods. An industrial workshop producing furniture, for example, may be Class 8, while a separate retail showroom selling that furniture may be Class 6.",
+        ],
+      },
+      {
+        heading: "Class 6 vs Class 9b",
+        level: 3,
+        paragraphs: [
+          "Class 9b buildings are generally used for assembly purposes, including certain public halls, theatres and venues where people gather for entertainment or other activities. A café serving customers is generally Class 6. But a venue primarily designed for public gatherings, performances or functions may require Class 9b classification.",
+          "The distinction depends on the building’s actual use and the NCC.",
+        ],
+      },
+      {
+        heading: "Tricky Class 6 Building Classification Cases for Retail Owners",
+        paragraphs: [
+          "Some commercial properties are straightforward to classify. Others contain different business activities that make classification more complicated. Here are four situations Melbourne business owners should understand before planning a fit-out.",
+        ],
+      },
+      {
+        heading: "Showroom With a Warehouse Out the Back",
+        level: 3,
+        leadIn: [
+          "Consider a business selling furniture, appliances or building materials. The front section is designed for customers to view products, discuss options and buy. The rear section is used to store stock and prepare deliveries.",
+          "These areas may have different classifications:",
+        ],
+        list: [
+          "The customer-facing showroom may be Class 6",
+          "The storage and wholesale area may be Class 7b",
+        ],
+        paragraphs: [
+          "The building may therefore contain more than one classification. The designer and building surveyor need to consider how the different spaces operate, their separation and the NCC requirements.",
+          "This matters most when converting an existing warehouse into a showroom, as the proposed retail use may trigger additional compliance work.",
+        ],
+      },
+      {
+        heading: "Trade Counter and Click-and-Collect: Class 6 or 7b?",
+        level: 3,
+        paragraphs: [
+          "Trade counters and click-and-collect facilities can create classification questions. A warehouse supplying products to trade customers may primarily operate as a storage or wholesale premises.",
+          "But if customers have access to a dedicated area where goods are displayed and sold, that section may be classified differently.",
+          "The key consideration is how the space is actually used and whether customers are accessing a retail or service area. Simply allowing customers to collect an online order does not automatically determine the classification.",
+          "A building surveyor should review the customer access arrangements, sales activities, storage areas and overall operation before confirming the classification.",
+        ],
+      },
+      {
+        heading: "Café vs Bar or Function Space",
+        level: 3,
+        paragraphs: [
+          "A café or restaurant where customers buy food and drinks is generally Class 6. But some hospitality businesses include areas primarily designed for public entertainment or assembly.",
+          "For example, a restaurant with a dedicated function room, live entertainment space or event area may require further classification assessment.",
+          "The distinction is not simply whether alcohol is served. It depends on the intended use of the premises and whether any area meets the requirements for an assembly building.",
+          "This is why hospitality design should consider seating arrangements, circulation, exits and the intended operation of each space from the beginning.",
+        ],
+      },
+      {
+        heading: "Shop-Top Housing and Mixed-Use Buildings",
+        level: 3,
+        leadIn: "Melbourne’s strip shopping streets, such as Sydney Road, High Street and Chapel Street, are full of buildings with a shop at street level and a flat, apartment or office upstairs. These buildings contain different uses and may therefore have multiple classifications.",
+        list: [
+          "The ground-floor shop may be Class 6",
+          "A flat or apartment upstairs may be Class 2 (or Class 4 if it is a single dwelling attached to the shop)",
+          "A separate office area may be Class 5",
+        ],
+        paragraphs: [
+          "Each part must be assessed according to its use and the NCC. The design also needs to consider how people access different areas, fire separation, exits and other building requirements.",
+        ],
+      },
+      {
+        heading: "What Are the Main Class 6 Building Requirements?",
+        paragraphs: [
+          "Class 6 building requirements depend on several factors, including the building’s size, number of storeys, construction, location, layout and specific use. There is no single checklist that applies identically to every shop or café.",
+        ],
+      },
+      {
+        heading: "Fire Safety and Exits",
+        level: 3,
+        leadIn: "Customers and employees must be able to safely leave the building during an emergency. Depending on the project, requirements may include:",
+        list: [
+          "Enough exits, in the right places",
+          "Suitable exit widths and travel distances",
+          "Emergency lighting and exit signage",
+          "Fire detection and warning systems",
+          "Fire extinguishers and other firefighting equipment",
+          "Fire separation between different building uses",
+        ],
+        paragraphs: [
+          "Existing buildings may require upgrades depending on the proposed building work and the assessment undertaken by the building surveyor.",
+        ],
+      },
+      {
+        heading: "Essential Safety Measures",
+        level: 3,
+        paragraphs: [
+          "Essential safety measures (ESMs) are building safety systems and features that must be maintained so they continue to operate correctly. Depending on the building, these may include fire detection systems, fire doors, emergency lighting, exit signs, fire protection systems and other safety features.",
+          "Owners have ongoing responsibilities to maintain the building’s essential safety measures and keep the required records. A retail fit-out can affect existing safety systems, so it is important to understand the building’s current obligations before changing its layout.",
+        ],
+      },
+      {
+        heading: "Accessibility Requirements",
+        level: 3,
+        leadIn: "Shops and cafés should be designed so people with disability can get in and get around. Depending on the work, this may involve:",
+        list: [
+          "An accessible entrance",
+          "Enough room to move around",
+          "Accessible paths of travel",
+          "Suitable doorways and access widths",
+          "Accessible sanitary facilities where required",
+          "Counters and retail areas customers can use",
+        ],
+        paragraphs: [
+          "The Disability Discrimination Act 1992 and [Disability (Access to Premises – Buildings) Standards 2010](https://www.legislation.gov.au/F2010L00668/latest/text) are important considerations for building work.",
+        ],
+      },
+      {
+        heading: "Toilets and Sanitary Facilities",
+        level: 3,
+        paragraphs: [
+          "The number and type of sanitary facilities required depend on the building’s use, occupancy and the regulations. A café, restaurant or retail premises may have different requirements depending on its size, customer capacity and staff arrangements.",
+          "Existing toilets should not automatically be assumed to satisfy the requirements of a new business use.",
+        ],
+      },
+      {
+        heading: "Energy Efficiency",
+        level: 3,
+        paragraphs: [
+          "Energy efficiency requirements also need to be considered when designing or altering commercial premises. Section J of the NCC addresses energy efficiency provisions for Class 3, 5, 6, 7, 8 and 9 buildings.",
+          "Depending on the project, considerations may include lighting, glazing, building fabric, insulation and mechanical services. Your building surveyor and consultants can confirm which requirements apply to the proposed work.",
+        ],
+      },
+      {
+        heading: "Changing the Use of a Space to a Shop",
+        paragraphs: [
+          "Converting an existing commercial property into a retail premises is not always as simple as changing the signage and installing shelving. A change in building use can affect the building’s classification and trigger additional compliance requirements.",
+        ],
+      },
+      {
+        heading: "Scenario 1: Converting an Office Into a Retail Shop",
+        level: 3,
+        leadIn: [
+          "An existing office is classified as Class 5. A new tenant wants to convert the premises into a clothing shop. The proposed use may require Class 6 classification.",
+          "The design and building surveyor may need to assess:",
+        ],
+        list: [
+          "Exit arrangements and travel distances",
+          "Fire safety provisions",
+          "Customer accessibility",
+          "Sanitary facilities",
+          "Occupancy and building capacity",
+          "Any required upgrades to existing building systems",
+        ],
+      },
+      {
+        heading: "Scenario 2: Converting a Warehouse Into a Showroom",
+        level: 3,
+        paragraphs: [
+          "An existing warehouse is used for storage and classified as Class 7b. The owner wants to create a customer-facing showroom at the front while retaining storage at the rear. The proposed arrangement may involve Class 6 and Class 7b areas.",
+          "The design needs to consider the relationship between these uses, access arrangements, fire separation and building permit requirements.",
+          "In both situations, it is important to establish the existing approved use and classification before starting work.",
+        ],
+      },
+      {
+        heading: "Permits for a Shop in Victoria: Step-by-Step Guide",
+        paragraphs: [
+          "Opening a new shop or changing an existing commercial premises in Victoria can involve planning approval, building approval or both. The exact process depends on the property’s zoning, overlays, existing approvals and the proposed works.",
+        ],
+      },
+      {
+        heading: "Step 1: Check the Property’s Zone and Overlays",
+        level: 3,
+        leadIn: [
+          "Before you sign a lease or lock in a design, check the property’s planning controls. Use the Victorian Government’s [VicPlan mapping tool](https://mapshare.vic.gov.au/vicplan/) to find the property’s zone and any overlays.",
+          "Pay particular attention to:",
+        ],
+        list: [
+          "Commercial and activity centre zones",
+          "Heritage overlays",
+          "Design and development overlays",
+          "Environmental and other planning controls",
+          "Existing planning permit conditions",
+        ],
+        paragraphs: [
+          "A property may appear suitable for a shop, but specific planning controls can affect the proposed use, external appearance, signage or building works.",
+        ],
+      },
+      {
+        heading: "Step 2: Determine Whether a Planning Permit Is Required",
+        level: 3,
+        leadIn: "A [planning permit](/blog/how-to-get-a-planning-permit-approved-faster) relates to how land can be used or developed. Depending on the property and proposed work, council approval may be required for:",
+        list: [
+          "A change in land use",
+          "External alterations",
+          "New shopfronts",
+          "Advertising signs",
+          "Outdoor dining areas",
+          "Building and works",
+          "Other activities controlled by the planning scheme",
+        ],
+        paragraphs: [
+          "Not every internal shop fit-out requires a planning permit. Some works may be exempt, depending on the planning controls. For example, heritage properties may have additional requirements concerning shopfront changes and external alterations.",
+          "It’s best to check with your local council before work starts.",
+        ],
+      },
+      {
+        heading: "Step 3: Check Whether VicSmart Is Available",
+        level: 3,
+        leadIn: [
+          "VicSmart is a streamlined planning permit process for eligible applications. The Victorian Government describes VicSmart as a process with a 10-business-day assessment timeframe for eligible, complete applications.",
+          "But not every commercial project qualifies. Eligibility depends on the type of application, the planning scheme, the property zone and any overlays.",
+          "For example, certain advertising sign applications in commercial zones may qualify where the sign meets specific conditions, including:",
+        ],
+        list: [
+          "It is not within 30 metres of residential-zoned land",
+          "It is not internally illuminated, floodlit or an electronic or animated sign",
+          "Its total display area does not exceed 10 square metres",
+        ],
+        paragraphs: [
+          "These are eligibility conditions for a particular sign application, not a general exemption for every shop sign or fit-out. Similarly, some building and works applications may qualify under specific VicSmart provisions. Always confirm eligibility with council before relying on the fast-track process.",
+        ],
+      },
+      {
+        heading: "Step 4: Obtain a Building Permit",
+        level: 3,
+        leadIn: [
+          "A [building permit](/building-permit-drawings) is different from a planning permit. It confirms that the proposed building work has been checked against the building regulations.",
+          "For a retail fit-out, the appointed registered building surveyor will determine the documentation and compliance information needed. This may include:",
+        ],
+        list: [
+          "Existing and proposed floor plans",
+          "Building elevations and sections where required",
+          "Construction details",
+          "Fire safety information",
+          "Accessibility documentation",
+          "Structural engineering information",
+          "Energy efficiency reports",
+          "Other consultant reports the project needs",
+        ],
+        paragraphs: [
+          "Where both planning and building permits are required, the endorsed planning design and any permit conditions need to be considered when preparing the building permit documentation.",
+        ],
+      },
+      {
+        heading: "Step 5: Complete the Work and Obtain the Required Final Approval",
+        level: 3,
+        paragraphs: [
+          "Once the approved building work has been completed, the building surveyor will decide which final document is needed. Depending on the project, this may be an occupancy permit or a certificate of final inspection.",
+          "An occupancy permit confirms that the building surveyor is satisfied the building is suitable for occupation. A certificate of final inspection records the completion of the building work where that document is required. The building permit will specify which final document is required.",
+        ],
+      },
+      {
+        heading: "Step 6: Understand Your Essential Safety Measure Responsibilities",
+        level: 3,
+        paragraphs: [
+          "Building owners also need to understand their ongoing essential safety measure obligations. These responsibilities can include maintaining fire safety systems, keeping exits and paths of travel clear, organising required maintenance and retaining appropriate records.",
+          "In Victoria, the Building and Plumbing Commission (BPC), formerly the Victorian Building Authority (VBA), became the state’s building and plumbing regulator on 1 July 2025. The same requirements continue to apply to commercial building owners and operators.",
+        ],
+      },
+      {
+        heading: "Council Example: City of Yarra",
+        level: 3,
+        paragraphs: [
+          "If you are opening a shop in Fitzroy, Collingwood, Richmond or another City of Yarra suburb, check the property’s planning controls before making design decisions.",
+          "Older commercial buildings may be affected by heritage overlays, especially where proposed works change the external appearance or shopfront. Do not assume that a shop fit-out is exempt simply because it is internal. The planning scheme, permit conditions and building requirements still need to be checked.",
+          "Early discussions with council and a building designer can help identify potential approval issues before they affect your project.",
+        ],
+      },
+      {
+        heading: "Making Your Class 6 Building Accessible",
+        leadIn: [
+          "Accessibility is an important consideration when designing a retail shop, café, restaurant or showroom. The Disability Discrimination Act 1992 and the Disability (Access to Premises – Buildings) Standards 2010 establish important requirements for access to applicable buildings.",
+          "For new buildings and certain building work involving existing premises, accessibility provisions may apply to the new work and affected parts of the existing building.",
+          "Depending on the project, considerations can include:",
+        ],
+        list: [
+          "An accessible principal pedestrian entrance",
+          "A continuous accessible path of travel",
+          "Suitable doorways and circulation areas",
+          "Accessible customer facilities where required",
+          "Accessible toilets where required",
+          "Access to the areas customers use",
+        ],
+        paragraphs: [
+          "For existing buildings, the extent of required upgrades depends on the proposed work and the regulations. Accessibility should therefore be considered during the initial design stage, rather than treated as an issue to resolve once the fit-out is complete.",
+          "A building designer can coordinate the layout with the consultants and building surveyor to identify potential compliance issues early.",
+        ],
+      },
+      {
+        heading: "How a Retail Building Designer Helps With Class 6 Projects",
+        paragraphs: [
+          "Understanding building classification is only one part of preparing a successful retail or hospitality project. You also need a design that supports your business operations, meets planning and building requirements, and provides a practical experience for customers.",
+          "At Manzel Studio, we work with Melbourne business owners to design retail, hospitality and specialist commercial spaces. Our services can include:",
+        ],
+      },
+      {
+        heading: "Building Classification and Feasibility",
+        level: 3,
+        paragraphs: [
+          "Reviewing the proposed use and [available property information](/site-assessment) to identify potential classification and approval considerations before the design progresses.",
+        ],
+      },
+      {
+        heading: "Commercial and Retail Design",
+        level: 3,
+        paragraphs: [
+          "Developing functional layouts for shops, showrooms, trade counters and specialist retail environments.",
+        ],
+      },
+      {
+        heading: "Hospitality Design",
+        level: 3,
+        paragraphs: [
+          "Designing [cafés, restaurants and bars](/commercial-building-design) with practical layouts that consider council requirements, liquor licensing constraints and operational needs.",
+        ],
+      },
+      {
+        heading: "Planning Permit Documentation",
+        level: 3,
+        paragraphs: [
+          "Preparing design documentation to support council planning permit applications.",
+        ],
+      },
+      {
+        heading: "Building Permit Drawings",
+        level: 3,
+        paragraphs: [
+          "Developing detailed plans, elevations, sections and other architectural documentation required for building surveyor assessment.",
+        ],
+      },
+      {
+        heading: "Consultant and Building Surveyor Coordination",
+        level: 3,
+        paragraphs: [
+          "Working with the consultants and the appointed building surveyor to coordinate project information and respond to documentation requirements.",
+          "Manzel Studio is a registered building practitioner and can work with your existing builder or shopfitter.",
+        ],
+      },
+      {
+        heading: "Class 6 Projects From Manzel Studio’s Portfolio",
+        paragraphs: [
+          "Our commercial portfolio includes projects that demonstrate our experience designing customer-facing business environments.",
+        ],
+      },
+      {
+        heading: "Thomastown Barber Shop",
+        level: 3,
+        paragraphs: [
+          "A commercial retail project designed around a barber shop environment, where the layout needs to support customer movement, barber chairs and day-to-day operations.",
+        ],
+      },
+      {
+        heading: "Smiley Café, Craigieburn",
+        level: 3,
+        paragraphs: [
+          "A hospitality project focused on creating a functional café environment for customers and staff.",
+        ],
+      },
+      {
+        heading: "Al Barakah Butcher, Strathmore",
+        level: 3,
+        paragraphs: [
+          "A specialist retail project demonstrating the importance of designing commercial spaces around the specific requirements of the business.",
+          "Explore these and other projects in the [Manzel Studio commercial design portfolio](/our-projects).",
+          "If you are planning a new retail space or converting an existing commercial property, our [commercial building design services in Melbourne](/commercial-building-design) can help you progress from initial ideas to permit documentation.",
+          "You can also learn more about our [building permit drawings in Melbourne](/building-permit-drawings).",
+        ],
+      },
+    ],
+    conclusion: [
+      "Getting the building classification and approval pathway right from the beginning can help prevent unexpected costs, redesigns and construction delays.",
+      "Whether you are opening a new café, converting a warehouse into a showroom or fitting out an existing retail shop, Manzel Studio can help you understand the design and documentation requirements.",
+      "**Opening or changing a shop, café or showroom in Melbourne? Talk to Manzel Studio before you sign the lease.**",
+      "Visit [Manzel Studio’s commercial building design page](/commercial-building-design) or [contact the team](/contact-us?service=commercial-building-design) to discuss your project.",
+    ],
+    faqs: [
+      {
+        q: "What is a Class 6 building?",
+        a: "A Class 6 building is a shop or other building used for the retail sale of goods or the supply of services directly to the public. Common examples include shops, cafés, restaurants, hairdressers, barbers, supermarkets and showrooms.",
+      },
+      {
+        q: "Is a café a Class 6 building?",
+        a: "Yes. A typical café or restaurant where customers buy food and drinks is generally classified as Class 6 under the NCC. But separate areas used primarily for public assembly or other activities may require a different classification assessment.",
+      },
+      {
+        q: "What is the difference between Class 5 and Class 6?",
+        a: "Class 5 buildings are used as offices for professional or commercial purposes, such as accounting firms and legal practices. Class 6 buildings are used for retail sales or services supplied directly to the public, such as shops, cafés and hair salons.",
+      },
+      {
+        q: "Is a warehouse showroom Class 6 or Class 7?",
+        a: "It may contain both classifications. The customer-facing showroom may be Class 6, while the warehouse storage area may be Class 7b. The final classification depends on the actual use, layout and the NCC.",
+      },
+      {
+        q: "Do I need a planning permit for a shop fit-out in Melbourne?",
+        a: "Not necessarily. Some internal fit-outs may not require a planning permit, but the answer depends on the property’s zoning, overlays, existing permit conditions and proposed works. External alterations, signage, changes of use and heritage-related works may require council approval.",
+      },
+      {
+        q: "Do I need a building permit for a shop fit-out?",
+        a: "A building permit may be required depending on the nature and extent of the proposed building work. The appointed building surveyor can determine whether a permit is needed and what documentation must be provided. Do not assume that all internal fit-outs are exempt.",
+      },
+    ],
+  },
+
   "essential-steps-architectural-site-analysis": {
     slug: "essential-steps-architectural-site-analysis",
     intro: [
@@ -643,7 +1106,7 @@ export const blogArticles: Record<string, Article> = {
     slug: "commercial-building-design-insights",
     intro: [
       "Commercial buildings have evolved significantly over the past decade. Today's businesses require spaces that do more than provide shelter - they need environments that support productivity, attract customers, improve sustainability and adapt to changing operational needs.",
-      "From office developments and retail premises to healthcare facilities and mixed-use projects, commercial building design plays a crucial role in determining how a building performs over its lifespan. In Melbourne's competitive property market, thoughtful design can create long-term value while helping businesses achieve their operational goals.",
+      "From office developments and [retail premises](/blog/class-6-building-victoria-retail-guide) to healthcare facilities and mixed-use projects, commercial building design plays a crucial role in determining how a building performs over its lifespan. In Melbourne's competitive property market, thoughtful design can create long-term value while helping businesses achieve their operational goals.",
     ],
     sections: [
       {
@@ -1286,6 +1749,7 @@ export const blogArticles: Record<string, Article> = {
         ],
         paragraphs: [
           "It is also sensible to maintain a contingency for unexpected costs.",
+          "It also helps to know how the build will be funded. Construction loans are usually paid out in stages as each part of the home is finished, so your budget and building contract need to line up with those stages. Wanna Finance explains how [construction loans](https://wannafinance.com.au/owner-builder-construction-loans/) work.",
           "Having a realistic budget from the beginning allows your design team to make decisions that are achievable rather than creating a home that needs to be substantially redesigned later.",
         ],
       },
