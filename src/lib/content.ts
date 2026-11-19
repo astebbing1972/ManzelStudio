@@ -429,7 +429,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     title:
-      "Commercial Building Design Melbourne: Creating Functional, Future-Ready Spaces",
+      "Commercial Building Design Principles: Creating Functional, Future-Ready Spaces",
     href: "/blog/commercial-building-design-insights",
     image: img(
       "/resources/c0173968/blog-post/post-19/300-commercial-building-design-trends-melbourne(1).png"
@@ -444,7 +444,9 @@ export const blogPosts: BlogPost[] = [
     excerptLong:
       "Commercial buildings have evolved significantly over the past decade. Today's businesses require spaces that do more than provide shelter - they need environmen...",
     categories: ["commercial-design", "sustainable-design", "planning-permits"],
-    metaTitle: "Commercial Building Design Trends Melbourne | Manzel Studio",
+    metaTitle: "Commercial Building Design Principles and Trends | Manzel Studio",
+    metaDescription:
+      "The principles behind commercial buildings that work: functionality, flexibility and sustainability, plus current trends and the design process, explained for business owners and developers.",
   },
   {
     title: "Manzel Studio Launches Purpose Driven Building Design Services in Melbourne",
@@ -1474,6 +1476,7 @@ export const roomingHouseIntro = {
     "At Manzel Studio, we specialise in creating **High-yield designs** tailored to the unique requirements of Rooming House developments.",
     "Our experienced team understands the specific needs of these projects and is dedicated to maximising profitability while creating comfortable and appealing living spaces for residents.",
     "Whether you are developing a purpose-built property, adapting an existing building, or upgrading an established Rooming House, we help transform your project requirement into a clear, coordinated, and practical design.",
+    "Our guide on [how to choose a rooming house designer in Melbourne](/blog/how-to-choose-a-rooming-house-designer-melbourne) explains what to look for.",
   ],
   cta: { label: "More About Us", href: "/about-us" },
 };
@@ -2047,6 +2050,7 @@ export const grannyFlatIntroV2 = {
     "At Manzel Studio, we design granny flats around the property, existing home, access, privacy, natural light and intended use.",
     "Whether the space is intended for family members, ageing relatives, independent living, guests or rental purposes, our approach starts with understanding how the small second dwelling needs to work for you and the site.",
     "We can assist from early feasibility and concept design through to detailed drawings, consultant coordination and documentation for the relevant planning and building approval stages.",
+    "Our guide on [how to choose a granny flat designer in Melbourne](/blog/how-to-choose-a-granny-flat-designer-melbourne) covers the approval basics and what to ask.",
   ],
   cta: { label: "More About Us", href: "/about-us" },
 };
