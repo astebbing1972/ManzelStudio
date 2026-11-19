@@ -1056,10 +1056,10 @@ export const commercialIntro = {
   eyebrow: "— About Us",
   titlePre: "Experienced Commercial Building Designers for Productive, Future Ready Spaces",
   paragraphs: [
-    "At Manzel Studio, our commercial building designers create spaces that support business goals, whether that's boosting employee productivity, elevating your brand, or adapting to evolving usage patterns.",
+    "At Manzel Studio, our commercial building designers in Melbourne create spaces that support business goals, whether that's boosting employee productivity, elevating your brand, or adapting to evolving usage patterns.",
     "Each project is shaped around your operations, customers, and long-term plans, ensuring the finished space works as hard as your team does.",
     "Designed to support the way your business works today and into the future.",
-    "From early feasibility through to permits and documentation, our team guides you through each stage with honest advice and a clear process, helping you move forward with confidence.",
+    "From early feasibility through to planning permits and [building permit drawings](/building-permit-drawings), our team guides you through each stage with honest advice and a clear process, helping you move forward with confidence.",
   ],
   cta: { label: "More About Us", href: "/about-us" },
 };
@@ -1089,6 +1089,18 @@ export const commercialWhatWeDesign = {
       body: "Helping you balance commercial, residential, and community uses on a single site.",
     },
   ],
+};
+
+export const commercialRetail = {
+  eyebrow: "— Retail Design",
+  titlePre: "Retail Building Designer in Melbourne",
+  paragraphs: [
+    "Manzel Studio designs retail spaces across Melbourne, from shops and shopfronts to showrooms, food and beverage tenancies and new retail buildings. Whether you're fitting out an existing tenancy or starting from a vacant site, we shape the space around how your customers move and buy.",
+    "We plan layouts that balance display, customer flow, counters, storage and back-of-house areas, so the space works for your staff on a busy day as well as for your customers.",
+    "Each retail project has its own approval pathway. A fit-out inside an approved shop may only need a building permit, while a change of use, a new shopfront or a new building may also need a planning permit. Our guide to [retail fit-out vs a new retail build](/blog/retail-fit-out-vs-new-retail-build) explains the difference.",
+    "Before you sign a lease, we check the property's zoning, overlays and permit history, so there are no surprises later. If you're not sure [what a Class 6 building is in Victoria](/blog/class-6-building-victoria-retail-guide), our guide is a good place to start.",
+  ],
+  cta: { label: "Discuss Your Retail Project", href: "/contact-us?service=commercial-building-design" },
 };
 
 export const commercialSpecialist = {
@@ -1179,7 +1191,7 @@ export const commercialSuburbs = {
   eyebrow: "— Suburbs We Work In",
   titlePre: "Commercial Building Designers Across Melbourne and Victoria",
   titleEm: "",
-  body: "Our team has delivered residential projects across Melbourne's inner north, eastern suburbs, bayside, and beyond. Wherever your site is in Victoria, we know how to navigate the local planning landscape.",
+  body: "Our team designs offices, shops, showrooms and mixed-use buildings across Melbourne's inner north, eastern suburbs, bayside, and beyond, including local retail strips. Wherever your site is in Victoria, we know how to navigate the local planning landscape.",
   chips: suburbs.chips,
 };
 
@@ -1187,6 +1199,18 @@ export const commercialFaqs = [
   {
     q: "What does a commercial building designer actually do?",
     a: "A commercial designer creates spaces that support how a business runs, balancing brand identity, customer experience, staff flow and future flexibility. At Manzel Studio, we handle every stage from feasibility and concept design to council approvals and construction support.",
+  },
+  {
+    q: "Do you design retail shops and shop fit-outs?",
+    a: "Yes. We design shops, shopfronts, showrooms, cafés and other retail tenancies, from fit-outs in existing buildings to new retail builds, and prepare the drawings for planning and building permits. Not sure which path suits your project? Read our guide to [retail fit-out vs a new retail build](/blog/retail-fit-out-vs-new-retail-build).",
+  },
+  {
+    q: "Do I need a planning permit to open a shop in an existing building?",
+    a: "Not always. If the premises already has an approved retail use and you're only changing the inside, you may only need a building permit. A planning permit is more likely if the use is changing, you're altering the shopfront or signage, or the property has a heritage or other overlay. Our [Class 6 building guide](/blog/class-6-building-victoria-retail-guide) walks through the steps, and we can check your property before you sign a lease.",
+  },
+  {
+    q: "Can you design warehouses and industrial buildings?",
+    a: "Yes. We design warehouses, factories and other industrial buildings, including those with a showroom or office attached, and prepare the drawings for planning and building permits. Our [industrial and warehouse compliance guide](/blog/industrial-warehouse-building-design-compliance-victoria) covers the main requirements in Victoria.",
   },
   {
     q: "How long does a commercial project take?",
@@ -1213,7 +1237,7 @@ export const commercialFaqs = [
     a: "A 30 to 45 minute conversation about your premises, business goals, and budget. We'll review what's possible, outline likely planning considerations, and explain how we'd approach the project. No obligation, no pressure.",
   },
   {
-    q: "How much does a residential building designer cost?",
+    q: "How much does a commercial building designer cost?",
     a: "Fees depend on the scope and complexity of your project. After our free initial consultation, we provide a detailed, fixed-fee proposal so you know exactly what's included from day one.",
   },
 ];

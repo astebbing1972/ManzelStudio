@@ -24,6 +24,7 @@ import {
   trustBar,
   commercialIntro,
   commercialWhatWeDesign,
+  commercialRetail,
   commercialSpecialist,
   commercialWhatsIncluded,
   commercialProcess,
@@ -34,9 +35,9 @@ import {
   commercialCta,
 } from "@/lib/content";
 
-const title = "Commercial Building Designer Melbourne | Manzel Studio";
+const title = "Commercial & Retail Building Designer Melbourne | Manzel Studio";
 const description =
-  "Manzel Studio offers commercial building design and drafting services in Melbourne - offices, retail, industrial and mixed-use developments across Victoria.";
+  "Commercial and retail building designers in Melbourne. Offices, shops, fit-outs, showrooms and mixed-use developments, from feasibility to planning and building permits.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -62,6 +63,7 @@ export default function CommercialBuildingDesign() {
         <TrustBar items={trustBar} />
         <ServiceIntro {...commercialIntro} />
         <WhatWeDesign {...commercialWhatWeDesign} />
+        <ServiceIntro {...commercialRetail} />
         <MultiResidential {...commercialSpecialist} />
         <WhatsIncluded {...commercialWhatsIncluded} />
         <ServiceProcess {...commercialProcess} />

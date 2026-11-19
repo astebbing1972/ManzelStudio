@@ -2365,7 +2365,7 @@ export const blogArticles: Record<string, Article> = {
     intro: [
       "Opening a retail space in Melbourne usually comes down to one of two starting points: fitting out an existing tenancy, or building from a vacant shell or a completely new structure. Both can get you to the same result - a functioning shop - but they follow very different approval pathways, timelines and design decisions.",
       "Choosing the wrong path early, or not realising which path you're actually on, is one of the most common causes of delay for retail projects. A fit-out that looks straightforward can trigger a full planning permit if the use is changing. A new build can be significantly simplified if the site already has appropriate zoning and services in place.",
-      "This guide is written for retailers, franchise operators and landlords weighing up a fit-out against a new build, and outlines what a [building designer](/commercial-building-design) typically manages on each path.",
+      "This guide is written for retailers, franchise operators and landlords weighing up a fit-out against a new build, and outlines what a [retail building designer](/commercial-building-design) typically manages on each path.",
     ],
     sections: [
       {
@@ -2476,7 +2476,7 @@ export const blogArticles: Record<string, Article> = {
     intro: [
       "Industrial and warehouse projects in Victoria carry a layer of compliance that most commercial fit-outs don't have to deal with. Zoning restricts what a site can actually be used for, environmental regulations can apply well before construction starts, and the building code treats large industrial floor plates differently to a standard office or shop.",
       "Getting these basics wrong early is one of the most common ways an industrial project loses months, whether that's discovering a proposed use isn't permitted in the zone, or finding out a stormwater or trade waste agreement should have been sought before design was finalised.",
-      "This guide walks through the zoning, planning, building code and environmental compliance basics for an industrial or warehouse building in Victoria, and where a [building designer](/commercial-building-design) fits into the process.",
+      "This guide walks through the zoning, planning, building code and environmental compliance basics for an industrial or warehouse building in Victoria, and where a [commercial building designer](/commercial-building-design) fits into the process.",
     ],
     sections: [
       {
