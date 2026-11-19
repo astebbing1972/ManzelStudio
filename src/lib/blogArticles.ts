@@ -1267,10 +1267,10 @@ export const blogArticles: Record<string, Article> = {
         ],
       },
       {
-        heading: "Choosing a Commercial Building Designer",
+        heading: "Working With a Designer on Your Commercial Project",
         banner: {
           src: img("/pub/c0173968/editor-uploaded-image/Commercial Building Design Melbourne.png"),
-          alt: "Choosing a Commercial Building Designer",
+          alt: "Working With a Designer on Your Commercial Project",
           aspect: "1080/720",
         },
         leadIn: [
@@ -1355,7 +1355,7 @@ export const blogArticles: Record<string, Article> = {
               {
                 heading: "1. Residential",
                 paragraph:
-                  "Manzel Studio designs [custom homes, renovations, and home extensions](/residential-building-design) for families who want spaces that suit the way they actually live. From early concept planning through to detailed design, the studio focuses on comfort, flow, natural light, site potential, and long-term usability.",
+                  "Manzel Studio designs [custom homes, renovations, and home extensions](/residential-building-design) for families who want spaces that suit the way they actually live. From early concept planning through to detailed design, the studio focuses on comfort, flow, natural light, site potential, and long-term usability. The studio also designs [granny flats](/granny-flat-building-design) and [rooming houses](/rooming-house-building-design).",
               },
               {
                 heading: "2. Commercial",
@@ -1445,7 +1445,7 @@ export const blogArticles: Record<string, Article> = {
         heading: "1. Use the Rear of the Site Strategically",
         level: 3,
         paragraphs: [
-          "On narrow blocks, the rear of the site is often one of the most valuable areas. It may provide opportunities for vehicle access, a garage, private outdoor space, or a secondary living zone.",
+          "On narrow blocks, the rear of the site is often one of the most valuable areas. It may provide opportunities for vehicle access, a garage, private outdoor space, or a secondary living zone. On deeper blocks, it may even suit a [granny flat](/granny-flat-building-design).",
           "Where rear access is available, placing parking or service areas toward the back can free up the front of the home for a stronger street presence and better internal planning.",
           "A well-designed rear zone can also create a private courtyard, landscaped outlook, or flexible outdoor room that makes the whole home feel larger.",
         ],
