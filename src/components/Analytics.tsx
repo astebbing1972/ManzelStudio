@@ -15,8 +15,20 @@ import Script from "next/script";
  * interacts with the page, so the scripts now never affect the score.
  *
  * `gtag()` and the `config` call still run immediately and queue in
- * `dataLayer`, so the page view is sent as soon as gtag.js arrives. Nothing
- * else on the site calls `gtag` (no form conversions or Ads tags). Trade-off:
+ * `dataLayer`, so the page view is sent as soon as gtag.js arrives.
+ *
+ * Enquiry events (GA4 custom events, no personal data):
+ * - `phone_click` / `email_click`: one capture-phase click listener below
+ *   covers every `tel:` / `mailto:` link on the site (header, contact page,
+ *   footer, service CTAs) with `link_url` = the href. Blog "Share by email"
+ *   links (`mailto:?subject=…`, no recipient) are skipped - they aren't
+ *   enquiries. The click itself counts as an interaction, so gtag.js loads
+ *   and the queued event is sent.
+ * - `contact_form_submission`: sent from ContactSection.tsx via
+ *   `trackEvent()` (src/lib/analytics.ts) after Netlify Forms accepts the
+ *   submission, with only `form_name` and `enquiry_type`.
+ *
+ * Trade-off:
  * a visitor who leaves without any scroll, tap, key press or mouse move is not
  * counted - previously only sub-1-2s bounces were missed.
  *
@@ -35,7 +47,17 @@ export default function Analytics() {
     ? `window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', ${JSON.stringify(gaId)});`
+        gtag('config', ${JSON.stringify(gaId)});
+        document.addEventListener("click", function (e) {
+          var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+          if (!a) return;
+          var href = a.getAttribute("href") || "";
+          if (/^tel:/i.test(href)) {
+            gtag("event", "phone_click", { link_url: href });
+          } else if (/^mailto:[^?]/i.test(href)) {
+            gtag("event", "email_click", { link_url: href.split("?")[0] });
+          }
+        }, true);`
     : "";
 
   return (
