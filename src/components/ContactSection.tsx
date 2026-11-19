@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Reveal from "./Reveal";
+import { trackEvent } from "@/lib/analytics";
 import { InstagramIcon, LinkedinIcon, PinterestIcon, XIcon } from "./icons";
 
 // Keyed by each service page's own route slug, so a page's CTA can link to
@@ -166,6 +167,11 @@ export default function ContactSection({
       if (!response.ok) throw new Error(`Form submission failed: ${response.status}`);
 
       setSubmitted(true);
+      // Enquiry type only - never the visitor's name, email, phone or message.
+      trackEvent("contact_form_submission", {
+        form_name: "contact",
+        enquiry_type: form.reason || "General Enquiry",
+      });
     } catch {
       setError(true);
     } finally {
