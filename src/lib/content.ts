@@ -334,9 +334,9 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     title: "Top Building Design Studios in Melbourne for 2027: How to Choose the Right Practice",
-    href: "/blog/top-building-design-studios-melbourne-2027",
-    image: "/images/blog/top-building-design-studios-melbourne-2027.png",
-    imageLarge: "/images/blog/top-building-design-studios-melbourne-2027.png",
+    href: "/blog/top-building-design-studios-melbourne",
+    image: "/images/blog/top-building-design-studios-melbourne.png",
+    imageLarge: "/images/blog/top-building-design-studios-melbourne.png",
     date: "Fri, 20 Nov 2026",
     author: "Manzel Studio",
     excerpt:

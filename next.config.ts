@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/blog/top-building-design-studios-melbourne-2027",
+        destination: "/blog/top-building-design-studios-melbourne",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "manzelstudio.com" }],
         destination: "https://www.manzelstudio.com.au/:path*",

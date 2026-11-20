@@ -46,8 +46,8 @@ export type Article = {
 };
 
 export const blogArticles: Record<string, Article> = {
-  "top-building-design-studios-melbourne-2027": {
-    slug: "top-building-design-studios-melbourne-2027",
+  "top-building-design-studios-melbourne": {
+    slug: "top-building-design-studios-melbourne",
     intro: [
       "Selecting the right building design partner in Melbourne shapes every stage of your project, from initial site feasibility and council planning approvals to construction documentation and buildability. Unlike large commercial architectural practices that focus on civic towers or institutional landmarks, Melbourne's leading building design studios specialise in practical, council-compliant residential, multi-unit, and small-to-medium commercial projects across Victoria.",
       "Below is a comparison of Melbourne building design studios to consider for 2027, followed by a practical guide on what to look for before signing a fee proposal.",
