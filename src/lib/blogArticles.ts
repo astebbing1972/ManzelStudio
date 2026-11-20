@@ -46,6 +46,124 @@ export type Article = {
 };
 
 export const blogArticles: Record<string, Article> = {
+  "top-building-design-studios-melbourne-2027": {
+    slug: "top-building-design-studios-melbourne-2027",
+    intro: [
+      "Selecting the right building design partner in Melbourne shapes every stage of your project, from initial site feasibility and council planning approvals to construction documentation and buildability. Unlike large commercial architectural practices that focus on civic towers or institutional landmarks, Melbourne's leading building design studios specialise in practical, council-compliant residential, multi-unit, and small-to-medium commercial projects across Victoria.",
+      "Below is a comparison of Melbourne building design studios to consider for 2027, followed by a practical guide on what to look for before signing a fee proposal.",
+    ],
+    sections: [
+      {
+        heading: "1. Manzel Studio: Best for Specialised Residential Yields, Permits & Commercial Design",
+        leadIn: [
+          "**Location:** Preston, VIC · **Website:** manzelstudio.com.au",
+          "Based in Preston, [Manzel Studio](/) is a Melbourne building design practice serving homeowners, investors, and commercial property owners across Victoria. Led by director Ali Dirani, the studio focuses on clear, buildable documentation and site-responsive design rather than construction.",
+        ],
+        list: [
+          "**Core Design Services:** Custom residential homes (including narrow-block homes), [granny flat building design](/granny-flat-building-design), [rooming house building design](/rooming-house-building-design), commercial spaces, retail fit-outs, and healthcare environments.",
+          "**Approvals & Documentation:** Comprehensive architectural site assessments, town planning packages, and detailed [building permit drawings](/building-permit-drawings) ready for consultant coordination and building surveyor review.",
+          "**Best For:** Property owners and investors in Melbourne seeking a dedicated design practice with experience across both specialised residential yields (rooming houses and granny flats) and commercial or healthcare compliance.",
+        ],
+      },
+      {
+        heading: "2. Sketch Design & Interiors: Best for Boutique Residential & Interior Detailing",
+        leadIn: [
+          "**Location:** Elsternwick, VIC · **Website:** sketchdesign.com.au",
+          "Operating out of Elsternwick, Sketch Design & Interiors is a Melbourne residential design and interior studio established in 2006.",
+        ],
+        list: [
+          "**Core Design Services:** Custom new homes, contemporary renovations, heritage-sensitive extensions, and full interior design packages.",
+          "**Best For:** Melbourne homeowners planning a custom residential build or renovation where cohesive exterior and interior detailing is a priority.",
+        ],
+      },
+      {
+        heading: "3. SilverPoint Building Designers & Planning Consultants: Best for Town Planning & Multi-Dwelling Projects",
+        leadIn: [
+          "**Location:** Camberwell, VIC · **Website:** silverpointdesignandplanning.com.au",
+          "Located in Camberwell, SilverPoint Building Designers & Planning Consultants combines building design with dedicated town planning consultancy across metropolitan Melbourne councils.",
+        ],
+        list: [
+          "**Core Design Services:** Dual occupancy developments, townhouse projects, home extensions, subdivision applications, and commercial design.",
+          "**Best For:** Developers and property owners navigating complex local council overlays, subdivisions, or multi-dwelling town planning applications.",
+        ],
+      },
+      {
+        heading: "4. Innovative Space Design: Best for North-West Melbourne Residential & Commercial Projects",
+        leadIn: [
+          "**Location:** Moonee Ponds, VIC · **Website:** isd.net.au",
+          "Based in Moonee Ponds, Innovative Space Design provides residential and commercial building design, drafting, and town planning services across Melbourne.",
+        ],
+        list: [
+          "**Core Design Services:** Custom residential homes, home extensions, multi-unit townhouse developments, commercial fit-outs, and childcare centre design.",
+          "**Best For:** Clients looking for a long-established north-west Melbourne studio experienced in both residential renovations and commercial or childcare planning approvals.",
+        ],
+      },
+      {
+        heading: "5. Iwan Design: Best for Eastern Suburbs Homes & Small Commercial Spaces",
+        leadIn: [
+          "**Location:** Ringwood, VIC · **Website:** iwandesign.com.au",
+          "Operating from Ringwood, Iwan Design is a Melbourne building design studio focused on tailored residential living spaces and practical commercial environments.",
+        ],
+        list: [
+          "**Core Design Services:** New homes, residential renovations and extensions, plus selected office, retail, and light industrial design.",
+          "**Best For:** Homeowners and small business owners across Melbourne's eastern suburbs seeking a hands-on, collaborative design process.",
+        ],
+      },
+      {
+        heading: "6. Meraq Building Designers: Best for Custom Homes & Multi-Unit Townhouses",
+        leadIn: [
+          "**Location:** Melbourne, VIC · **Website:** meraq.com.au",
+          "Meraq Building Designers is a Melbourne building design practice specialising in custom homes and multi-unit residential projects.",
+        ],
+        list: [
+          "**Core Design Services:** Custom single dwellings, dual occupancies, and multi-unit townhouse developments across metropolitan Melbourne.",
+          "**Best For:** Property owners and small-scale developers focused on maximising residential site potential.",
+        ],
+      },
+      {
+        heading: "7. Lateral Building Design: Best for Established Victorian Residential & Extension Work",
+        leadIn: [
+          "**Location:** Melbourne, VIC · **Website:** lateralbuildingdesign.com.au",
+          "Established in 2002, Lateral Building Design is a Victorian residential building design practice delivering concept-to-permit documentation.",
+        ],
+        list: [
+          "**Core Design Services:** Custom homes, double-storey additions, home renovations, and multi-dwelling projects.",
+          "**Best For:** Melbourne homeowners planning major extensions or custom new builds with an established local design team.",
+        ],
+      },
+      {
+        heading: "How to Choose a Building Designer in Melbourne for 2027",
+        leadIn: "Before signing a fee proposal, evaluate prospective studios against four practical criteria:",
+        ordered: true,
+        list: [
+          "**Relevant Project Experience in Victoria:** Residential extensions, rooming houses, granny flats, and commercial spaces each carry distinct National Construction Code (NCC) and Victorian planning requirements. Review completed projects that match your specific building class.",
+          "**Clarity on Scope (Design vs. Construction):** Most building design practices focus strictly on concept design, planning applications, and technical documentation rather than acting as the builder. Confirm whether the studio coordinates external consultants (such as structural engineers, energy raters, and land surveyors) during the documentation stage.",
+          "**Local Council & Overlay Familiarity:** Planning controls, including zoning, setbacks, site coverage, overshadowing, and heritage overlays, vary significantly between Victorian municipalities. Always check how local council rules apply to your specific title before locking in a concept.",
+          "**Transparent Documentation Stages:** Ensure your proposal clearly separates initial site analysis and concept design from town planning drawings and final construction documentation.",
+        ],
+      },
+      {
+        heading: "Planning a Project in Melbourne for 2027?",
+        paragraphs: [
+          "If you have a site in mind and want to understand its development potential, zoning constraints, or permit pathway, speak with the team at Manzel Studio to discuss your project brief.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the difference between a building designer and an architect in Australia?",
+        a: "In Australia, both registered architects and qualified building designers can design residential, multi-unit, and commercial buildings and prepare documentation for planning and building permits. Architects hold registration under state Architects Acts and often lead large-scale civic or highly specialised projects, while building designers frequently focus on custom homes, renovations, townhouses, and small-to-medium commercial developments with practical, build-focused documentation.",
+      },
+      {
+        q: "Do I need a planning permit before applying for a building permit in Victoria?",
+        a: "Whether a planning permit is required depends on your property's zoning, planning overlays, lot size, and the type of work proposed. Because planning rules vary by site and local council across Victoria, you should always verify your specific site conditions with a building designer, town planner, or your local council before starting design work.",
+      },
+      {
+        q: "What should be included in a building permit drawing package?",
+        a: "A complete building permit documentation set typically includes detailed site plans, floor plans, elevations, sections, construction details, window and door schedules, and coordination with engineering and energy-efficiency reports required by a registered building surveyor.",
+      },
+    ],
+  },
   "class-6-building-victoria-retail-guide": {
     slug: "class-6-building-victoria-retail-guide",
     intro: [

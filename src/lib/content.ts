@@ -333,6 +333,29 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Top Building Design Studios in Melbourne for 2027: How to Choose the Right Practice",
+    href: "/blog/top-building-design-studios-melbourne-2027",
+    image: "/images/blog/top-building-design-studios-melbourne-2027.png",
+    imageLarge: "/images/blog/top-building-design-studios-melbourne-2027.png",
+    date: "Fri, 20 Nov 2026",
+    author: "Manzel Studio",
+    excerpt:
+      "Compare seven Melbourne building design studios for 2027 and learn the four checks to make before signing a fee proposal.",
+    excerptLong:
+      "Selecting the right building design partner in Melbourne shapes every stage of your project, from site feasibility and council approvals to construction documentation. Here is a comparison of Melbourne building design studios for 2027 and a practical guide to choosing between them.",
+    categories: ["industry-insights", "planning-permits"],
+    metaTitle: "Top Building Design Studios in Melbourne (2027 Guide) | Manzel Studio",
+    metaDescription:
+      "Compare leading Melbourne building design practices for 2027. Learn how to choose the right designer for residential, commercial, granny flat, and permit projects in Victoria.",
+    imageAlt: "Top building design studios in Melbourne for 2027 - comparison and guide to choosing a designer",
+    keywords: [
+      "building design studios Melbourne",
+      "building designers Melbourne",
+      "best building designer Melbourne 2027",
+      "how to choose a building designer",
+    ],
+  },
+  {
     title: "What Is a Class 6 Building? A Victorian Guide for Shops, Cafés and Showrooms",
     href: "/blog/class-6-building-victoria-retail-guide",
     image: "/images/blog/class-6-building-victoria-retail-guide.png",
